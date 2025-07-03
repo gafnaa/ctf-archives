@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="flex items-center justify-between">
+        <h1 class="font-semibold text-2xl text-gray-800 transition-colors duration-300">
+            My Notes
+        </h1>
+
+        <a href="{{ url_for('new_note') }}"
+           class="w-auto px-5 py-2 text-sm tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-md hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80">
+            New Note
+        </a>
+    </div>
+
+    <div>
+        <h2>
+            Welcome, {{ current_user }}! Select a note or create a new one.
+        </h2>
+    </div>
+
+    <div class="py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        {% for nid, title, content in user_notes %}
+            <div class="w-full px-4 py-3 rounded-md shadow-md ">
+                <div class="flex items-center justify-between">
+                    <span class="text-sm font-light text-gray-800 ">Personal Note</span>
+                    <span class="px-3 py-1 text-xs text-blue-800 uppercase bg-blue-200 rounded-full ">web</span>
+                </div>
+
+                <div>
+                    <h1 class="mt-2 text-lg font-semibold capitalize text-gray-800 ">{{ title }}</h1>
+                    <p class="mt-2 text-sm text-gray-600 break-words line-clamp-6 min-h-28">{{ content }}</p>
+                </div>
+
+                <div class="flex mt-4">
+                    <a href="{{ url_for('view_note', note_id=nid) }}"
+                       class="w-full px-5 py-2 text-sm tracking-wide text-white text-center capitalize transition-colors duration-300 transform bg-blue-600 rounded-md sm:mx-2 sm:order-2  hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80">
+                        View Note
+                    </a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+    <div class="flex justify-center">
+        {% if not user_notes %}
+            <p class="text-gray-500">You have no notes yet. Start by creating a new note!</p>
+        {% else %}
+            <p class="text-gray-500">You have {{ user_notes|length }} notes.</p>
+        {% endif %}
+    </div>
+{% endblock %}

@@ -1,0 +1,20 @@
+import binascii
+
+# Salin hex string dari atas, pastikan tidak ada spasi atau baris kosong
+hex_string = (
+    "504b03043300010063002f02b55a00000000430000002700000008000b00666c61672e747874"
+    "019907000200414503003d42ffd1b35f95031424f68b65c3f57669f14e8df0003fe240b3ac33"
+    "64859e4c2dbc3c36f2d4acc403761385afe4e3f90fbd29d91b614ba2c6efde11b71bcc907a72"
+    "ed504b01023f033300010063002f02b55a00000000430000002700000008002f00000000666c"
+    "61672e7478740a002000000000010018008213854307cadb0100000000000000000001990700"
+    "020041450300504b050600000000010001006500007400000000"
+)
+
+# Convert ke byte array
+zip_data = binascii.unhexlify(hex_string)
+
+# Tulis ke file zip
+with open("output.zip", "wb") as f:
+    f.write(zip_data)
+
+print("ZIP file 'output.zip' berhasil dibuat.")

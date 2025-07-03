@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}vuvublog{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='output.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.svg') }}" type="image/svg+xml">
+</head>
+
+<body class="flex flex-col min-h-screen">
+<header>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, msg in messages %}
+                <div class="w-full text-white bg-blue-600">
+                    <div class="container flex items-center justify-between px-6 py-2 mx-auto">
+                        {{ msg }}
+                    </div>
+                </div>
+
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+</header>
+
+<nav>
+    <div class="container px-6 py-8 mx-auto flex flex-row items-center justify-between">
+        <a href="{{ url_for('dashboard') }}" class="flex flex-row gap-4 items-center">
+            <svg class="w-auto h-7" width="800px" height="800px" viewBox="-3 0 262 262" version="1.1"
+                 xmlns="http://www.w3.org/2000/svg"
+                 preserveAspectRatio="xMidYMid">
+                <g>
+                    <path d="M74.2028387,33.6020645 L131.154581,241.796129 C134.982194,255.787355 149.425548,264.026839 163.408516,260.195097 C177.401806,256.363355 185.633032,241.915871 181.803355,227.92671 L124.84129,19.7264516 C121.011613,5.73935484 106.570323,-2.50219355 92.5873548,1.3316129 C78.6064516,5.15716129 70.3731613,19.6087742 74.2028387,33.6 L74.2028387,33.6020645 Z"
+                          fill="#F96316">
+
+                    </path>
+                    <path d="M179.662452,32.8134194 L37.0456774,193.858065 C27.4250323,204.717419 28.4304516,221.322323 39.2794839,230.945032 C50.1285161,240.565677 66.7169032,239.562323 76.3375484,228.707097 L218.954323,67.6645161 C228.574968,56.8051613 227.569548,40.2064516 216.720516,30.5816774 C205.867355,20.9527742 189.274839,21.9581935 179.662452,32.8113548 L179.662452,32.8134194 Z"
+                          fill="#B200F8">
+
+                    </path>
+                    <path d="M18.0645161,122.054194 L221.452387,189.347097 C235.216516,193.899355 250.066581,186.427871 254.618839,172.651355 C259.181419,158.876903 251.707871,144.020645 237.937548,139.462194 L34.555871,72.1754839 C20.7855484,67.6190968 5.94167742,75.0905806 1.38735484,88.8670968 C-3.16283871,102.641548 4.31070968,117.501935 18.0686452,122.054194 L18.0645161,122.054194 Z"
+                          fill="#00B4F2">
+
+                    </path>
+                </g>
+            </svg>
+
+            <span class="font-semibold text-2xl text-gray-800 transition-colors duration-300 hover:text-black">
+                vuvublog
+            </span>
+        </a>
+
+        {% if current_user %}
+            <a href="{{ url_for('logout') }}"
+               class="w-auto px-5 py-2 text-sm tracking-wide text-white capitalize transition-colors duration-300 transform bg-gray-600 rounded-md hover:bg-gray-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80">
+                {{ current_user }}
+                <span class="px-2">|</span>
+                Logout
+            </a>
+        {% else %}
+            <a href="{{ url_for('login') }}"
+               class="w-auto px-5 py-2 text-sm tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-md hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80">
+                Login
+            </a>
+        {% endif %}
+    </div>
+</nav>
+</header>
+
+<main>
+    <div class="container px-6 py-8 mx-auto">
+        {% block content %}{% endblock %}
+    </div>
+</main>
+
+<footer class="mt-auto">
+    <div class="container px-6 py-8 mx-auto">
+        <div class="flex flex-col items-center text-center">
+            <a href="{{ url_for('dashboard') }}" class="flex flex-row gap-4 items-center">
+                <svg class="w-auto h-7" width="800px" height="800px" viewBox="-3 0 262 262" version="1.1"
+                     xmlns="http://www.w3.org/2000/svg"
+                     preserveAspectRatio="xMidYMid">
+                    <g>
+                        <path d="M74.2028387,33.6020645 L131.154581,241.796129 C134.982194,255.787355 149.425548,264.026839 163.408516,260.195097 C177.401806,256.363355 185.633032,241.915871 181.803355,227.92671 L124.84129,19.7264516 C121.011613,5.73935484 106.570323,-2.50219355 92.5873548,1.3316129 C78.6064516,5.15716129 70.3731613,19.6087742 74.2028387,33.6 L74.2028387,33.6020645 Z"
+                              fill="#F96316">
+
+                        </path>
+                        <path d="M179.662452,32.8134194 L37.0456774,193.858065 C27.4250323,204.717419 28.4304516,221.322323 39.2794839,230.945032 C50.1285161,240.565677 66.7169032,239.562323 76.3375484,228.707097 L218.954323,67.6645161 C228.574968,56.8051613 227.569548,40.2064516 216.720516,30.5816774 C205.867355,20.9527742 189.274839,21.9581935 179.662452,32.8113548 L179.662452,32.8134194 Z"
+                              fill="#B200F8">
+
+                        </path>
+                        <path d="M18.0645161,122.054194 L221.452387,189.347097 C235.216516,193.899355 250.066581,186.427871 254.618839,172.651355 C259.181419,158.876903 251.707871,144.020645 237.937548,139.462194 L34.555871,72.1754839 C20.7855484,67.6190968 5.94167742,75.0905806 1.38735484,88.8670968 C-3.16283871,102.641548 4.31070968,117.501935 18.0686452,122.054194 L18.0645161,122.054194 Z"
+                              fill="#00B4F2">
+
+                        </path>
+                    </g>
+                </svg>
+                <span class="font-semibold text-2xl text-gray-800">
+                            vuvublog
+                        </span>
+            </a>
+
+            <p class="max-w-md mx-auto mt-4 text-gray-500 ">
+                Amazing blog posts, tutorials and flags for elite developers.
+            </p>
+
+            <div class="flex flex-col mt-4 sm:flex-row sm:items-center sm:justify-center">
+                <a target="_blank" referrerpolicy="no-referrer" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                   class="flex items-center justify-center order-1 w-full px-2 py-2 mt-3 text-sm tracking-wide text-gray-600 capitalize transition-colors duration-300 transform border rounded-md sm:mx-2 sm:mt-0 sm:w-auto hover:bg-gray-50 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-40">
+                    <svg class="w-5 h-5 mx-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C21.9939 17.5203 17.5203 21.9939 12 22ZM4 12.172C4.04732 16.5732 7.64111 20.1095 12.0425 20.086C16.444 20.0622 19.9995 16.4875 19.9995 12.086C19.9995 7.68451 16.444 4.10977 12.0425 4.086C7.64111 4.06246 4.04732 7.59876 4 12V12.172ZM10 16.5V7.5L16 12L10 16.5Z"
+                              fill="currentColor"></path>
+                    </svg>
+
+                    <span class="mx-1">View Demo</span>
+                </a>
+
+                <a href="{{ url_for('new_note') }}"
+                   class="w-full px-5 py-2 text-sm tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-md sm:mx-2 sm:order-2 sm:w-auto hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80">
+                    Get started
+                </a>
+            </div>
+        </div>
+
+        <hr class="my-10 border-gray-200 "/>
+
+        <div class="flex flex-col items-center sm:flex-row sm:justify-between">
+            <p class="text-sm text-gray-500">© Copyright 2025. All Rights Reserved.</p>
+
+            <div class="flex mt-3 -mx-2 sm:mt-0">
+                <a href="#"
+                   class="mx-2 text-sm text-gray-500 transition-colors duration-300 hover:text-black hover:underline "
+                   aria-label="Reddit"> Teams </a>
+
+                <a href="#"
+                   class="mx-2 text-sm text-gray-500 transition-colors duration-300 hover:text-black hover:underline"
+                   aria-label="Reddit"> Privacy </a>
+
+                <a href="#"
+                   class="mx-2 text-sm text-gray-500 transition-colors duration-300 hover:text-black hover:underline
+        "
+                   aria-label="Reddit"> Cookies </a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

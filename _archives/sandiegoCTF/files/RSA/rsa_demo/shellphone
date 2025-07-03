@@ -1,0 +1,11 @@
+--2025-05-11 12:12:54--  https://ctf.sdc.tf/uploads%5C?key%5C=2448783cc180e96dbb4f178dad34090318f2a31cc080e2cb1d4474a5bea9b3a3%2Fshellphone
+Resolving ctf.sdc.tf (ctf.sdc.tf)... 54.177.148.218
+Connecting to ctf.sdc.tf (ctf.sdc.tf)|54.177.148.218|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 5414 (5.3K) [text/html]
+Saving to: ‘uploads\\?key\\=2448783cc180e96dbb4f178dad34090318f2a31cc080e2cb1d4474a5bea9b3a3%2Fshellphone’
+
+     0K .....                                                 100% 9.16M=0.001s
+
+2025-05-11 12:13:01 (9.16 MB/s) - ‘uploads\\?key\\=2448783cc180e96dbb4f178dad34090318f2a31cc080e2cb1d4474a5bea9b3a3%2Fshellphone’ saved [5414/5414]
+

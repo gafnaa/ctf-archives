@@ -1,0 +1,36 @@
+services:
+  bot_service:
+    build:
+      context: ./bot
+      dockerfile: Dockerfile
+    environment:
+      ADMIN_PASSWORD: "the_password_is_not_known_to_you_and_will_be_different_on_the_provided_instance_and_is_not_guessable_!"
+      CHALLENGE_SERVICE_URL: "http://challenge_service:9222"
+      FLAG_STAGE_2: "GPNCTF{flag_stage_2_the_real_flag_will_be_on_the_provided_instance}"
+      FLAG_STAGE_3: "GPNCTF{flag_stage_3_the_real_flag_will_be_on_the_provided_instance}"
+    expose:
+      - "3000"
+    networks:
+      - internal
+    depends_on:
+      - challenge_service
+
+  challenge_service:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    environment:
+      ADMIN_PASSWORD_HASH: "82ea54dedc0908d04fd72977757c09cdc456a2d8cb5fce33b75a215762d98bd06fa19fbecf992c772cabc2a8c29f37287c3ddbd709118bb9aff68fca75814057"
+      BOT_SERVICE_URL: "http://bot_service:3000"
+      CHALLENGE_SERVICE_URL: "http://challenge_service:9222"
+      FLAG_STAGE_1: "GPNCTF{flag_stage_1_the_real_flag_will_be_on_the_provided_instance}"
+      FLAG_STAGE_4: "GPNCTF{flag_stage_4_the_real_flag_will_be_on_the_provided_instance}"
+      FLAG_STAGE_5: "GPNCTF{flag_stage_5_the_real_flag_will_be_on_the_provided_instance}"
+    ports:
+      - "9222:9222"
+    networks:
+      - internal
+
+networks:
+  internal:
+    driver: bridge

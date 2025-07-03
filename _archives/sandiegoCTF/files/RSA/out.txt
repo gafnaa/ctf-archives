@@ -1,0 +1,3 @@
+RustSA encryption service! Type your message below (exactly 16 characters):
+Your ciphertext is below:
+187943791592623141370643984438525124469

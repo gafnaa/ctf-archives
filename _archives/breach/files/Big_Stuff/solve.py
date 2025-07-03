@@ -1,0 +1,40 @@
+from Crypto.Util.number import long_to_bytes
+from math import isqrt
+
+# Nilai dari file pub.txt
+n = 204533410617102050746042637962327466871107108301681249223975760443018634610882274563735445099132146374726198258046650825234125898218445155970401506229255426249618343792913375431874440323539525131326007396005240858915288570202243022369185892658145409958404034288432982740879954426952520963124427492501998471121
+e = 65537
+c = 89380932790630673819512501516900007833166225440028403006718641729397936039824001928560337675014466750682519151992838101583663401925904081237795072757880598141027611992614221254189389722423650868055839844028299120383767988341416686177832071571615328206078391873011654847214987438674395853909909769762573221193
+
+# Cek apakah sebuah bilangan adalah kuadrat sempurna
+def is_square(n):
+    root = isqrt(n)
+    return root * root == n
+
+# Faktorisasi n dengan metode Fermat
+def fermat_factor(n):
+    a = isqrt(n)
+    if a * a < n:
+        a += 1
+    b2 = a * a - n
+    while not is_square(b2):
+        a += 1
+        b2 = a * a - n
+    b = isqrt(b2)
+    p = a + b
+    q = a - b
+    return p, q
+
+# Faktorisasi n
+p, q = fermat_factor(n)
+assert p * q == n, "Faktorisasi gagal"
+
+# Hitung phi dan kunci privat
+phi = (p - 1) * (q - 1)
+d = pow(e, -1, phi)
+
+# Dekripsi ciphertext
+m = pow(c, d, n)
+flag = long_to_bytes(m).decode()
+
+print("FLAG:", flag)

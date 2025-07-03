@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% block title %}View Note{% endblock %}
+{% block content %}
+    <div class="flex items-center justify-between">
+        <h1 class="font-semibold text-2xl text-gray-800 transition-colors duration-300">
+            View Note
+        </h1>
+
+        <a href="{{ url_for('new_note') }}"
+           class="w-auto px-5 py-2 text-sm tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-md hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80">
+            New Note
+        </a>
+    </div>
+
+    <div>
+        <h2>
+            To view other notes, select from the list on the left or create a new note.
+        </h2>
+        <div class="flex flex-wrap mt-2 gap-x-2">
+            {% for nid, title in user_notes %}
+                <a href="{{ url_for('view_note', note_id=nid) }}"
+                   class="text-sm text-gray-500 transition-colors duration-300 hover:text-black hover:underline"> {{ title }} </a>
+            {% endfor %}
+        </div>
+    </div>
+
+    <section>
+        <div class="container px-6 py-10 mx-auto">
+            <div class="lg:-mx-6 lg:flex lg:items-center">
+                <img class="object-cover lg:w-1/2 lg:mx-6 w-full h-full rounded-lg"
+                     src="data:image/png;base64, {{ note.image_path|read_file }}" alt="">
+
+                <div class="mt-8 lg:w-1/2 lg:px-6 lg:mt-0">
+                    <p class="text-5xl font-semibold text-blue-500 ">“</p>
+
+                    <h1 class="text-2xl font-semibold text-gray-800  lg:text-3xl lg:w-96">
+                        {{ note.title }}
+                    </h1>
+
+                    <p class="max-w-lg mt-6 text-gray-500 ">
+                        “ {{ note.content }} ”
+                    </p>
+
+                    <h3 class="mt-6 text-lg font-medium text-blue-500">{{ note.owner.username }}</h3>
+                    <p class="text-gray-600 ">Flag Capture Manager at GPNCTF</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% if is_mod %}
+        <hr class="my-10 border-gray-200 "/>
+
+        <h1 class="font-semibold text-2xl text-gray-800 transition-colors duration-300">
+            Moderator Actions
+        </h1>
+
+        <form class="mt-4 flex justify-between gap-4" method="post"
+              action="{{ url_for('report_note', note_id=note_id) }}">
+            <input type="text" name="reason" id="reason" placeholder="Reason for reporting" required
+                   class="block w-full px-4 py-2 text-black placeholder-gray-400  border border-gray-200 rounded-lg  focus:border-blue-400  focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40"/>
+            <button type="submit"
+                    class="w-auto px-4 text-sm tracking-wide text-white whitespace-nowrap capitalize transition-colors duration-300 transform bg-red-600 rounded-md hover:bg-red-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80">
+                Report Note
+            </button>
+
+        </form>
+
+        <hr class="my-10 border-gray-200 "/>
+    {% endif %}
+
+{% endblock %}

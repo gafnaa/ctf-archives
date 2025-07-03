@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+/* Changes button default cursor to pointer */
+@layer base {
+    button:not(:disabled),
+    [role="button"]:not(:disabled) {
+        cursor: pointer;
+    }
+}

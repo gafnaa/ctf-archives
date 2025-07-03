@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block title %}View Note{% endblock %}
+{% block content %}
+    <div class="flex items-center justify-between">
+        <h1 class="font-semibold text-2xl text-gray-800 transition-colors duration-300">
+            View Reported Note
+        </h1>
+
+        <a href="{{ url_for('new_note') }}"
+           class="w-auto px-5 py-2 text-sm tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-md hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80">
+            New Note
+        </a>
+    </div>
+
+    <section>
+        <div class="container px-6 py-10 mx-auto">
+            <div class="lg:-mx-6 lg:flex lg:items-center">
+                <img class="object-cover object-center lg:w-1/2 lg:mx-6 w-full h-96 rounded-lg lg:h-[36rem]"
+                     src="data:image/png;base64, {{ note.image_path|read_file }}" alt="">
+
+                <div class="mt-8 lg:w-1/2 lg:px-6 lg:mt-0">
+                    <p class="text-5xl font-semibold text-blue-500 ">“</p>
+
+                    <h1 class="text-2xl font-semibold text-gray-800  lg:text-3xl lg:w-96">
+                        {{ note.title }}
+                    </h1>
+
+                    <p class="max-w-lg mt-6 text-gray-500 ">
+                        “ {{ note.content }} ”
+                    </p>
+
+                    <h3 class="mt-6 text-lg font-medium text-blue-500">{{ note.owner.username }}</h3>
+                    <p class="text-gray-600 ">Flag Capture Manager at GPNCTF</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div>
+        <hr class="my-10 border-gray-200 "/>
+
+        <h1 class="font-semibold text-2xl text-gray-800 transition-colors duration-300">
+            Reporter Notes
+        </h1>
+
+        {# The reason is safe, why else would we allow it to be reported? #}
+        <p>Report reason: {{ note.reason|safe }}</p>
+        <p>Reported by: {{ note.reported_by }}</p>
+
+        <hr class="my-10 border-gray-200 "/>
+    </div>
+{% endblock %}
