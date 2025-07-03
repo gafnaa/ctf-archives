@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+    {% if admin %}
+        <h1>Welcome admin {{ username }}!</h1>
+        <p>Here is your admin panel:</p>
+        <ul>
+            <li><a href="/admin/fetch">Admin Fetcher</a></li>
+        </ul>
+    {% else %}
+        <h1>Welcome {{ username }}!</h1>
+        <p>You are not an admin.</p>
+    {% endif %}
+</body>
+</html>

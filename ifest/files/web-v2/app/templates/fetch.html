@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Fetcher</title>
+</head>
+<body>
+    <h1>Admin Fetcher</h1>
+
+    <form id="fetchForm">
+        URL: <input type="text" id="url" required /><br>
+        <input type="submit" value="Fetch" />
+    </form>
+
+    <div id="result">
+        {% if result %}
+            <h2>Fetched Content:</h2>
+            <pre>{{ result }}</pre>
+        {% endif %}
+    </div>
+
+    <script>
+        document.getElementById('fetchForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const data = {
+                url: document.getElementById('url').value
+            };
+
+            const response = await fetch('/admin/fetch', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+            });
+
+            const text = await response.text();
+            document.getElementById('result').innerHTML = `
+                <h2>Fetched Content:</h2>
+                <pre>${text}</pre>
+            `;
+        });
+    </script>
+</body>
+</html>

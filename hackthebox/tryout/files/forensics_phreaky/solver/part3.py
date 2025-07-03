@@ -1,0 +1,20 @@
+import base64
+
+encoded_data = """
+UEsDBAoACQAAAGZ3ZljJKeGm6QAAAN0AAAAWABwAcGhyZWFrc19wbGFuLnBkZi5wYXJ0M1VUCQAD
+wIToZcCE6GV1eAsAAQToAwAABOgDAAClpsW/gto1vxt+rZZjVotnhKoaNhhzOz+MdqxCcWHfda7p
+XXkbFXwaA/lANMOcS7/LrFRxqTVqGkTbUDIexbC3kO7dyjJVPXkqPqOwHAXA2o/jq2ORUsdeIaNe
+ZOG/9PGdtOZmeGQowZCDfCHii576VwQBRAV+1G8Xe1rLphPsBCD9uBQ58EUigH0HEanGU6NW6zgf
+H9ZPlEPHg9AXMuLmLxnqyh3wU13xQYNwSgF1OJhdoZgsVaJBbX83/oI8gDjh9jynVpzAKjQXgTM0
+3sYhCJjIbW1O43JCisFUi4ShUiYXCbzcmWhxjVBLBwjJKeGm6QAAAN0AAABQSwECHgMKAAkAAABm
+d2ZYySnhpukAAADdAAAAFgAYAAAAAAAAAAAAtIEAAAAAcGhyZWFrc19wbGFuLnBkZi5wYXJ0M1VU
+BQADwIToZXV4CwABBOgDAAAE6AMAAFBLBQYAAAAAAQABAFwAAABJAQAAAAA=
+"""
+
+decoded_bytes = base64.b64decode(encoded_data)
+
+with open("part3.zip", "wb") as f:
+    f.write(decoded_bytes)
+
+print("File ZIP berhasil diekstrak: part3.zip")
+

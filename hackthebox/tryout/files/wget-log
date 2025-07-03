@@ -1,0 +1,6 @@
+--2025-05-06 15:28:01--  https://ctf.hackthebox.com/challenges/40779/download?expires=1746520242
+Resolving ctf.hackthebox.com (ctf.hackthebox.com)... 109.176.239.69
+Connecting to ctf.hackthebox.com (ctf.hackthebox.com)|109.176.239.69|:443... connected.
+HTTP request sent, awaiting response... 403 Forbidden
+2025-05-06 15:28:02 ERROR 403: Forbidden.
+

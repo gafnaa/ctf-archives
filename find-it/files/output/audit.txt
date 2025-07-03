@@ -1,0 +1,21 @@
+Foremost version 1.5.7 by Jesse Kornblum, Kris Kendall, and Nick Mikus
+Audit File
+
+Foremost started at Sat May 10 18:56:56 2025
+Invocation: foremost -i hidden_data.bin 
+Output directory: /mnt/e/CTF/find-it/files/output
+Configuration file: /etc/foremost.conf
+------------------------------------------------------------------
+File: hidden_data.bin
+Start: Sat May 10 18:56:57 2025
+Length: 191 KB (195780 bytes)
+ 
+Num	 Name (bs=512)	       Size	 File Offset	 Comment 
+
+Finish: Sat May 10 18:56:57 2025
+
+0 FILES EXTRACTED
+	
+------------------------------------------------------------------
+
+Foremost finished at Sat May 10 18:56:57 2025

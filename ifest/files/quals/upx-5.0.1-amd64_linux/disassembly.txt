@@ -1,0 +1,1167 @@
+
+./original:     file format elf64-x86-64
+
+
+Disassembly of section .note.gnu.property:
+
+0000000000400318 <.note.gnu.property>:
+  400318:	04 00                	add    $0x0,%al
+  40031a:	00 00                	add    %al,(%rax)
+  40031c:	30 00                	xor    %al,(%rax)
+  40031e:	00 00                	add    %al,(%rax)
+  400320:	05 00 00 00 47       	add    $0x47000000,%eax
+  400325:	4e 55                	rex.WRX push %rbp
+  400327:	00 02                	add    %al,(%rdx)
+  400329:	80 00 c0             	addb   $0xc0,(%rax)
+  40032c:	04 00                	add    $0x0,%al
+  40032e:	00 00                	add    %al,(%rax)
+  400330:	01 00                	add    %eax,(%rax)
+  400332:	00 00                	add    %al,(%rax)
+  400334:	00 00                	add    %al,(%rax)
+  400336:	00 00                	add    %al,(%rax)
+  400338:	01 00                	add    %eax,(%rax)
+  40033a:	01 c0                	add    %eax,%eax
+  40033c:	04 00                	add    $0x0,%al
+  40033e:	00 00                	add    %al,(%rax)
+  400340:	01 00                	add    %eax,(%rax)
+  400342:	00 00                	add    %al,(%rax)
+  400344:	00 00                	add    %al,(%rax)
+  400346:	00 00                	add    %al,(%rax)
+  400348:	02 00                	add    (%rax),%al
+  40034a:	01 c0                	add    %eax,%eax
+  40034c:	04 00                	add    $0x0,%al
+	...
+
+Disassembly of section .note.gnu.build-id:
+
+0000000000400358 <.note.gnu.build-id>:
+  400358:	04 00                	add    $0x0,%al
+  40035a:	00 00                	add    %al,(%rax)
+  40035c:	14 00                	adc    $0x0,%al
+  40035e:	00 00                	add    %al,(%rax)
+  400360:	03 00                	add    (%rax),%eax
+  400362:	00 00                	add    %al,(%rax)
+  400364:	47                   	rex.RXB
+  400365:	4e 55                	rex.WRX push %rbp
+  400367:	00 a7 f0 4b 6f 64    	add    %ah,0x646f4bf0(%rdi)
+  40036d:	41 12 20             	adc    (%r8),%spl
+  400370:	1c 7e                	sbb    $0x7e,%al
+  400372:	f5                   	cmc
+  400373:	fa                   	cli
+  400374:	44 fa                	rex.R cli
+  400376:	f7 9b 10 d5 30 79    	negl   0x7930d510(%rbx)
+
+Disassembly of section .note.ABI-tag:
+
+000000000040037c <.note.ABI-tag>:
+  40037c:	04 00                	add    $0x0,%al
+  40037e:	00 00                	add    %al,(%rax)
+  400380:	10 00                	adc    %al,(%rax)
+  400382:	00 00                	add    %al,(%rax)
+  400384:	01 00                	add    %eax,(%rax)
+  400386:	00 00                	add    %al,(%rax)
+  400388:	47                   	rex.RXB
+  400389:	4e 55                	rex.WRX push %rbp
+  40038b:	00 00                	add    %al,(%rax)
+  40038d:	00 00                	add    %al,(%rax)
+  40038f:	00 03                	add    %al,(%rbx)
+  400391:	00 00                	add    %al,(%rax)
+  400393:	00 02                	add    %al,(%rdx)
+  400395:	00 00                	add    %al,(%rax)
+  400397:	00 00                	add    %al,(%rax)
+  400399:	00 00                	add    %al,(%rax)
+	...
+
+Disassembly of section .init:
+
+0000000000401000 <.init>:
+  401000:	f3 0f 1e fa          	endbr64
+  401004:	48 83 ec 08          	sub    $0x8,%rsp
+  401008:	48 8b 05 d1 2f 00 00 	mov    0x2fd1(%rip),%rax        # 403fe0 <fgets@plt+0x2f70>
+  40100f:	48 85 c0             	test   %rax,%rax
+  401012:	74 02                	je     401016 <strncpy@plt-0x1a>
+  401014:	ff d0                	call   *%rax
+  401016:	48 83 c4 08          	add    $0x8,%rsp
+  40101a:	c3                   	ret
+
+Disassembly of section .plt:
+
+0000000000401020 <strncpy@plt-0x10>:
+  401020:	ff 35 ca 2f 00 00    	push   0x2fca(%rip)        # 403ff0 <fgets@plt+0x2f80>
+  401026:	ff 25 cc 2f 00 00    	jmp    *0x2fcc(%rip)        # 403ff8 <fgets@plt+0x2f88>
+  40102c:	0f 1f 40 00          	nopl   0x0(%rax)
+
+0000000000401030 <strncpy@plt>:
+  401030:	ff 25 ca 2f 00 00    	jmp    *0x2fca(%rip)        # 404000 <fgets@plt+0x2f90>
+  401036:	68 00 00 00 00       	push   $0x0
+  40103b:	e9 e0 ff ff ff       	jmp    401020 <strncpy@plt-0x10>
+
+0000000000401040 <puts@plt>:
+  401040:	ff 25 c2 2f 00 00    	jmp    *0x2fc2(%rip)        # 404008 <fgets@plt+0x2f98>
+  401046:	68 01 00 00 00       	push   $0x1
+  40104b:	e9 d0 ff ff ff       	jmp    401020 <strncpy@plt-0x10>
+
+0000000000401050 <strlen@plt>:
+  401050:	ff 25 ba 2f 00 00    	jmp    *0x2fba(%rip)        # 404010 <fgets@plt+0x2fa0>
+  401056:	68 02 00 00 00       	push   $0x2
+  40105b:	e9 c0 ff ff ff       	jmp    401020 <strncpy@plt-0x10>
+
+0000000000401060 <printf@plt>:
+  401060:	ff 25 b2 2f 00 00    	jmp    *0x2fb2(%rip)        # 404018 <fgets@plt+0x2fa8>
+  401066:	68 03 00 00 00       	push   $0x3
+  40106b:	e9 b0 ff ff ff       	jmp    401020 <strncpy@plt-0x10>
+
+0000000000401070 <fgets@plt>:
+  401070:	ff 25 aa 2f 00 00    	jmp    *0x2faa(%rip)        # 404020 <fgets@plt+0x2fb0>
+  401076:	68 04 00 00 00       	push   $0x4
+  40107b:	e9 a0 ff ff ff       	jmp    401020 <strncpy@plt-0x10>
+
+Disassembly of section .text:
+
+0000000000401080 <.text>:
+  401080:	41 54                	push   %r12
+  401082:	bf b0 22 40 00       	mov    $0x4022b0,%edi
+  401087:	55                   	push   %rbp
+  401088:	53                   	push   %rbx
+  401089:	48 81 ec 10 04 00 00 	sub    $0x410,%rsp
+  401090:	e8 ab ff ff ff       	call   401040 <puts@plt>
+  401095:	bf 58 23 40 00       	mov    $0x402358,%edi
+  40109a:	31 c0                	xor    %eax,%eax
+  40109c:	4c 8d 64 24 10       	lea    0x10(%rsp),%r12
+  4010a1:	e8 ba ff ff ff       	call   401060 <printf@plt>
+  4010a6:	48 8b 15 83 2f 00 00 	mov    0x2f83(%rip),%rdx        # 404030 <stdin@GLIBC_2.2.5>
+  4010ad:	4c 89 e7             	mov    %r12,%rdi
+  4010b0:	be 00 04 00 00       	mov    $0x400,%esi
+  4010b5:	e8 b6 ff ff ff       	call   401070 <fgets@plt>
+  4010ba:	4c 89 e7             	mov    %r12,%rdi
+  4010bd:	e8 8e ff ff ff       	call   401050 <strlen@plt>
+  4010c2:	48 85 c0             	test   %rax,%rax
+  4010c5:	74 0b                	je     4010d2 <fgets@plt+0x62>
+  4010c7:	80 7c 04 0f 0a       	cmpb   $0xa,0xf(%rsp,%rax,1)
+  4010cc:	0f 84 99 00 00 00    	je     40116b <fgets@plt+0xfb>
+  4010d2:	4c 89 e7             	mov    %r12,%rdi
+  4010d5:	e8 76 ff ff ff       	call   401050 <strlen@plt>
+  4010da:	48 8d 7c 24 0d       	lea    0xd(%rsp),%rdi
+  4010df:	48 89 c5             	mov    %rax,%rbp
+  4010e2:	31 c0                	xor    %eax,%eax
+  4010e4:	48 83 fd 46          	cmp    $0x46,%rbp
+  4010e8:	0f 94 c0             	sete   %al
+  4010eb:	31 db                	xor    %ebx,%ebx
+  4010ed:	eb 4f                	jmp    40113e <fgets@plt+0xce>
+  4010ef:	90                   	nop
+  4010f0:	85 c0                	test   %eax,%eax
+  4010f2:	74 6b                	je     40115f <fgets@plt+0xef>
+  4010f4:	ba 02 00 00 00       	mov    $0x2,%edx
+  4010f9:	49 8d 34 1c          	lea    (%r12,%rbx,1),%rsi
+  4010fd:	e8 2e ff ff ff       	call   401030 <strncpy@plt>
+  401102:	31 d2                	xor    %edx,%edx
+  401104:	48 89 c7             	mov    %rax,%rdi
+  401107:	48 0f be 44 24 0d    	movsbq 0xd(%rsp),%rax
+  40110d:	84 c0                	test   %al,%al
+  40110f:	74 19                	je     40112a <fgets@plt+0xba>
+  401111:	48 0f be 4c 24 0e    	movsbq 0xe(%rsp),%rcx
+  401117:	84 c9                	test   %cl,%cl
+  401119:	74 0f                	je     40112a <fgets@plt+0xba>
+  40111b:	48 c1 e0 08          	shl    $0x8,%rax
+  40111f:	48 8d 53 01          	lea    0x1(%rbx),%rdx
+  401123:	48 01 c1             	add    %rax,%rcx
+  401126:	48 0f af d1          	imul   %rcx,%rdx
+  40112a:	8b 84 1b 60 23 40 00 	mov    0x402360(%rbx,%rbx,1),%eax
+  401131:	48 39 d0             	cmp    %rdx,%rax
+  401134:	0f 94 c0             	sete   %al
+  401137:	48 83 c3 02          	add    $0x2,%rbx
+  40113b:	0f b6 c0             	movzbl %al,%eax
+  40113e:	48 39 eb             	cmp    %rbp,%rbx
+  401141:	72 ad                	jb     4010f0 <fgets@plt+0x80>
+  401143:	85 c0                	test   %eax,%eax
+  401145:	74 18                	je     40115f <fgets@plt+0xef>
+  401147:	bf 08 23 40 00       	mov    $0x402308,%edi
+  40114c:	e8 ef fe ff ff       	call   401040 <puts@plt>
+  401151:	48 81 c4 10 04 00 00 	add    $0x410,%rsp
+  401158:	31 c0                	xor    %eax,%eax
+  40115a:	5b                   	pop    %rbx
+  40115b:	5d                   	pop    %rbp
+  40115c:	41 5c                	pop    %r12
+  40115e:	c3                   	ret
+  40115f:	bf 38 23 40 00       	mov    $0x402338,%edi
+  401164:	e8 d7 fe ff ff       	call   401040 <puts@plt>
+  401169:	eb e6                	jmp    401151 <fgets@plt+0xe1>
+  40116b:	c6 44 04 0f 00       	movb   $0x0,0xf(%rsp,%rax,1)
+  401170:	e9 5d ff ff ff       	jmp    4010d2 <fgets@plt+0x62>
+  401175:	66 2e 0f 1f 84 00 00 	cs nopw 0x0(%rax,%rax,1)
+  40117c:	00 00 00 
+  40117f:	90                   	nop
+  401180:	f3 0f 1e fa          	endbr64
+  401184:	31 ed                	xor    %ebp,%ebp
+  401186:	49 89 d1             	mov    %rdx,%r9
+  401189:	5e                   	pop    %rsi
+  40118a:	48 89 e2             	mov    %rsp,%rdx
+  40118d:	48 83 e4 f0          	and    $0xfffffffffffffff0,%rsp
+  401191:	50                   	push   %rax
+  401192:	54                   	push   %rsp
+  401193:	45 31 c0             	xor    %r8d,%r8d
+  401196:	31 c9                	xor    %ecx,%ecx
+  401198:	48 c7 c7 80 10 40 00 	mov    $0x401080,%rdi
+  40119f:	ff 15 33 2e 00 00    	call   *0x2e33(%rip)        # 403fd8 <fgets@plt+0x2f68>
+  4011a5:	f4                   	hlt
+  4011a6:	66 2e 0f 1f 84 00 00 	cs nopw 0x0(%rax,%rax,1)
+  4011ad:	00 00 00 
+  4011b0:	f3 0f 1e fa          	endbr64
+  4011b4:	c3                   	ret
+  4011b5:	66 2e 0f 1f 84 00 00 	cs nopw 0x0(%rax,%rax,1)
+  4011bc:	00 00 00 
+  4011bf:	90                   	nop
+  4011c0:	b8 30 40 40 00       	mov    $0x404030,%eax
+  4011c5:	48 3d 30 40 40 00    	cmp    $0x404030,%rax
+  4011cb:	74 13                	je     4011e0 <fgets@plt+0x170>
+  4011cd:	b8 00 00 00 00       	mov    $0x0,%eax
+  4011d2:	48 85 c0             	test   %rax,%rax
+  4011d5:	74 09                	je     4011e0 <fgets@plt+0x170>
+  4011d7:	bf 30 40 40 00       	mov    $0x404030,%edi
+  4011dc:	ff e0                	jmp    *%rax
+  4011de:	66 90                	xchg   %ax,%ax
+  4011e0:	c3                   	ret
+  4011e1:	66 66 2e 0f 1f 84 00 	data16 cs nopw 0x0(%rax,%rax,1)
+  4011e8:	00 00 00 00 
+  4011ec:	0f 1f 40 00          	nopl   0x0(%rax)
+  4011f0:	be 30 40 40 00       	mov    $0x404030,%esi
+  4011f5:	48 81 ee 30 40 40 00 	sub    $0x404030,%rsi
+  4011fc:	48 89 f0             	mov    %rsi,%rax
+  4011ff:	48 c1 ee 3f          	shr    $0x3f,%rsi
+  401203:	48 c1 f8 03          	sar    $0x3,%rax
+  401207:	48 01 c6             	add    %rax,%rsi
+  40120a:	48 d1 fe             	sar    $1,%rsi
+  40120d:	74 11                	je     401220 <fgets@plt+0x1b0>
+  40120f:	b8 00 00 00 00       	mov    $0x0,%eax
+  401214:	48 85 c0             	test   %rax,%rax
+  401217:	74 07                	je     401220 <fgets@plt+0x1b0>
+  401219:	bf 30 40 40 00       	mov    $0x404030,%edi
+  40121e:	ff e0                	jmp    *%rax
+  401220:	c3                   	ret
+  401221:	66 66 2e 0f 1f 84 00 	data16 cs nopw 0x0(%rax,%rax,1)
+  401228:	00 00 00 00 
+  40122c:	0f 1f 40 00          	nopl   0x0(%rax)
+  401230:	f3 0f 1e fa          	endbr64
+  401234:	80 3d fd 2d 00 00 00 	cmpb   $0x0,0x2dfd(%rip)        # 404038 <stdin@GLIBC_2.2.5+0x8>
+  40123b:	75 13                	jne    401250 <fgets@plt+0x1e0>
+  40123d:	55                   	push   %rbp
+  40123e:	48 89 e5             	mov    %rsp,%rbp
+  401241:	e8 7a ff ff ff       	call   4011c0 <fgets@plt+0x150>
+  401246:	c6 05 eb 2d 00 00 01 	movb   $0x1,0x2deb(%rip)        # 404038 <stdin@GLIBC_2.2.5+0x8>
+  40124d:	5d                   	pop    %rbp
+  40124e:	c3                   	ret
+  40124f:	90                   	nop
+  401250:	c3                   	ret
+  401251:	66 66 2e 0f 1f 84 00 	data16 cs nopw 0x0(%rax,%rax,1)
+  401258:	00 00 00 00 
+  40125c:	0f 1f 40 00          	nopl   0x0(%rax)
+  401260:	f3 0f 1e fa          	endbr64
+  401264:	eb 8a                	jmp    4011f0 <fgets@plt+0x180>
+  401266:	66 2e 0f 1f 84 00 00 	cs nopw 0x0(%rax,%rax,1)
+  40126d:	00 00 00 
+  401270:	48 0f be 17          	movsbq (%rdi),%rdx
+  401274:	31 c0                	xor    %eax,%eax
+  401276:	84 d2                	test   %dl,%dl
+  401278:	74 17                	je     401291 <fgets@plt+0x221>
+  40127a:	48 0f be 4f 01       	movsbq 0x1(%rdi),%rcx
+  40127f:	84 c9                	test   %cl,%cl
+  401281:	74 0e                	je     401291 <fgets@plt+0x221>
+  401283:	48 c1 e2 08          	shl    $0x8,%rdx
+  401287:	89 f6                	mov    %esi,%esi
+  401289:	48 8d 04 11          	lea    (%rcx,%rdx,1),%rax
+  40128d:	48 0f af c6          	imul   %rsi,%rax
+  401291:	c3                   	ret
+
+Disassembly of section .fini:
+
+0000000000401294 <.fini>:
+  401294:	f3 0f 1e fa          	endbr64
+  401298:	48 83 ec 08          	sub    $0x8,%rsp
+  40129c:	48 83 c4 08          	add    $0x8,%rsp
+  4012a0:	c3                   	ret
+
+Disassembly of section .interp:
+
+0000000000402000 <.interp>:
+  402000:	2f                   	(bad)
+  402001:	6c                   	insb   (%dx),%es:(%rdi)
+  402002:	69 62 36 34 2f 6c 64 	imul   $0x646c2f34,0x36(%rdx),%esp
+  402009:	2d 6c 69 6e 75       	sub    $0x756e696c,%eax
+  40200e:	78 2d                	js     40203d <fgets@plt+0xfcd>
+  402010:	78 38                	js     40204a <fgets@plt+0xfda>
+  402012:	36 2d 36 34 2e 73    	ss sub $0x732e3436,%eax
+  402018:	6f                   	outsl  %ds:(%rsi),(%dx)
+  402019:	2e 32 00             	cs xor (%rax),%al
+
+Disassembly of section .gnu.hash:
+
+0000000000402020 <.gnu.hash>:
+  402020:	02 00                	add    (%rax),%al
+  402022:	00 00                	add    %al,(%rax)
+  402024:	08 00                	or     %al,(%rax)
+  402026:	00 00                	add    %al,(%rax)
+  402028:	01 00                	add    %eax,(%rax)
+  40202a:	00 00                	add    %al,(%rax)
+  40202c:	06                   	(bad)
+  40202d:	00 00                	add    %al,(%rax)
+  40202f:	00 00                	add    %al,(%rax)
+  402031:	00 20                	add    %ah,(%rax)
+  402033:	00 80 00 00 00 00    	add    %al,0x0(%rax)
+  402039:	00 00                	add    %al,(%rax)
+  40203b:	00 08                	add    %cl,(%rax)
+  40203d:	00 00                	add    %al,(%rax)
+  40203f:	00 67 55             	add    %ah,0x55(%rdi)
+  402042:	61                   	(bad)
+  402043:	10                   	.byte 0x10
+
+Disassembly of section .dynsym:
+
+0000000000402048 <.dynsym>:
+	...
+  402060:	21 00                	and    %eax,(%rax)
+  402062:	00 00                	add    %al,(%rax)
+  402064:	12 00                	adc    (%rax),%al
+	...
+  402076:	00 00                	add    %al,(%rax)
+  402078:	12 00                	adc    (%rax),%al
+  40207a:	00 00                	add    %al,(%rax)
+  40207c:	12 00                	adc    (%rax),%al
+	...
+  40208e:	00 00                	add    %al,(%rax)
+  402090:	0d 00 00 00 12       	or     $0x12000000,%eax
+	...
+  4020a5:	00 00                	add    %al,(%rax)
+  4020a7:	00 1a                	add    %bl,(%rdx)
+  4020a9:	00 00                	add    %al,(%rax)
+  4020ab:	00 12                	add    %dl,(%rdx)
+	...
+  4020bd:	00 00                	add    %al,(%rax)
+  4020bf:	00 33                	add    %dh,(%rbx)
+  4020c1:	00 00                	add    %al,(%rax)
+  4020c3:	00 12                	add    %dl,(%rdx)
+	...
+  4020d5:	00 00                	add    %al,(%rax)
+  4020d7:	00 01                	add    %al,(%rcx)
+  4020d9:	00 00                	add    %al,(%rax)
+  4020db:	00 12                	add    %dl,(%rdx)
+	...
+  4020ed:	00 00                	add    %al,(%rax)
+  4020ef:	00 5b 00             	add    %bl,0x0(%rbx)
+  4020f2:	00 00                	add    %al,(%rax)
+  4020f4:	20 00                	and    %al,(%rax)
+	...
+  402106:	00 00                	add    %al,(%rax)
+  402108:	07                   	(bad)
+  402109:	00 00                	add    %al,(%rax)
+  40210b:	00 11                	add    %dl,(%rcx)
+  40210d:	00 19                	add    %bl,(%rcx)
+  40210f:	00 30                	add    %dh,(%rax)
+  402111:	40                   	rex
+  402112:	40 00 00             	rex add %al,(%rax)
+  402115:	00 00                	add    %al,(%rax)
+  402117:	00 08                	add    %cl,(%rax)
+  402119:	00 00                	add    %al,(%rax)
+  40211b:	00 00                	add    %al,(%rax)
+  40211d:	00 00                	add    %al,(%rax)
+	...
+
+Disassembly of section .dynstr:
+
+0000000000402120 <.dynstr>:
+  402120:	00 66 67             	add    %ah,0x67(%rsi)
+  402123:	65 74 73             	gs je  402199 <fgets@plt+0x1129>
+  402126:	00 73 74             	add    %dh,0x74(%rbx)
+  402129:	64 69 6e 00 70 75 74 	imul   $0x73747570,%fs:0x0(%rsi),%ebp
+  402130:	73 
+  402131:	00 73 74             	add    %dh,0x74(%rbx)
+  402134:	72 6e                	jb     4021a4 <fgets@plt+0x1134>
+  402136:	63 70 79             	movsxd 0x79(%rax),%esi
+  402139:	00 73 74             	add    %dh,0x74(%rbx)
+  40213c:	72 6c                	jb     4021aa <fgets@plt+0x113a>
+  40213e:	65 6e                	outsb  %gs:(%rsi),(%dx)
+  402140:	00 5f 5f             	add    %bl,0x5f(%rdi)
+  402143:	6c                   	insb   (%dx),%es:(%rdi)
+  402144:	69 62 63 5f 73 74 61 	imul   $0x6174735f,0x63(%rdx),%esp
+  40214b:	72 74                	jb     4021c1 <fgets@plt+0x1151>
+  40214d:	5f                   	pop    %rdi
+  40214e:	6d                   	insl   (%dx),%es:(%rdi)
+  40214f:	61                   	(bad)
+  402150:	69 6e 00 70 72 69 6e 	imul   $0x6e697270,0x0(%rsi),%ebp
+  402157:	74 66                	je     4021bf <fgets@plt+0x114f>
+  402159:	00 6c 69 62          	add    %ch,0x62(%rcx,%rbp,2)
+  40215d:	63 2e                	movsxd (%rsi),%ebp
+  40215f:	73 6f                	jae    4021d0 <fgets@plt+0x1160>
+  402161:	2e 36 00 47 4c       	cs ss add %al,0x4c(%rdi)
+  402166:	49                   	rex.WB
+  402167:	42                   	rex.X
+  402168:	43 5f                	rex.XB pop %r15
+  40216a:	32 2e                	xor    (%rsi),%ch
+  40216c:	32 2e                	xor    (%rsi),%ch
+  40216e:	35 00 47 4c 49       	xor    $0x494c4700,%eax
+  402173:	42                   	rex.X
+  402174:	43 5f                	rex.XB pop %r15
+  402176:	32 2e                	xor    (%rsi),%ch
+  402178:	33 34 00             	xor    (%rax,%rax,1),%esi
+  40217b:	5f                   	pop    %rdi
+  40217c:	5f                   	pop    %rdi
+  40217d:	67 6d                	insl   (%dx),%es:(%edi)
+  40217f:	6f                   	outsl  %ds:(%rsi),(%dx)
+  402180:	6e                   	outsb  %ds:(%rsi),(%dx)
+  402181:	5f                   	pop    %rdi
+  402182:	73 74                	jae    4021f8 <fgets@plt+0x1188>
+  402184:	61                   	(bad)
+  402185:	72 74                	jb     4021fb <fgets@plt+0x118b>
+  402187:	5f                   	pop    %rdi
+  402188:	5f                   	pop    %rdi
+	...
+
+Disassembly of section .gnu.version:
+
+000000000040218a <.gnu.version>:
+  40218a:	00 00                	add    %al,(%rax)
+  40218c:	02 00                	add    (%rax),%al
+  40218e:	03 00                	add    (%rax),%eax
+  402190:	03 00                	add    (%rax),%eax
+  402192:	03 00                	add    (%rax),%eax
+  402194:	03 00                	add    (%rax),%eax
+  402196:	03 00                	add    (%rax),%eax
+  402198:	01 00                	add    %eax,(%rax)
+  40219a:	03 00                	add    (%rax),%eax
+
+Disassembly of section .gnu.version_r:
+
+00000000004021a0 <.gnu.version_r>:
+  4021a0:	01 00                	add    %eax,(%rax)
+  4021a2:	02 00                	add    (%rax),%al
+  4021a4:	3a 00                	cmp    (%rax),%al
+  4021a6:	00 00                	add    %al,(%rax)
+  4021a8:	10 00                	adc    %al,(%rax)
+  4021aa:	00 00                	add    %al,(%rax)
+  4021ac:	00 00                	add    %al,(%rax)
+  4021ae:	00 00                	add    %al,(%rax)
+  4021b0:	75 1a                	jne    4021cc <fgets@plt+0x115c>
+  4021b2:	69 09 00 00 03 00    	imul   $0x30000,(%rcx),%ecx
+  4021b8:	44 00 00             	add    %r8b,(%rax)
+  4021bb:	00 10                	add    %dl,(%rax)
+  4021bd:	00 00                	add    %al,(%rax)
+  4021bf:	00 b4 91 96 06 00 00 	add    %dh,0x696(%rcx,%rdx,4)
+  4021c6:	02 00                	add    (%rax),%al
+  4021c8:	50                   	push   %rax
+  4021c9:	00 00                	add    %al,(%rax)
+  4021cb:	00 00                	add    %al,(%rax)
+  4021cd:	00 00                	add    %al,(%rax)
+	...
+
+Disassembly of section .rela.dyn:
+
+00000000004021d0 <.rela.dyn>:
+  4021d0:	d8 3f                	fdivrs (%rdi)
+  4021d2:	40 00 00             	rex add %al,(%rax)
+  4021d5:	00 00                	add    %al,(%rax)
+  4021d7:	00 06                	add    %al,(%rsi)
+  4021d9:	00 00                	add    %al,(%rax)
+  4021db:	00 01                	add    %al,(%rcx)
+	...
+  4021e5:	00 00                	add    %al,(%rax)
+  4021e7:	00 e0                	add    %ah,%al
+  4021e9:	3f                   	(bad)
+  4021ea:	40 00 00             	rex add %al,(%rax)
+  4021ed:	00 00                	add    %al,(%rax)
+  4021ef:	00 06                	add    %al,(%rsi)
+  4021f1:	00 00                	add    %al,(%rax)
+  4021f3:	00 07                	add    %al,(%rdi)
+	...
+  4021fd:	00 00                	add    %al,(%rax)
+  4021ff:	00 30                	add    %dh,(%rax)
+  402201:	40                   	rex
+  402202:	40 00 00             	rex add %al,(%rax)
+  402205:	00 00                	add    %al,(%rax)
+  402207:	00 05 00 00 00 08    	add    %al,0x8000000(%rip)        # 840220d <stdin@GLIBC_2.2.5+0x7ffe1dd>
+	...
+
+Disassembly of section .rela.plt:
+
+0000000000402218 <.rela.plt>:
+  402218:	00 40 40             	add    %al,0x40(%rax)
+  40221b:	00 00                	add    %al,(%rax)
+  40221d:	00 00                	add    %al,(%rax)
+  40221f:	00 07                	add    %al,(%rdi)
+  402221:	00 00                	add    %al,(%rax)
+  402223:	00 02                	add    %al,(%rdx)
+	...
+  40222d:	00 00                	add    %al,(%rax)
+  40222f:	00 08                	add    %cl,(%rax)
+  402231:	40                   	rex
+  402232:	40 00 00             	rex add %al,(%rax)
+  402235:	00 00                	add    %al,(%rax)
+  402237:	00 07                	add    %al,(%rdi)
+  402239:	00 00                	add    %al,(%rax)
+  40223b:	00 03                	add    %al,(%rbx)
+	...
+  402245:	00 00                	add    %al,(%rax)
+  402247:	00 10                	add    %dl,(%rax)
+  402249:	40                   	rex
+  40224a:	40 00 00             	rex add %al,(%rax)
+  40224d:	00 00                	add    %al,(%rax)
+  40224f:	00 07                	add    %al,(%rdi)
+  402251:	00 00                	add    %al,(%rax)
+  402253:	00 04 00             	add    %al,(%rax,%rax,1)
+	...
+  40225e:	00 00                	add    %al,(%rax)
+  402260:	18 40 40             	sbb    %al,0x40(%rax)
+  402263:	00 00                	add    %al,(%rax)
+  402265:	00 00                	add    %al,(%rax)
+  402267:	00 07                	add    %al,(%rdi)
+  402269:	00 00                	add    %al,(%rax)
+  40226b:	00 05 00 00 00 00    	add    %al,0x0(%rip)        # 402271 <fgets@plt+0x1201>
+  402271:	00 00                	add    %al,(%rax)
+  402273:	00 00                	add    %al,(%rax)
+  402275:	00 00                	add    %al,(%rax)
+  402277:	00 20                	add    %ah,(%rax)
+  402279:	40                   	rex
+  40227a:	40 00 00             	rex add %al,(%rax)
+  40227d:	00 00                	add    %al,(%rax)
+  40227f:	00 07                	add    %al,(%rdi)
+  402281:	00 00                	add    %al,(%rax)
+  402283:	00 06                	add    %al,(%rsi)
+	...
+
+Disassembly of section .rodata:
+
+00000000004022a0 <.rodata>:
+  4022a0:	01 00                	add    %eax,(%rax)
+  4022a2:	02 00                	add    (%rax),%al
+	...
+  4022b0:	49 27                	rex.WB (bad)
+  4022b2:	6d                   	insl   (%dx),%es:(%rdi)
+  4022b3:	20 73 6f             	and    %dh,0x6f(%rbx)
+  4022b6:	20 73 6f             	and    %dh,0x6f(%rbx)
+  4022b9:	72 72                	jb     40232d <fgets@plt+0x12bd>
+  4022bb:	79 2c                	jns    4022e9 <fgets@plt+0x1279>
+  4022bd:	20 49 20             	and    %cl,0x20(%rcx)
+  4022c0:	66 6f                	outsw  %ds:(%rsi),(%dx)
+  4022c2:	72 67                	jb     40232b <fgets@plt+0x12bb>
+  4022c4:	6f                   	outsl  %ds:(%rsi),(%dx)
+  4022c5:	74 20                	je     4022e7 <fgets@plt+0x1277>
+  4022c7:	77 68                	ja     402331 <fgets@plt+0x12c1>
+  4022c9:	61                   	(bad)
+  4022ca:	74 20                	je     4022ec <fgets@plt+0x127c>
+  4022cc:	74 68                	je     402336 <fgets@plt+0x12c6>
+  4022ce:	65 20 66 6c          	and    %ah,%gs:0x6c(%rsi)
+  4022d2:	61                   	(bad)
+  4022d3:	67 20 69 73          	and    %ch,0x73(%ecx)
+  4022d7:	2c 20                	sub    $0x20,%al
+  4022d9:	63 6f 75             	movsxd 0x75(%rdi),%ebp
+  4022dc:	6c                   	insb   (%dx),%es:(%rdi)
+  4022dd:	64 20 79 6f          	and    %bh,%fs:0x6f(%rcx)
+  4022e1:	75 20                	jne    402303 <fgets@plt+0x1293>
+  4022e3:	70 6c                	jo     402351 <fgets@plt+0x12e1>
+  4022e5:	65 61                	gs (bad)
+  4022e7:	73 65                	jae    40234e <fgets@plt+0x12de>
+  4022e9:	20 74 72 79          	and    %dh,0x79(%rdx,%rsi,2)
+  4022ed:	20 74 6f 20          	and    %dh,0x20(%rdi,%rbp,2)
+  4022f1:	67 75 65             	addr32 jne 402359 <fgets@plt+0x12e9>
+  4022f4:	73 73                	jae    402369 <fgets@plt+0x12f9>
+  4022f6:	20 69 74             	and    %ch,0x74(%rcx)
+  4022f9:	20 66 69             	and    %ah,0x69(%rsi)
+  4022fc:	72 73                	jb     402371 <fgets@plt+0x1301>
+  4022fe:	74 3f                	je     40233f <fgets@plt+0x12cf>
+	...
+  402308:	0a 20                	or     (%rax),%ah
+  40230a:	57                   	push   %rdi
+  40230b:	6f                   	outsl  %ds:(%rsi),(%dx)
+  40230c:	77 20                	ja     40232e <fgets@plt+0x12be>
+  40230e:	63 6f 6e             	movsxd 0x6e(%rdi),%ebp
+  402311:	67 72 61             	addr32 jb 402375 <fgets@plt+0x1305>
+  402314:	74 73                	je     402389 <fgets@plt+0x1319>
+  402316:	2c 20                	sub    $0x20,%al
+  402318:	74 68                	je     402382 <fgets@plt+0x1312>
+  40231a:	61                   	(bad)
+  40231b:	74 20                	je     40233d <fgets@plt+0x12cd>
+  40231d:	69 73 20 69 6e 64 65 	imul   $0x65646e69,0x20(%rbx),%esi
+  402324:	65 64 20 74 68 65    	gs and %dh,%fs:0x65(%rax,%rbp,2)
+  40232a:	20 63 6f             	and    %ah,0x6f(%rbx)
+  40232d:	72 72                	jb     4023a1 <fgets@plt+0x1331>
+  40232f:	65 63 74 20 66       	movsxd %gs:0x66(%rax,%riz,1),%esi
+  402334:	6c                   	insb   (%dx),%es:(%rdi)
+  402335:	61                   	(bad)
+  402336:	67 00 0a             	add    %cl,(%edx)
+  402339:	20 55 68             	and    %dl,0x68(%rbp)
+  40233c:	6d                   	insl   (%dx),%es:(%rdi)
+  40233d:	6d                   	insl   (%dx),%es:(%rdi)
+  40233e:	2c 20                	sub    $0x20,%al
+  402340:	49 27                	rex.WB (bad)
+  402342:	6d                   	insl   (%dx),%es:(%rdi)
+  402343:	20 61 66             	and    %ah,0x66(%rcx)
+  402346:	72 61                	jb     4023a9 <fgets@plt+0x1339>
+  402348:	69 64 20 74 68 61 74 	imul   $0x27746168,0x74(%rax,%riz,1),%esp
+  40234f:	27 
+  402350:	73 20                	jae    402372 <fgets@plt+0x1302>
+  402352:	77 72                	ja     4023c6 <fgets@plt+0x1356>
+  402354:	6f                   	outsl  %ds:(%rsi),(%dx)
+  402355:	6e                   	outsb  %ds:(%rsi),(%dx)
+  402356:	67 00 66 6c          	add    %ah,0x6c(%esi)
+  40235a:	61                   	(bad)
+  40235b:	67 3a 20             	cmp    (%eax),%ah
+  40235e:	00 00                	add    %al,(%rax)
+  402360:	46                   	rex.RX
+  402361:	49 00 00             	rex.WB add %al,(%r8)
+  402364:	f9                   	stc
+  402365:	cf                   	iret
+  402366:	00 00                	add    %al,(%rax)
+  402368:	f5                   	cmc
+  402369:	a4                   	movsb  %ds:(%rsi),%es:(%rdi)
+  40236a:	01 00                	add    %eax,(%rax)
+  40236c:	5d                   	pop    %rbp
+  40236d:	68 01 00 cb 30       	push   $0x30cb0001
+  402372:	04 00                	add    $0x0,%al
+  402374:	a4                   	movsb  %ds:(%rsi),%es:(%rdi)
+  402375:	a8 04                	test   $0x4,%al
+  402377:	00 96 d8 04 00 39    	add    %dl,0x390004d8(%rsi)
+  40237d:	d3 02                	roll   %cl,(%rdx)
+  40237f:	00 41 eb             	add    %al,-0x15(%rcx)
+  402382:	06                   	(bad)
+  402383:	00 3b                	add    %bh,(%rbx)
+  402385:	2e 08 00             	cs or  %al,(%rax)
+  402388:	05 cf 07 00 89       	add    $0x890007cf,%eax
+  40238d:	fe 0a                	decb   (%rdx)
+  40238f:	00 22                	add    %ah,(%rdx)
+  402391:	01 0a                	add    %ecx,(%rdx)
+  402393:	00 61 66             	add    %ah,0x66(%rcx)
+  402396:	05 00 8d c8 0a       	add    $0xac88d00,%eax
+  40239b:	00 81 5d 0d 00 51    	add    %al,0x51000d5d(%rcx)
+  4023a1:	f2 0d 00 f9 f8 0d    	repnz or $0xdf8f900,%eax
+  4023a7:	00 9f cb 0d 00 79    	add    %bl,0x79000dcb(%rdi)
+  4023ad:	5e                   	pop    %rsi
+  4023ae:	07                   	(bad)
+  4023af:	00 a8 df 08 00 e7    	add    %ch,-0x18fff721(%rax)
+  4023b5:	43 08 00             	rex.XB or %al,(%r8)
+  4023b8:	9d                   	popf
+  4023b9:	bb 10 00 71 77       	mov    $0x77710010,%ebx
+  4023be:	16                   	(bad)
+  4023bf:	00 30                	add    %dh,(%rax)
+  4023c1:	17                   	(bad)
+  4023c2:	15 00 ed 07 0b       	adc    $0xb07ed00,%eax
+  4023c7:	00 f0                	add    %dh,%al
+  4023c9:	d8 17                	fcoms  (%rdi)
+  4023cb:	00 ea                	add    %ch,%dl
+  4023cd:	7e 14                	jle    4023e3 <fgets@plt+0x1373>
+  4023cf:	00 5b 6d             	add    %bl,0x6d(%rbx)
+  4023d2:	19 00                	sbb    %eax,(%rax)
+  4023d4:	e5 d6                	in     $0xd6,%eax
+  4023d6:	0b 00                	or     (%rax),%eax
+  4023d8:	4e 7c 0c             	rex.WRX jl 4023e7 <fgets@plt+0x1377>
+  4023db:	00 8d 95 0d 00 1f    	add    %cl,0x1f000d95(%rbp)
+  4023e1:	0a 1d 00 44 b8 0d    	or     0xdb84400(%rip),%bl        # df867e7 <stdin@GLIBC_2.2.5+0xdb827b7>
+  4023e7:	00                   	.byte 0
+  4023e8:	b1 3d                	mov    $0x3d,%cl
+  4023ea:	1d                   	.byte 0x1d
+	...
+
+Disassembly of section .eh_frame_hdr:
+
+00000000004023ec <.eh_frame_hdr>:
+  4023ec:	01 1b                	add    %ebx,(%rbx)
+  4023ee:	03 3b                	add    (%rbx),%edi
+  4023f0:	30 00                	xor    %al,(%rax)
+  4023f2:	00 00                	add    %al,(%rax)
+  4023f4:	05 00 00 00 34       	add    $0x34000000,%eax
+  4023f9:	ec                   	in     (%dx),%al
+  4023fa:	ff                   	(bad)
+  4023fb:	ff 74 00 00          	push   0x0(%rax,%rax,1)
+  4023ff:	00 94 ec ff ff b0 00 	add    %dl,0xb0ffff(%rsp,%rbp,8)
+  402406:	00 00                	add    %al,(%rax)
+  402408:	94                   	xchg   %eax,%esp
+  402409:	ed                   	in     (%dx),%eax
+  40240a:	ff                   	(bad)
+  40240b:	ff 4c 00 00          	decl   0x0(%rax,%rax,1)
+  40240f:	00 c4                	add    %al,%ah
+  402411:	ed                   	in     (%dx),%eax
+  402412:	ff                   	(bad)
+  402413:	ff 60 00             	jmp    *0x0(%rax)
+  402416:	00 00                	add    %al,(%rax)
+  402418:	84 ee                	test   %ch,%dh
+  40241a:	ff                   	(bad)
+  40241b:	ff                   	.byte 0xff
+  40241c:	9c                   	pushf
+  40241d:	00 00                	add    %al,(%rax)
+	...
+
+Disassembly of section .eh_frame:
+
+0000000000402420 <.eh_frame>:
+  402420:	14 00                	adc    $0x0,%al
+  402422:	00 00                	add    %al,(%rax)
+  402424:	00 00                	add    %al,(%rax)
+  402426:	00 00                	add    %al,(%rax)
+  402428:	01 7a 52             	add    %edi,0x52(%rdx)
+  40242b:	00 01                	add    %al,(%rcx)
+  40242d:	78 10                	js     40243f <fgets@plt+0x13cf>
+  40242f:	01 1b                	add    %ebx,(%rbx)
+  402431:	0c 07                	or     $0x7,%al
+  402433:	08 90 01 00 00 10    	or     %dl,0x10000001(%rax)
+  402439:	00 00                	add    %al,(%rax)
+  40243b:	00 1c 00             	add    %bl,(%rax,%rax,1)
+  40243e:	00 00                	add    %al,(%rax)
+  402440:	40 ed                	rex in (%dx),%eax
+  402442:	ff                   	(bad)
+  402443:	ff 26                	jmp    *(%rsi)
+  402445:	00 00                	add    %al,(%rax)
+  402447:	00 00                	add    %al,(%rax)
+  402449:	44 07                	rex.R (bad)
+  40244b:	10 10                	adc    %dl,(%rax)
+  40244d:	00 00                	add    %al,(%rax)
+  40244f:	00 30                	add    %dh,(%rax)
+  402451:	00 00                	add    %al,(%rax)
+  402453:	00 5c ed ff          	add    %bl,-0x1(%rbp,%rbp,8)
+  402457:	ff 05 00 00 00 00    	incl   0x0(%rip)        # 40245d <fgets@plt+0x13ed>
+  40245d:	00 00                	add    %al,(%rax)
+  40245f:	00 24 00             	add    %ah,(%rax,%rax,1)
+  402462:	00 00                	add    %al,(%rax)
+  402464:	44 00 00             	add    %r8b,(%rax)
+  402467:	00 b8 eb ff ff 60    	add    %bh,0x60ffffeb(%rax)
+  40246d:	00 00                	add    %al,(%rax)
+  40246f:	00 00                	add    %al,(%rax)
+  402471:	0e                   	(bad)
+  402472:	10 46 0e             	adc    %al,0xe(%rsi)
+  402475:	18 4a 0f             	sbb    %cl,0xf(%rdx)
+  402478:	0b 77 08             	or     0x8(%rdi),%esi
+  40247b:	80 00 3f             	addb   $0x3f,(%rax)
+  40247e:	1a 3b                	sbb    (%rbx),%bh
+  402480:	2a 33                	sub    (%rbx),%dh
+  402482:	24 22                	and    $0x22,%al
+  402484:	00 00                	add    %al,(%rax)
+  402486:	00 00                	add    %al,(%rax)
+  402488:	10 00                	adc    %al,(%rax)
+  40248a:	00 00                	add    %al,(%rax)
+  40248c:	6c                   	insb   (%dx),%es:(%rdi)
+  40248d:	00 00                	add    %al,(%rax)
+  40248f:	00 e0                	add    %ah,%al
+  402491:	ed                   	in     (%dx),%eax
+  402492:	ff                   	(bad)
+  402493:	ff 22                	jmp    *(%rdx)
+  402495:	00 00                	add    %al,(%rax)
+  402497:	00 00                	add    %al,(%rax)
+  402499:	00 00                	add    %al,(%rax)
+  40249b:	00 30                	add    %dh,(%rax)
+  40249d:	00 00                	add    %al,(%rax)
+  40249f:	00 80 00 00 00 dc    	add    %al,-0x24000000(%rax)
+  4024a5:	eb ff                	jmp    4024a6 <fgets@plt+0x1436>
+  4024a7:	ff f5                	push   %rbp
+  4024a9:	00 00                	add    %al,(%rax)
+  4024ab:	00 00                	add    %al,(%rax)
+  4024ad:	42 0e                	rex.X (bad)
+  4024af:	10 8c 02 46 0e 18 86 	adc    %cl,-0x79e7f1ba(%rdx,%rax,1)
+  4024b6:	03 41 0e             	add    0xe(%rcx),%eax
+  4024b9:	20 83 04 47 0e b0    	and    %al,-0x4ff1b8fc(%rbx)
+  4024bf:	08 02                	or     %al,(%rdx)
+  4024c1:	c8 0a 0e 20          	enter  $0xe0a,$0x20
+  4024c5:	43 0e                	rex.XB (bad)
+  4024c7:	18 41 0e             	sbb    %al,0xe(%rcx)
+  4024ca:	10 42 0e             	adc    %al,0xe(%rdx)
+  4024cd:	08 41 0b             	or     %al,0xb(%rcx)
+  4024d0:	00 00                	add    %al,(%rax)
+	...
+
+Disassembly of section .init_array:
+
+0000000000403df8 <.init_array>:
+  403df8:	60                   	(bad)
+  403df9:	12 40 00             	adc    0x0(%rax),%al
+  403dfc:	00 00                	add    %al,(%rax)
+	...
+
+Disassembly of section .fini_array:
+
+0000000000403e00 <.fini_array>:
+  403e00:	30 12                	xor    %dl,(%rdx)
+  403e02:	40 00 00             	rex add %al,(%rax)
+  403e05:	00 00                	add    %al,(%rax)
+	...
+
+Disassembly of section .dynamic:
+
+0000000000403e08 <.dynamic>:
+  403e08:	01 00                	add    %eax,(%rax)
+  403e0a:	00 00                	add    %al,(%rax)
+  403e0c:	00 00                	add    %al,(%rax)
+  403e0e:	00 00                	add    %al,(%rax)
+  403e10:	3a 00                	cmp    (%rax),%al
+  403e12:	00 00                	add    %al,(%rax)
+  403e14:	00 00                	add    %al,(%rax)
+  403e16:	00 00                	add    %al,(%rax)
+  403e18:	0c 00                	or     $0x0,%al
+  403e1a:	00 00                	add    %al,(%rax)
+  403e1c:	00 00                	add    %al,(%rax)
+  403e1e:	00 00                	add    %al,(%rax)
+  403e20:	00 10                	add    %dl,(%rax)
+  403e22:	40 00 00             	rex add %al,(%rax)
+  403e25:	00 00                	add    %al,(%rax)
+  403e27:	00 0d 00 00 00 00    	add    %cl,0x0(%rip)        # 403e2d <fgets@plt+0x2dbd>
+  403e2d:	00 00                	add    %al,(%rax)
+  403e2f:	00 94 12 40 00 00 00 	add    %dl,0x40(%rdx,%rdx,1)
+  403e36:	00 00                	add    %al,(%rax)
+  403e38:	19 00                	sbb    %eax,(%rax)
+  403e3a:	00 00                	add    %al,(%rax)
+  403e3c:	00 00                	add    %al,(%rax)
+  403e3e:	00 00                	add    %al,(%rax)
+  403e40:	f8                   	clc
+  403e41:	3d 40 00 00 00       	cmp    $0x40,%eax
+  403e46:	00 00                	add    %al,(%rax)
+  403e48:	1b 00                	sbb    (%rax),%eax
+  403e4a:	00 00                	add    %al,(%rax)
+  403e4c:	00 00                	add    %al,(%rax)
+  403e4e:	00 00                	add    %al,(%rax)
+  403e50:	08 00                	or     %al,(%rax)
+  403e52:	00 00                	add    %al,(%rax)
+  403e54:	00 00                	add    %al,(%rax)
+  403e56:	00 00                	add    %al,(%rax)
+  403e58:	1a 00                	sbb    (%rax),%al
+  403e5a:	00 00                	add    %al,(%rax)
+  403e5c:	00 00                	add    %al,(%rax)
+  403e5e:	00 00                	add    %al,(%rax)
+  403e60:	00 3e                	add    %bh,(%rsi)
+  403e62:	40 00 00             	rex add %al,(%rax)
+  403e65:	00 00                	add    %al,(%rax)
+  403e67:	00 1c 00             	add    %bl,(%rax,%rax,1)
+  403e6a:	00 00                	add    %al,(%rax)
+  403e6c:	00 00                	add    %al,(%rax)
+  403e6e:	00 00                	add    %al,(%rax)
+  403e70:	08 00                	or     %al,(%rax)
+  403e72:	00 00                	add    %al,(%rax)
+  403e74:	00 00                	add    %al,(%rax)
+  403e76:	00 00                	add    %al,(%rax)
+  403e78:	f5                   	cmc
+  403e79:	fe                   	(bad)
+  403e7a:	ff 6f 00             	ljmp   *0x0(%rdi)
+  403e7d:	00 00                	add    %al,(%rax)
+  403e7f:	00 20                	add    %ah,(%rax)
+  403e81:	20 40 00             	and    %al,0x0(%rax)
+  403e84:	00 00                	add    %al,(%rax)
+  403e86:	00 00                	add    %al,(%rax)
+  403e88:	05 00 00 00 00       	add    $0x0,%eax
+  403e8d:	00 00                	add    %al,(%rax)
+  403e8f:	00 20                	add    %ah,(%rax)
+  403e91:	21 40 00             	and    %eax,0x0(%rax)
+  403e94:	00 00                	add    %al,(%rax)
+  403e96:	00 00                	add    %al,(%rax)
+  403e98:	06                   	(bad)
+  403e99:	00 00                	add    %al,(%rax)
+  403e9b:	00 00                	add    %al,(%rax)
+  403e9d:	00 00                	add    %al,(%rax)
+  403e9f:	00 48 20             	add    %cl,0x20(%rax)
+  403ea2:	40 00 00             	rex add %al,(%rax)
+  403ea5:	00 00                	add    %al,(%rax)
+  403ea7:	00 0a                	add    %cl,(%rdx)
+  403ea9:	00 00                	add    %al,(%rax)
+  403eab:	00 00                	add    %al,(%rax)
+  403ead:	00 00                	add    %al,(%rax)
+  403eaf:	00 6a 00             	add    %ch,0x0(%rdx)
+  403eb2:	00 00                	add    %al,(%rax)
+  403eb4:	00 00                	add    %al,(%rax)
+  403eb6:	00 00                	add    %al,(%rax)
+  403eb8:	0b 00                	or     (%rax),%eax
+  403eba:	00 00                	add    %al,(%rax)
+  403ebc:	00 00                	add    %al,(%rax)
+  403ebe:	00 00                	add    %al,(%rax)
+  403ec0:	18 00                	sbb    %al,(%rax)
+  403ec2:	00 00                	add    %al,(%rax)
+  403ec4:	00 00                	add    %al,(%rax)
+  403ec6:	00 00                	add    %al,(%rax)
+  403ec8:	15 00 00 00 00       	adc    $0x0,%eax
+	...
+  403ed5:	00 00                	add    %al,(%rax)
+  403ed7:	00 03                	add    %al,(%rbx)
+  403ed9:	00 00                	add    %al,(%rax)
+  403edb:	00 00                	add    %al,(%rax)
+  403edd:	00 00                	add    %al,(%rax)
+  403edf:	00 e8                	add    %ch,%al
+  403ee1:	3f                   	(bad)
+  403ee2:	40 00 00             	rex add %al,(%rax)
+  403ee5:	00 00                	add    %al,(%rax)
+  403ee7:	00 02                	add    %al,(%rdx)
+  403ee9:	00 00                	add    %al,(%rax)
+  403eeb:	00 00                	add    %al,(%rax)
+  403eed:	00 00                	add    %al,(%rax)
+  403eef:	00 78 00             	add    %bh,0x0(%rax)
+  403ef2:	00 00                	add    %al,(%rax)
+  403ef4:	00 00                	add    %al,(%rax)
+  403ef6:	00 00                	add    %al,(%rax)
+  403ef8:	14 00                	adc    $0x0,%al
+  403efa:	00 00                	add    %al,(%rax)
+  403efc:	00 00                	add    %al,(%rax)
+  403efe:	00 00                	add    %al,(%rax)
+  403f00:	07                   	(bad)
+  403f01:	00 00                	add    %al,(%rax)
+  403f03:	00 00                	add    %al,(%rax)
+  403f05:	00 00                	add    %al,(%rax)
+  403f07:	00 17                	add    %dl,(%rdi)
+  403f09:	00 00                	add    %al,(%rax)
+  403f0b:	00 00                	add    %al,(%rax)
+  403f0d:	00 00                	add    %al,(%rax)
+  403f0f:	00 18                	add    %bl,(%rax)
+  403f11:	22 40 00             	and    0x0(%rax),%al
+  403f14:	00 00                	add    %al,(%rax)
+  403f16:	00 00                	add    %al,(%rax)
+  403f18:	07                   	(bad)
+  403f19:	00 00                	add    %al,(%rax)
+  403f1b:	00 00                	add    %al,(%rax)
+  403f1d:	00 00                	add    %al,(%rax)
+  403f1f:	00 d0                	add    %dl,%al
+  403f21:	21 40 00             	and    %eax,0x0(%rax)
+  403f24:	00 00                	add    %al,(%rax)
+  403f26:	00 00                	add    %al,(%rax)
+  403f28:	08 00                	or     %al,(%rax)
+  403f2a:	00 00                	add    %al,(%rax)
+  403f2c:	00 00                	add    %al,(%rax)
+  403f2e:	00 00                	add    %al,(%rax)
+  403f30:	48 00 00             	rex.W add %al,(%rax)
+  403f33:	00 00                	add    %al,(%rax)
+  403f35:	00 00                	add    %al,(%rax)
+  403f37:	00 09                	add    %cl,(%rcx)
+  403f39:	00 00                	add    %al,(%rax)
+  403f3b:	00 00                	add    %al,(%rax)
+  403f3d:	00 00                	add    %al,(%rax)
+  403f3f:	00 18                	add    %bl,(%rax)
+  403f41:	00 00                	add    %al,(%rax)
+  403f43:	00 00                	add    %al,(%rax)
+  403f45:	00 00                	add    %al,(%rax)
+  403f47:	00 fe                	add    %bh,%dh
+  403f49:	ff                   	(bad)
+  403f4a:	ff 6f 00             	ljmp   *0x0(%rdi)
+  403f4d:	00 00                	add    %al,(%rax)
+  403f4f:	00 a0 21 40 00 00    	add    %ah,0x4021(%rax)
+  403f55:	00 00                	add    %al,(%rax)
+  403f57:	00 ff                	add    %bh,%bh
+  403f59:	ff                   	(bad)
+  403f5a:	ff 6f 00             	ljmp   *0x0(%rdi)
+  403f5d:	00 00                	add    %al,(%rax)
+  403f5f:	00 01                	add    %al,(%rcx)
+  403f61:	00 00                	add    %al,(%rax)
+  403f63:	00 00                	add    %al,(%rax)
+  403f65:	00 00                	add    %al,(%rax)
+  403f67:	00 f0                	add    %dh,%al
+  403f69:	ff                   	(bad)
+  403f6a:	ff 6f 00             	ljmp   *0x0(%rdi)
+  403f6d:	00 00                	add    %al,(%rax)
+  403f6f:	00 8a 21 40 00 00    	add    %cl,0x4021(%rdx)
+	...
+
+Disassembly of section .got:
+
+0000000000403fd8 <.got>:
+	...
+
+Disassembly of section .got.plt:
+
+0000000000403fe8 <.got.plt>:
+  403fe8:	08 3e                	or     %bh,(%rsi)
+  403fea:	40 00 00             	rex add %al,(%rax)
+	...
+  403ffd:	00 00                	add    %al,(%rax)
+  403fff:	00 36                	add    %dh,(%rsi)
+  404001:	10 40 00             	adc    %al,0x0(%rax)
+  404004:	00 00                	add    %al,(%rax)
+  404006:	00 00                	add    %al,(%rax)
+  404008:	46 10 40 00          	rex.RX adc %r8b,0x0(%rax)
+  40400c:	00 00                	add    %al,(%rax)
+  40400e:	00 00                	add    %al,(%rax)
+  404010:	56                   	push   %rsi
+  404011:	10 40 00             	adc    %al,0x0(%rax)
+  404014:	00 00                	add    %al,(%rax)
+  404016:	00 00                	add    %al,(%rax)
+  404018:	66 10 40 00          	data16 adc %al,0x0(%rax)
+  40401c:	00 00                	add    %al,(%rax)
+  40401e:	00 00                	add    %al,(%rax)
+  404020:	76 10                	jbe    404032 <stdin@GLIBC_2.2.5+0x2>
+  404022:	40 00 00             	rex add %al,(%rax)
+  404025:	00 00                	add    %al,(%rax)
+	...
+
+Disassembly of section .data:
+
+0000000000404028 <.data>:
+  404028:	00 00                	add    %al,(%rax)
+	...
+
+Disassembly of section .comment:
+
+0000000000000000 <.comment>:
+   0:	47                   	rex.RXB
+   1:	43                   	rex.XB
+   2:	43 3a 20             	rex.XB cmp (%r8),%spl
+   5:	28 47 4e             	sub    %al,0x4e(%rdi)
+   8:	55                   	push   %rbp
+   9:	29 20                	sub    %esp,(%rax)
+   b:	31 34 2e             	xor    %esi,(%rsi,%rbp,1)
+   e:	32 2e                	xor    (%rsi),%ch
+  10:	31 20                	xor    %esp,(%rax)
+  12:	32 30                	xor    (%rax),%dh
+  14:	32 35 30 31 31 30    	xor    0x30313130(%rip),%dh        # 3031314a <stdin@GLIBC_2.2.5+0x2ff0f11a>
+  1a:	20 28                	and    %ch,(%rax)
+  1c:	52                   	push   %rdx
+  1d:	65 64 20 48 61       	gs and %cl,%fs:0x61(%rax)
+  22:	74 20                	je     44 <strncpy@plt-0x400fec>
+  24:	31 34 2e             	xor    %esi,(%rsi,%rbp,1)
+  27:	32 2e                	xor    (%rsi),%ch
+  29:	31                   	.byte 0x31
+  2a:	2d                   	.byte 0x2d
+  2b:	37                   	(bad)
+  2c:	29 00                	sub    %eax,(%rax)
+
+Disassembly of section .annobin.notes:
+
+0000000000000000 <.annobin.notes>:
+   0:	41 56                	push   %r14
+   2:	3a 34 70             	cmp    (%rax,%rsi,2),%dh
+   5:	31 32                	xor    %esi,(%rdx)
+   7:	36 39 00             	ss cmp %eax,(%rax)
+   a:	52                   	push   %rdx
+   b:	56                   	push   %rsi
+   c:	3a 72 75             	cmp    0x75(%rdx),%dh
+   f:	6e                   	outsb  %ds:(%rsi),(%dx)
+  10:	6e                   	outsb  %ds:(%rsi),(%dx)
+  11:	69 6e 67 20 67 63 63 	imul   $0x63636720,0x67(%rsi),%ebp
+  18:	20 31                	and    %dh,(%rcx)
+  1a:	34 2e                	xor    $0x2e,%al
+  1c:	32 2e                	xor    (%rsi),%ch
+  1e:	31 20                	xor    %esp,(%rax)
+  20:	32 30                	xor    (%rax),%dh
+  22:	32 35 30 31 31 30    	xor    0x30313130(%rip),%dh        # 30313158 <stdin@GLIBC_2.2.5+0x2ff0f128>
+  28:	00 42 56             	add    %al,0x56(%rdx)
+  2b:	3a 61 6e             	cmp    0x6e(%rcx),%ah
+  2e:	6e                   	outsb  %ds:(%rsi),(%dx)
+  2f:	6f                   	outsl  %ds:(%rsi),(%dx)
+  30:	62 69 6e 20 67       	(bad)
+  35:	63 63 20             	movsxd 0x20(%rbx),%esp
+  38:	31 34 2e             	xor    %esi,(%rsi,%rbp,1)
+  3b:	32 2e                	xor    (%rsi),%ch
+  3d:	31 20                	xor    %esp,(%rax)
+  3f:	32 30                	xor    (%rax),%dh
+  41:	32 35 30 31 31 30    	xor    0x30313130(%rip),%dh        # 30313177 <stdin@GLIBC_2.2.5+0x2ff0f147>
+  47:	00 47 57             	add    %al,0x57(%rdi)
+  4a:	3a 30                	cmp    (%rax),%dh
+  4c:	78 37                	js     85 <strncpy@plt-0x400fab>
+  4e:	64 36 30 35 36 32 20 	fs xor %dh,%fs:0x2e203236(%rip)        # 2e20328c <stdin@GLIBC_2.2.5+0x2ddff25c>
+  55:	2e 
+  56:	2e 2f                	cs (bad)
+  58:	73 79                	jae    d3 <strncpy@plt-0x400f5d>
+  5a:	73 64                	jae    c0 <strncpy@plt-0x400f70>
+  5c:	65 70 73             	gs jo  d2 <strncpy@plt-0x400f5e>
+  5f:	2f                   	(bad)
+  60:	78 38                	js     9a <strncpy@plt-0x400f96>
+  62:	36 2f                	ss (bad)
+  64:	61                   	(bad)
+  65:	62 69 2d 6e 6f       	(bad)
+  6a:	74 65                	je     d1 <strncpy@plt-0x400f5f>
+  6c:	2e 63 00             	cs movsxd (%rax),%eax
+  6f:	53                   	push   %rbx
+  70:	50                   	push   %rax
+  71:	3a 33                	cmp    (%rbx),%dh
+  73:	00 53 43             	add    %dl,0x43(%rbx)
+  76:	3a 31                	cmp    (%rcx),%dh
+  78:	00 43 46             	add    %al,0x46(%rbx)
+  7b:	3a 38                	cmp    (%rax),%bh
+  7d:	20 2e                	and    %ch,(%rsi)
+  7f:	2e 2f                	cs (bad)
+  81:	73 79                	jae    fc <strncpy@plt-0x400f34>
+  83:	73 64                	jae    e9 <strncpy@plt-0x400f47>
+  85:	65 70 73             	gs jo  fb <strncpy@plt-0x400f35>
+  88:	2f                   	(bad)
+  89:	78 38                	js     c3 <strncpy@plt-0x400f6d>
+  8b:	36 2f                	ss (bad)
+  8d:	61                   	(bad)
+  8e:	62 69 2d 6e 6f       	(bad)
+  93:	74 65                	je     fa <strncpy@plt-0x400f36>
+  95:	2e 63 00             	cs movsxd (%rax),%eax
+  98:	46                   	rex.RX
+  99:	4c 3a 30             	rex.WR cmp (%rax),%r14b
+  9c:	20 2e                	and    %ch,(%rsi)
+  9e:	2e 2f                	cs (bad)
+  a0:	73 79                	jae    11b <strncpy@plt-0x400f15>
+  a2:	73 64                	jae    108 <strncpy@plt-0x400f28>
+  a4:	65 70 73             	gs jo  11a <strncpy@plt-0x400f16>
+  a7:	2f                   	(bad)
+  a8:	78 38                	js     e2 <strncpy@plt-0x400f4e>
+  aa:	36 2f                	ss (bad)
+  ac:	61                   	(bad)
+  ad:	62 69 2d 6e 6f       	(bad)
+  b2:	74 65                	je     119 <strncpy@plt-0x400f17>
+  b4:	2e 63 00             	cs movsxd (%rax),%eax
+  b7:	47                   	rex.RXB
+  b8:	41 3a 31             	cmp    (%r9),%sil
+  bb:	00 50 49             	add    %dl,0x49(%rax)
+  be:	3a 34 00             	cmp    (%rax,%rax,1),%dh
+  c1:	53                   	push   %rbx
+  c2:	45 3a 30             	cmp    (%r8),%r14b
+  c5:	00 69 53             	add    %ch,0x53(%rcx)
+  c8:	3a 30                	cmp    (%rax),%dh
+  ca:	00 47 57             	add    %al,0x57(%rdi)
+  cd:	3a 30                	cmp    (%rax),%dh
+  cf:	78 37                	js     108 <strncpy@plt-0x400f28>
+  d1:	64 36 30 35 36 32 20 	fs xor %dh,%fs:0x69203236(%rip)        # 6920330f <stdin@GLIBC_2.2.5+0x68dff2df>
+  d8:	69 
+  d9:	6e                   	outsb  %ds:(%rsi),(%dx)
+  da:	69 74 2e 63 00 43 46 	imul   $0x3a464300,0x63(%rsi,%rbp,1),%esi
+  e1:	3a 
+  e2:	38 20                	cmp    %ah,(%rax)
+  e4:	69 6e 69 74 2e 63 00 	imul   $0x632e74,0x69(%rsi),%ebp
+  eb:	46                   	rex.RX
+  ec:	4c 3a 30             	rex.WR cmp (%rax),%r14b
+  ef:	20 69 6e             	and    %ch,0x6e(%rcx)
+  f2:	69 74 2e 63 00 47 57 	imul   $0x3a574700,0x63(%rsi,%rbp,1),%esi
+  f9:	3a 
+  fa:	30 78 37             	xor    %bh,0x37(%rax)
+  fd:	64 36 30 35 36 32 20 	fs xor %dh,%fs:0x73203236(%rip)        # 7320333b <stdin@GLIBC_2.2.5+0x72dff30b>
+ 104:	73 
+ 105:	74 61                	je     168 <strncpy@plt-0x400ec8>
+ 107:	74 69                	je     172 <strncpy@plt-0x400ebe>
+ 109:	63 2d 72 65 6c 6f    	movsxd 0x6f6c6572(%rip),%ebp        # 6f6c6681 <stdin@GLIBC_2.2.5+0x6f2c2651>
+ 10f:	63 2e                	movsxd (%rsi),%ebp
+ 111:	63 00                	movsxd (%rax),%eax
+ 113:	53                   	push   %rbx
+ 114:	50                   	push   %rax
+ 115:	3a 30                	cmp    (%rax),%dh
+ 117:	20 73 74             	and    %dh,0x74(%rbx)
+ 11a:	61                   	(bad)
+ 11b:	74 69                	je     186 <strncpy@plt-0x400eaa>
+ 11d:	63 2d 72 65 6c 6f    	movsxd 0x6f6c6572(%rip),%ebp        # 6f6c6695 <stdin@GLIBC_2.2.5+0x6f2c2665>
+ 123:	63 2e                	movsxd (%rsi),%ebp
+ 125:	63 00                	movsxd (%rax),%eax
+ 127:	43                   	rex.XB
+ 128:	46 3a 38             	rex.RX cmp (%rax),%r15b
+ 12b:	20 73 74             	and    %dh,0x74(%rbx)
+ 12e:	61                   	(bad)
+ 12f:	74 69                	je     19a <strncpy@plt-0x400e96>
+ 131:	63 2d 72 65 6c 6f    	movsxd 0x6f6c6572(%rip),%ebp        # 6f6c66a9 <stdin@GLIBC_2.2.5+0x6f2c2679>
+ 137:	63 2e                	movsxd (%rsi),%ebp
+ 139:	63 00                	movsxd (%rax),%eax
+ 13b:	46                   	rex.RX
+ 13c:	4c 3a 30             	rex.WR cmp (%rax),%r14b
+ 13f:	20 73 74             	and    %dh,0x74(%rbx)
+ 142:	61                   	(bad)
+ 143:	74 69                	je     1ae <strncpy@plt-0x400e82>
+ 145:	63 2d 72 65 6c 6f    	movsxd 0x6f6c6572(%rip),%ebp        # 6f6c66bd <stdin@GLIBC_2.2.5+0x6f2c268d>
+ 14b:	63 2e                	movsxd (%rsi),%ebp
+ 14d:	63 00                	movsxd (%rax),%eax
+
+Disassembly of section .gnu.build.attributes:
+
+0000000000406040 <.gnu.build.attributes>:
+  406040:	08 00                	or     %al,(%rax)
+  406042:	00 00                	add    %al,(%rax)
+  406044:	10 00                	adc    %al,(%rax)
+  406046:	00 00                	add    %al,(%rax)
+  406048:	00 01                	add    %al,(%rcx)
+  40604a:	00 00                	add    %al,(%rax)
+  40604c:	47                   	rex.RXB
+  40604d:	41 24 01             	rex.B and $0x1,%al
+  406050:	33 61 31             	xor    0x31(%rcx),%esp
+  406053:	00 00                	add    %al,(%rax)
+  406055:	10 40 00             	adc    %al,0x0(%rax)
+  406058:	00 00                	add    %al,(%rax)
+  40605a:	00 00                	add    %al,(%rax)
+  40605c:	a1                   	.byte 0xa1
+  40605d:	12 40 00             	adc    0x0(%rax),%al
+  406060:	00 00                	add    %al,(%rax)
+	...
