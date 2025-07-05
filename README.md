@@ -15,7 +15,6 @@ This is my archive in working on ctf on various platforms.
 
 This is a list of Capture The Flag (CTF) competitions I have participated in, along with rankings and team names.
 
-* nickname: [s4nkya/sankya](https://ctftime.org/user/227041)
 
 | No | CTF Competition        | Year | Rank     | Team Name                     | Level         |
 |----|------------------------|------|----------|-------------------------------|---------------|
