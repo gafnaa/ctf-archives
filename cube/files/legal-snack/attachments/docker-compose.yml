@@ -1,0 +1,8 @@
+services:
+  legalsnack:
+    build:
+      context: .
+    ports:
+      - "5000:5000"
+    environment:
+      - FLAG=cube{example_flag}
