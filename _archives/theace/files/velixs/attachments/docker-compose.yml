@@ -1,0 +1,63 @@
+services:
+  webvelixs-bot:
+    container_name: webvelixs-bot
+    ports:
+      - 1987:3001
+    build:
+      context: .
+      dockerfile: .docker/bot/Dockerfile
+    volumes:
+      - .env:/bot/.env
+    env_file:
+      - .env
+    networks:
+      - laravel-development
+
+  webvelixs-php:
+    container_name: webvelixs-php
+    build: 
+      context: .docker/php
+    
+    volumes:
+      - ./velixs-web-ori:/var/www:cached
+      - .env:/var/www/.env
+    env_file:
+      - .env
+    networks:
+      - laravel-development
+    depends_on:
+      - webvelixs-db
+
+  webvelixs-nginx:
+    container_name: webvelixs-nginx
+    image: nginx
+    ports:
+      - 1391:80
+    volumes:
+      - ./velixs-web-ori:/var/www
+      - .docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - .docker/nginx/nginx.conf:/etc/nginx/nginx.conf
+    networks:
+      - laravel-development
+    depends_on:
+      - webvelixs-php
+
+  webvelixs-db:
+    container_name: webvelixs-db
+    image: mysql:8.1
+    volumes:
+      - .docker/db/data:/var/lib/mysql
+      - .docker/logs:/var/log/mysql
+      - .docker/db/my.cnf:/etc/mysql/conf.d/my.cnf
+      - .docker/db/sql:/docker-entrypoint-initdb.d
+    environment:
+      MYSQL_ROOT_PASSWORD: GantiLahLe
+      MYSQL_DATABASE: velixsdb
+      MYSQL_USER: rep
+      MYSQL_PASSWORD: gntibg
+    networks:
+      - laravel-development
+      
+
+networks:
+  laravel-development:

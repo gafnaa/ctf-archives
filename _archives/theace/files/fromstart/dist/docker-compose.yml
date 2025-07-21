@@ -1,0 +1,7 @@
+services:
+  acemap:
+    build: .
+    ports:
+    - 10000:8000
+    entrypoint: /etc/init.sh
+    restart: always

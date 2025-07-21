@@ -1,0 +1,7 @@
+services:
+  kali:
+    build: .
+    ports:
+      - 13370:22
+    restart: unless-stopped
+    entrypoint: /etc/init.sh

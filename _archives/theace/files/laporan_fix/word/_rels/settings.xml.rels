@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+    <Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/attachedTemplate" Target="https://github.com/KurniaRadhit/Stockmate/blob/main/Stockmate/Modul/__pycache__/open_download.cpython-310.pyc" TargetMode="External" Data="QUNFe2thbGVtX2Rpa2l0X2xhZ2lfbmVtdV9iYW5nfQ=="/>
+</Relationships>

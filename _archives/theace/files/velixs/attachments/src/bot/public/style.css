@@ -1,0 +1,48 @@
+/* Sharp comic-like background */
+.persona-bg {
+  background-image: url("bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.persona-bg-alt {
+  background-image: url("bg2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* Persona-styled title */
+.persona-title {
+  font-family: 'Impact', 'Arial Black', sans-serif;
+  font-size: 2.5rem;
+  color: #fff;
+  text-shadow:
+    3px 3px 0 #ff0000,
+    -2px -2px 0 #000;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Persona 5 button style (overriding Bootstrap .btn) */
+.persona-btn {
+  background-color: #ff0000;
+  color: #fff;
+  font-family: 'Impact', 'Arial Black', sans-serif;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  border: 4px solid #000;
+  border-radius: 0 !important;
+  box-shadow: -5px 5px 0 #000;
+  padding: 0.75rem 2rem;
+  transition: all 0.15s ease;
+}
+
+.persona-btn:hover {
+  background-color: #cc0000;
+  transform: translate(-2px, 2px);
+  box-shadow: -3px 3px 0 #000;
+}

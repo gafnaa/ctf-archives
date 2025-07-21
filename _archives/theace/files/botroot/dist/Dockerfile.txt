@@ -1,0 +1,15 @@
+FROM kalilinux/kali-rolling
+
+RUN apt update && apt -y install kali-linux-headless
+
+RUN groupadd -r ctf && useradd -m -s /bin/zsh -g ctf ctf && echo 'ctf:ctf' | chpasswd
+#RUN adduser --disabled-password --gecos '' ctf && echo 'ctf:ctf' | chpasswd
+RUN echo 'PasswordAuthentication yes' >> /etc/ssh/sshd_config
+RUN service ssh start
+
+COPY --chmod=0 flag.txt /flag.txt
+RUN echo '#!/bin/bash\n\
+/usr/sbin/sshd -D & /bin/sleep infinity' > /etc/init.sh
+RUN chmod 500 /etc/init.sh
+
+EXPOSE 22
