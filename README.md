@@ -29,6 +29,7 @@ This is a list of Capture The Flag (CTF) competitions I have participated in, al
 | 9  | TJCTF                  | 2025 | 239      | solo karir (solo)             | International |
 | 10 | N0PSctf                | 2025 | 495      | llcxmn fans club (solo)       | International |
 | 11 | FIT Competition        | 2025 | 30       | llcxmn fanclub                | National      |
+| 12 | ITFEST           | 2025 | 35 | llcxmn fan club | National |
 
 ## Notes
 
