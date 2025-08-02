@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  web:
+    build: .
+    volumes:
+      - .:/var/www/html
+    ports:
+      - "80:80"
+    depends_on:
+      - db
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: users
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql

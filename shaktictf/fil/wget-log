@@ -1,0 +1,6 @@
+--2025-07-25 21:18:52--  https://traboda-arena-shaktictf-2025.s3.amazonaws.com/files/attachments/chall_a4c65d4e-86c5-48b2-9d15-6c1bf0864169.zip?X-Amz-Algorithm=AWS4-HMAC-SHA256
+Resolving traboda-arena-shaktictf-2025.s3.amazonaws.com (traboda-arena-shaktictf-2025.s3.amazonaws.com)... 52.219.158.59, 52.219.156.203, 16.12.36.139, ...
+Connecting to traboda-arena-shaktictf-2025.s3.amazonaws.com (traboda-arena-shaktictf-2025.s3.amazonaws.com)|52.219.158.59|:443... connected.
+HTTP request sent, awaiting response... 400 Bad Request
+2025-07-25 21:18:52 ERROR 400: Bad Request.
+

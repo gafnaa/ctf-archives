@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&display=swap');
+
+.title {
+  font-family: 'Fira Sans', cursive, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #3a3a7a;
+  margin-bottom: 32px;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.popup-content {
+  background: #fff;
+  border-radius: 16px;
+  padding: 48px 32px;
+  box-shadow: 0 8px 32px rgba(60,60,120,0.2);
+  text-align: center;
+  font-family: 'Fira Sans', cursive, sans-serif;
+}
+.popup-content h2 {
+  font-size: 2.2rem;
+  color: #3a3a7a;
+  margin-bottom: 16px;
+}
+.popup-content p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 24px;
+}
+.popup-content button {
+  font-family: 'Fira Sans', cursive, sans-serif;
+  font-size: 1.1rem;
+  padding: 10px 28px;
+  border: none;
+  border-radius: 8px;
+  background: #3a3a7a;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.popup-content button:hover {
+  background: #5a5ad1;
+}
+
+.card {
+  width: 100px;
+  height: 140px;
+  perspective: 600px;
+  display: inline-block;
+  margin: 10px;
+  cursor: pointer;
+}
+.inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+.flipped .inner {
+  transform: rotateY(180deg);
+}
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+.front {
+  background: #bbb;
+}
+.back {
+  background: #fff;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.back img {
+  width: 80px;
+  height: 120px;
+  object-fit: contain;
+} 

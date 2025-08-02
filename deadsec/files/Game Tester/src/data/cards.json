@@ -1,0 +1,18 @@
+[
+  { "id": 1,  "pairId": "A", "img": "/images/card1.png" },
+  { "id": 2,  "pairId": "A", "img": "/images/card1.png" },
+  { "id": 3,  "pairId": "B", "img": "/images/card2.png" },
+  { "id": 4,  "pairId": "B", "img": "/images/card2.png" },
+  { "id": 5,  "pairId": "C", "img": "/images/card3.png" },
+  { "id": 6,  "pairId": "C", "img": "/images/card3.png" },
+  { "id": 7,  "pairId": "D", "img": "/images/card4.png" },
+  { "id": 8,  "pairId": "D", "img": "/images/card4.png" },
+  { "id": 9,  "pairId": "E", "img": "/images/card5.png" },
+  { "id": 10, "pairId": "E", "img": "/images/card5.png" },
+  { "id": 11, "pairId": "F", "img": "/images/card6.png" },
+  { "id": 12, "pairId": "F", "img": "/images/card6.png" },
+  { "id": 13, "pairId": "G", "img": "/images/card7.png" },
+  { "id": 14, "pairId": "G", "img": "/images/card7.png" },
+  { "id": 15, "pairId": "H", "img": "/images/card8.png" },
+  { "id": 16, "pairId": "H", "img": "/images/card8.png" }
+] 
