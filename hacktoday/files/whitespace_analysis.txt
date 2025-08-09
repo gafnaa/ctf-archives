@@ -1,0 +1,14 @@
+Selected line whitespace pattern:
+SSSSSTSSSTSSSSSSSTTSSTTSSTSSTSSSSTSSS
+
+Converting to binary (space=0, tab=1):
+00000100010000001100110110010001000
+
+Converting binary to ASCII characters (8-bit chunks):
+01000100 -> D
+01000000 -> @
+11001101 -> Í
+10010001 -> '
+000      -> (incomplete)
+
+The pattern suggests this might be using some form of whitespace steganography. You should check other whitespace-only lines in the file for additional parts of the flag.
