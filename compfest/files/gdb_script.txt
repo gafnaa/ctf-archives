@@ -1,0 +1,42 @@
+# Set breakpoint di dalam loop verifikasi
+break *0x482618
+
+# Inisialisasi variabel counter
+set $i = 0
+
+# 'commands 1' berarti: "Untuk breakpoint nomor 1, jalankan perintah-perintah berikut setiap kali kena"
+commands 1
+    # 'silent' agar GDB tidak berisik
+    silent
+
+    # Selama kita belum mengumpulkan 241 karakter
+    if $i < 241
+        # Gunakan Python untuk membaca 8-byte pointer dari stack.
+        # Offset +24 adalah kunci yang kita temukan dari disassembly.
+        python \
+        ptr_addr = gdb.parse_and_eval("$rsp + 24 + 16 * $rcx"); \
+        inferior = gdb.selected_inferior(); \
+        mem = inferior.read_memory(ptr_addr, 8); \
+        base_ptr = int.from_bytes(mem, "little"); \
+        gdb.execute(f"set $base_ptr = {base_ptr}")
+
+        # Setelah mendapatkan $base_ptr dari Python, lanjutkan seperti biasa
+        set $char_addr = ($rcx ^ 0x17) + $base_ptr
+        
+        # Cetak HANYA karakternya
+        output/c *$char_addr
+        
+        # Tambah counter
+        set $i = $i + 1
+
+        # Lanjutkan eksekusi
+        continue
+    else
+        # Jika sudah selesai, cetak baris baru dan keluar
+        printf "\\n"
+        quit
+    end
+end
+
+# Jalankan program
+run

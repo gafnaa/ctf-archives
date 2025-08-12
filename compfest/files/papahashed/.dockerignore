@@ -1,0 +1,19 @@
+# Node.js dependencies (should be installed inside the container)
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Environment variables
+.env
+
+# Logs
+logs
+*.log
+log.*
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Docker-related files
+docker-compose.override.yml
