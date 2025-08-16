@@ -1,0 +1,47 @@
+Received: from SEZPR03MB8139.apcprd03.prod.outlook.com (2603:1096:101:180::9)
+ by TYSPR03MB7452.apcprd03.prod.outlook.com with Microsoft SMTP Server; Sat, 02 Aug 2025 04:26:13 +0000
+ARC-Seal: i=1; a=rsa-sha256; d=microsoft.com; s=arcselector10001; cv=none; b=ExampleSignature==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com; s=arcselector10001; h=from:to:subject:date; bh=ExampleBodyHash=; b=ExampleSignature==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass smtp.mailfrom=nusantaraenergy.co.id; dkim=pass header.d=nusantaraenergy.co.id; dmarc=pass header.from=nusantaraenergy.co.id
+Authentication-Results: spf=pass smtp.mailfrom=nusantaraenergy.co.id; dkim=pass header.d=nusantaraenergy.co.id; dmarc=pass action=none header.from=nusantaraenergy.co.id
+Received-SPF: Pass (protection.outlook.com: domain of nusantaraenergy.co.id designates 203.190.42.55 as permitted sender)
+Received: from smtp.nusantaraenergy.co.id (203.190.42.55) by protection.outlook.com with Microsoft SMTP Server; Sat, 02 Aug 2025 04:26:13 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=nusantaraenergy.co.id; s=selector1; h=from:to:subject:date; bh=ExampleBodyHash=; b=ExampleSignature==
+From: Adi Putra <adi.putra@nusantaraenergy.co.id>
+To: Sari Wulandari <sari.wulandari@nusantaraenergy.co.id>, Darmawan Teja <darmawan.teja@nusantaraenergy.co.id>
+Subject: Re: 20250701 - Surabaya Unit Fund Recap
+Thread-Topic: Surabaya Unit Fund Recap
+Thread-Index: AQHbExampleThreadIndex3==
+Date: Wed, 02 Jul 2025 09:50:00 +0000
+Message-ID: <MSG-ID-003@nusantaraenergy.co.id>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Sari,
+
+Thanks for the update. No issues from my end.
+
+Adi Putra 
+Chief Operations Officer 
+Nusantara Energy 
+
+--- Previous Message --- 
+From: Sari Wulandari <sari.wulandari@nusantaraenergy.co.id> 
+Date: 1 July 2025 19:15 
+To: Adi Putra, Darmawan Teja 
+Subject: 20250701 - Surabaya Unit Fund Recap 
+
+Dear Team,
+
+This is to confirm that the Surabaya unit's fund reserve remains sufficient f=
+or Q3 operational needs. All transactions have been categorized and aligned w=
+ith the original budget.
+
+For disbursement requests, please continue using the standard format and send=
+ directly to me for further review.
+
+Best regards, 
+Sari Wulandari 
+Finance Manager 
+Nusantara Energy

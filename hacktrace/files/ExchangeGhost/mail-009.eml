@@ -1,0 +1,44 @@
+Received: from SG2PR02CA0136.apcprd02.prod.outlook.com (2603:1096:4:188::16)
+ by PUZPR03MB6910.apcprd03.prod.outlook.com with Microsoft SMTP Server; Sat, 02 Aug 2025 04:21:26 +0000
+ARC-Seal: i=1; a=rsa-sha256; d=microsoft.com; s=arcselector10001; cv=none; b=ExampleSignature==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com; s=arcselector10001; h=from:to:subject:date; bh=ExampleBodyHash=; b=ExampleSignature==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass smtp.mailfrom=nusantaraenergy.co.id; dkim=pass header.d=nusantaraenergy.co.id; dmarc=pass header.from=nusantaraenergy.co.id
+Authentication-Results: spf=pass smtp.mailfrom=nusantaraenergy.co.id; dkim=pass header.d=nusantaraenergy.co.id; dmarc=pass action=none header.from=nusantaraenergy.co.id
+Received-SPF: Pass (protection.outlook.com: domain of nusantaraenergy.co.id designates 203.190.42.55 as permitted sender)
+Received: from smtp.nusantaraenergy.co.id (203.190.42.55) by protection.outlook.com with Microsoft SMTP Server; Sat, 02 Aug 2025 04:21:26 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=nusantaraenergy.co.id; s=selector1; h=from:to:subject:date; bh=ExampleBodyHash=; b=ExampleSignature==
+From: Sari Wulandari <sari.wulandari@nusantaraenergy.co.id>
+To: Yuki Matsuda <yuki.matsuda@kenseicorp.jp>
+Cc: Adi Putra <adi.putra@nusantaraenergy.co.id>
+Subject: Re: Reimbursement Submission Format
+Thread-Topic: Reimbursement Submission Format
+Thread-Index: AQHbExampleThreadIndex==
+Date: Wed, 02 Jul 2025 10:32:00 +0000
+Message-ID: <PR0P3R-M3SS4GE-ID-1@nusantaraenergy.co.id>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Thanks Mr. Yuki, I=E2=80=99ve saved this format for future reference.
+
+--- Previous Message --- 
+From: Yuki Matsuda <yuki.matsuda@kenseicorp.jp> 
+Date: 2 July 2025 10:12 
+To: Sari Wulandari 
+Cc: Adi Putra 
+Subject: Reimbursement Submission Format 
+
+Hi Sari,
+
+As discussed over the phone this morning, here=E2=80=99s the required format for reimbursement submissions from the division:
+
+=E2=80=A2 Full Name: 
+=E2=80=A2 Employee Code: 
+=E2=80=A2 Requested Amount: 
+=E2=80=A2 Reason for Reimbursement: 
+=E2=80=A2 Submission Date:
+
+Please make sure all fields are completed before submission.
+
+Regards, 
+Yuki Matsuda

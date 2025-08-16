@@ -1,0 +1,37 @@
+Received: from TYSPR03MB7452.apcprd03.prod.outlook.com (2603:1096:400:430::9)
+ by SG2PR02CA0136.apcprd02.prod.outlook.com with Microsoft SMTP Server; Sat, 02 Aug 2025 04:27:30 +0000
+ARC-Seal: i=1; a=rsa-sha256; d=microsoft.com; s=arcselector10001; cv=none; b=ExampleSignature==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com; s=arcselector10001; h=from:to:subject:date; bh=ExampleBodyHash=; b=ExampleSignature==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass smtp.mailfrom=nusantaraenergy.co.id; dkim=pass header.d=nusantaraenergy.co.id; dmarc=pass header.from=nusantaraenergy.co.id
+Authentication-Results: spf=pass smtp.mailfrom=nusantaraenergy.co.id; dkim=pass header.d=nusantaraenergy.co.id; dmarc=pass action=none header.from=nusantaraenergy.co.id
+Received-SPF: Pass (protection.outlook.com: domain of nusantaraenergy.co.id designates 203.190.42.55 as permitted sender)
+Received: from smtp.nusantaraenergy.co.id (203.190.42.55) by protection.outlook.com with Microsoft SMTP Server; Sat, 02 Aug 2025 04:27:30 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=nusantaraenergy.co.id; s=selector1; h=from:to:subject:date; bh=ExampleBodyHash=; b=ExampleSignature==
+From: Sari Wulandari <sari.wulandari@nusantaraenergy.co.id>
+To: Yuki Matsuda <yuki.matsuda@kenseicorp.jp>
+Subject: 20250702 - Jakarta Fund Request
+Thread-Topic: Jakarta Fund Request
+Thread-Index: AQHbExampleThreadIndex4==
+Date: Wed, 02 Jul 2025 15:44:00 +0000
+Message-ID: <MSG-ID-004@nusantaraenergy.co.id>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+MIME-Version: 1.0
+
+Dear Mr. Yuki Matsuda,
+
+Kindly find below the details for the reimbursement request to be processed.
+
+• Full Name: Ratna Siregar  
+• Employee Code: NSR0492  
+• Requested Amount: IDR 75,000,000  
+• Purpose: Regional training expense reimbursement  
+• Submission Date: 02/07/2025  
+• SWIFT/BIC: CITIUS33  
+• Bank Account: 032101009823
+
+Please process accordingly.
+
+Sari Wulandari  
+Finance Manager  
+Nusantara Energy

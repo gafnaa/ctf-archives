@@ -1,0 +1,36 @@
+Received: from TYSPR03MB7452.apcprd03.prod.outlook.com (2603:1096:400:430::9)
+ by SG2PR02CA0136.apcprd02.prod.outlook.com with Microsoft SMTP Server; Sat, 02 Aug 2025 04:24:48 +0000
+ARC-Seal: i=1; a=rsa-sha256; d=microsoft.com; s=arcselector10001; cv=none; b=ExampleSignature==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com; s=arcselector10001; h=from:to:subject:date; bh=ExampleBodyHash=; b=ExampleSignature==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass smtp.mailfrom=kenseicorp.jp; dkim=pass header.d=kenseicorp.jp; dmarc=pass header.from=kenseicorp.jp
+Authentication-Results: spf=pass smtp.mailfrom=kenseicorp.jp; dkim=pass header.d=kenseicorp.jp; dmarc=pass action=none header.from=kenseicorp.jp
+Received-SPF: Pass (protection.outlook.com: domain of kenseicorp.jp designates 203.0.113.42 as permitted sender)
+Received: from smtp.kenseicorp.jp (203.0.113.42) by protection.outlook.com with Microsoft SMTP Server; Sat, 02 Aug 2025 04:24:48 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=kenseicorp.jp; s=selector1; h=from:to:subject:date; bh=ExampleBodyHash=; b=ExampleSignature==
+From: Yuki Matsuda <yuki.matsuda@kenseicorp.jp>
+To: Sari Wulandari <sari.wulandari@nusantaraenergy.co.id>
+Subject: (No subject)
+Thread-Topic: Internal Budget Files
+Thread-Index: AQHbExampleThreadIndex2==
+Date: Wed, 02 Jul 2025 14:05:00 +0000
+Message-ID: <MSG-ID-002@kenseicorp.jp>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Hi Sari,
+
+I just received some internal documentation that may be relevant to our budge= 
+t discussion yesterday.
+
+Please access the preliminary proposal files from the Osaka division via the = 
+link below:
+
+https://intranet.kenseicorp.jp/internal-review/YXNkajEyMzQ=3D
+
+Let me know once you've reviewed it before the Friday meeting.
+
+Best regards, 
+Yuki Matsuda 
+Head of Internal Operations 
+Kensei Corporation
