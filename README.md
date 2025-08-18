@@ -33,6 +33,7 @@ This is a list of Capture The Flag (CTF) competitions I have participated in, al
 | 13 | HackToday IPB | 2025 | 12 | pwnr sigma | National |
 | 14 | HIDC25 | 2025 | 13 | One Piece is real! | National |
 | 15 | Cyber Ops Clash 2.0 | 2025 | 2 | perintis | National |
+| 16 | CRCHCTF | 2025 | 28 | sankya fan club | International |
 
 ## Notes
 
