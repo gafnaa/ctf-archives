@@ -1,159 +1,259 @@
-# This script must be run in a SageMath environment (e.g., `sage -python decryptor.py`)
-# It requires the following Python libraries: pycryptodome, ecdsa
-# You can install them via pip:
-# sage -pip install pycryptodome ecdsa
-
+from hashlib import sha256
 from Crypto.Cipher import AES
 from Crypto.Util.number import long_to_bytes
-from ecdsa.curves import SECP256k1
-from hashlib import sha256
-from sage.all import Matrix, ZZ, vector
+import itertools
+from fractions import Fraction
 
-def decrypt():
+# -------------- paste challenge data --------------
+Qx = 97807947985096161804355732287982753654948031534592619413324094997123323826739
+
+sigs = [
+(50658460383356839460979921779058660085431659138336527004561825291835819056804,
+ 15850652019778287159181648273271057077857252067295554884511726592433856004955),
+(55021558662059447624798058172147092977535149253064191890036638955424342991727,
+ 74553053530485102972794074692893327695307196166246697328850608864367232027860),
+(30479934388831147873799837596662669512786812168070523970113395515778733960560,
+ 24795513289186384624402347385289431030294290384764332702903267759322698549323),
+(105837751039535424559125644715870967168975265675053708037661158119949086718741,
+ 34322229408348037372747722870510689860223438200463919013767954018481873308042),
+(29755510144869154344956611474205380034219221937592878531082778231633908520693,
+ 90802786861810650502837812803785663278073189428623894144782372853351534201266),
+(81476943002290977298605252983624488256852285686939369751236802174273258924703,
+ 76125563968319436945740791182365902972202388557882652962877204412103358147936),
+(28261512207892426224742133858705952910512697868735737188525240842635310379121,
+ 72524968561911868126689165463494021914038765141242718996701297339646827995055),
+(87710736467323984781434451294397381339986854981796616474558454870226909597785,
+ 8253967440051485588971581354001826947025694400823436258129687301057096956293),
+(60226781003242921722706257356256557663467850819801351549557281916623976835902,
+ 16080056968321866311295326477870779138609421008224138407194499563948854826683),
+(72238256033123334662456106980189329192393498098949141696572737611506613581447,
+ 17507752889992449167413404197668789112266365286127119900030769586272616824807)
+]
+
+msgs = [
+b"The true sign of intelligence is not knowledge but imagination.",
+b"In the middle of difficulty lies opportunity.",
+b"I have no special talent. I am only passionately curious.",
+b"The only source of knowledge is experience.",
+b"Logic will get you from A to B. Imagination will take you everywhere.",
+b"Life is like riding a bicycle. To keep your balance, you must keep moving.",
+b"Strive not to be a success, but rather to be of value.",
+b"Weakness of attitude becomes weakness of character.",
+b"Peace cannot be kept by force; it can only be achieved by understanding.",
+b"It's not that I'm so smart, it's just that I stay with problems longer."
+]
+
+enc_flag = bytes.fromhex("79db35dbbede035ad9587883668089967888c84b7ae9a240374efdd6be77b3c2149b4491fa6b3203665edfededc051286e542f28dab37ebb6a5994ac6390bea77e61fe9c75c47ced53e8d7f43fd5")
+nonce = bytes.fromhex("eb1354aa22946d8305f1968f2cf985f6")
+tag = bytes.fromhex("5db7cb1bd95658b84adc9e4dbda93d8d")
+
+# SECP256k1 order
+n = 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBAAEDCE6AF48A03BBFD25E8CD0364141
+
+# -------------- preprocess e_i, r_i, s_i --------------
+rs = [int(r) for r, s in sigs]
+ss = [int(s) for r, s in sigs]
+hs_bytes = [sha256(m).digest() for m in msgs]
+
+def compute_e(r, Qx_bytes, h_bytes):
+    return int.from_bytes(sha256(r.to_bytes(32,'big') + Qx_bytes + h_bytes).digest(), 'big') % n
+
+Qx_bytes = Qx.to_bytes(32,'big')
+es = [compute_e(r, Qx_bytes, h) for r, h in zip(rs, hs_bytes)]
+
+m = len(es)
+print(f"Using {m} signatures. n = {n}")
+
+# -------------- helper: test candidate d --------------
+K_bound = 2**128
+def test_d(d):
+    kis = [(ss[i] - (es[i] * d)) % n for i in range(m)]
+    ok = all(k < K_bound for k in kis)
+    return ok, kis
+
+# -------------- simple integer-matrix helpers --------------
+def zero_matrix(rows, cols):
+    return [[0 for _ in range(cols)] for _ in range(rows)]
+
+def copy_matrix(B):
+    return [row[:] for row in B]
+
+# -------------- exact LLL implementation (Fraction-based) --------------
+def lll_reduction(B_in, delta=Fraction(3,4)):
     """
-    Recovers the private key by exploiting small nonces in the signature scheme
-    and then decrypts the flag.
+    Input: integer matrix as list of rows (basis vectors).
+    Returns: LLL-reduced basis (list of rows).
     """
-    # --- Provided Data from out.txt ---
-    Q_x = 97807947985096161804355732287982753654948031534592619413324094997123323826739
-    Q_y = 67741340960897337662050584132725854587173198377001983557101362922093290658991
-    
-    # Signatures (r, s)
-    sigs = [
-        (50658460383356839460979921779058660085431659138336527004561825291835819056804, 15850652019778287159181648273271057077857252067295554884511726592433856004955),
-        (55021558662059447624798058172147092977535149253064191890036638955424342991727, 74553053530485102972794074692893327695307196166246697328850608864367232027860),
-        (30479934388831147873799837596662669512786812168070523970113395515778733960560, 24795513289186384624402347385289431030294290384764332702903267759322698549323),
-        (105837751039535424559125644715870967168975265675053708037661158119949086718741, 34322229408348037372747722870510689860223438200463919013767954018481873308042),
-        (29755510144869154344956611474205380034219221937592878531082778231633908520693, 90802786861810650502837812803785663278073189428623894144782372853351534201266),
-        (81476943002290977298605252983624488256852285686939369751236802174273258924703, 76125563968319436945740791182365902972202388557882652962877204412103358147936),
-        (28261512207892426224742133858705952910512697868735737188525240842635310379121, 72524968561911868126689165463494021914038765141242718996701297339646827995055),
-        (87710736467323984781434451294397381339986854981796616474558454870226909597785, 82539674400514855889715813540018269470256944008234362582561057096987377956293),
-        (60226781003242921722706257356256557663467850819801351549557281916623976835902, 16080056968321866311295326477870779138609421008224138407194499563948854826683),
-        (72238256033123334662456106980189329192393498098949141696572737611506613581447, 17507752889992449167413404197668789112266365286127119900030769586272616824807)
-    ]
-    
-    # Encrypted flag data
-    enc_flag = bytes.fromhex("79db35dbbede035ad9587883668089967888c84b7ae9a240374efdd6be77b3c2149b4491fa6b3203665edfededc051286e542f28dab37ebb6a5994ac6390bea77e61fe9c75c47ced53e8d7f43fd5")
-    nonce = bytes.fromhex("eb1354aa22946d8305f1968f2cf985f6")
-    tag = bytes.fromhex("5db7cb1bd95658b84adc9e4dbda93d8d")
+    # Work with column vectors internally
+    B = [list(map(int, row)) for row in B_in]
+    d = len(B[0])       # dimension
+    k = 1
+    # Convert to column-basis (vectors)
+    basis = [B[i][:] for i in range(len(B))]
 
-    # --- Elliptic Curve and Message Data ---
-    C = SECP256k1
-    n = C.order
-    msgs = [
-        b"The true sign of intelligence is not knowledge but imagination.",
-        b"In the middle of difficulty lies opportunity.",
-        b"I have no special talent. I am only passionately curious.",
-        b"The only source of knowledge is experience.",
-        b"Logic will get you from A to B. Imagination will take you everywhere.",
-        b"Life is like riding a bicycle. To keep your balance, you must keep moving.",
-        b"Strive not to be a success, but rather to be of value.",
-        b"Weakness of attitude becomes weakness of character.",
-        b"Peace cannot be kept by force; it can only be achieved by understanding.",
-        b"It's not that I'm so smart, it's just that I stay with problems longer."
-    ]
+    def gram_schmidt(basis):
+        m = len(basis)
+        mu = [[Fraction(0) for _ in range(m)] for _ in range(m)]
+        bstar = [[Fraction(0) for _ in range(d)] for _ in range(m)]
+        bstar_norm = [Fraction(0) for _ in range(m)]
 
-    # --- Attack Logic ---
+        for i in range(m):
+            # vi = bi
+            vi = [Fraction(x) for x in basis[i]]
+            for j in range(i):
+                # mu[i][j] = <bi, b*_j> / <b*_j, b*_j>
+                num = sum(Fraction(basis[i][t]) * bstar[j][t] for t in range(d))
+                mu[i][j] = num / bstar_norm[j] if bstar_norm[j] != 0 else Fraction(0)
+                # vi -= mu[i][j] * b*_j
+                for t in range(d):
+                    vi[t] -= mu[i][j] * bstar[j][t]
+            bstar[i] = vi
+            bstar_norm[i] = sum(vi[t]*vi[t] for t in range(d))
+        return mu, bstar_norm
 
-    # 1. Calculate e_i for each signature
-    # e = H(r || Q.x || H(m))
-    print("Step 1: Calculating hash values (e_i) for each signature...")
-    e_values = []
-    s_values = []
-    for i, (r, s) in enumerate(sigs):
-        s_values.append(s)
-        msg_hash = sha256(msgs[i]).digest()
-        # Ensure r and Q.x are 32 bytes for concatenation
-        r_bytes = long_to_bytes(r, 32)
-        Qx_bytes = long_to_bytes(Q_x, 32)
-        
-        combined_hash = sha256(r_bytes + Qx_bytes + msg_hash).digest()
-        e = int.from_bytes(combined_hash, 'big') % n
-        e_values.append(e)
-    print("Done.")
+    def size_reduce(basis, mu, k, l):
+        # reduce basis[k] with respect to basis[l]
+        # round to nearest integer
+        r = int(mu[k][l] + Fraction(1,2)) if mu[k][l] >= 0 else int(mu[k][l] - Fraction(1,2))
+        if r != 0:
+            for t in range(d):
+                basis[k][t] -= r * basis[l][t]
+            return True
+        return False
 
-    # 2. Set up the lattice for the Hidden Number Problem (HNP)
-    # The vulnerability is that k_i = (s_i - e_i*d) mod n is small (< 2^128).
-    # We can solve for d by finding a vector close to a target vector in a lattice.
-    print("\nStep 2: Setting up the lattice...")
-    m = len(sigs)
-    # Scaling factor to balance the components of the target vector
-    M = 2**128 
+    mu, bstar_norm = gram_schmidt(basis)
+    m = len(basis)
 
-    # Create the basis matrix B
-    B = Matrix(ZZ, m + 1, m + 1)
-    
-    # Set diagonal elements for the modulo n part
+    while k < m:
+        # Size reduce with all j < k
+        for j in range(k-1, -1, -1):
+            changed = size_reduce(basis, mu, k, j)
+            if changed:
+                mu, bstar_norm = gram_schmidt(basis)
+
+        # Lovasz condition
+        lhs = bstar_norm[k]
+        rhs = (delta - mu[k][k-1]**2) * bstar_norm[k-1]
+        if lhs >= rhs:
+            k += 1
+        else:
+            # swap basis vectors k and k-1
+            basis[k], basis[k-1] = basis[k-1], basis[k]
+            mu, bstar_norm = gram_schmidt(basis)
+            k = max(k-1, 1)
+    # return as list of rows again
+    return [row[:] for row in basis]
+
+# -------------- lattice builders (no Sage) --------------
+def try_basis_variant_1(K, M):
+    # (m+1) x (m+1)
+    B = zero_matrix(m+1, m+1)
     for i in range(m):
-        B[i, i] = M * n
+        B[i][i] = K
+        B[i][m] = ss[i]
+    for j in range(m):
+        B[m][j] = es[j] * M
+    B[m][m] = M * n
+    return B
 
-    # Set the last row with the e_i values and the final scaling component
+def try_basis_variant_2(K, S):
+    # (m+2) x (m+2)
+    B = zero_matrix(m+2, m+2)
     for i in range(m):
-        B[m, i] = M * e_values[i]
-    B[m, m] = 1 # This corresponds to the unknown private key d
-    print("Lattice basis created.")
+        B[i][i] = K
+    for j in range(m):
+        B[m][j] = es[j]
+    B[m][m] = n
+    B[m+1][m] = S
+    B[m+1][m+1] = S * K
+    return B
 
-    # Create the target vector T
-    T = vector(ZZ, [M * s for s in s_values] + [0])
+# generate parameter grids to try
+K_choices = [2**127, 2**128, 2**129]
+M_guess = n // (2**128)
+M_choices = [max(1, M_guess//2), M_guess, M_guess*2, 1]
+S_choices = [2**180, 2**200, 2**220, 2**230]
 
-    # 3. Reduce the lattice basis using LLL
-    print("\nStep 3: Running LLL algorithm to find a reduced basis...")
-    B_red = B.LLL()
-    print("LLL reduction complete.")
+attempts = 0
+found = []
 
-    # 4. Solve the Closest Vector Problem (CVP) using Babai's rounding method
-    print("\nStep 4: Solving the Closest Vector Problem (CVP)...")
-    # **FIX**: Implement Babai's rounding algorithm to avoid Lattice import issues.
-    # We want to find an integer vector c such that c * B_red is close to T.
-    # We can approximate c by T * B_red^(-1) and then rounding the components to integers.
+print("Starting lattice attempts (multiple scalings). This may take a bit...")
+
+for K, M, S in itertools.product(K_choices, M_choices, S_choices):
+    # variant 1
+    attempts += 1
     try:
-        B_red_inv = B_red.inverse()
-        c = T * B_red_inv
-        # Round components to nearest integers and create an integer vector
-        c_rounded = vector(ZZ, [round(ci) for ci in c])
-        L_close = c_rounded * B_red
+        B1 = try_basis_variant_1(K, M)
+        L1 = lll_reduction(B1)
+        for row in L1:
+            vec = list(map(int, row))
+            kis = vec[0:m]
+            for i in range(m):
+                e_i = es[i]
+                if e_i % n == 0:
+                    continue
+                rhs = (ss[i] - kis[i]) % n
+                try:
+                    d_candidate = (rhs * pow(e_i, -1, n)) % n
+                except ValueError:
+                    continue
+                ok, kis_check = test_d(d_candidate)
+                if ok:
+                    print(f"\nFOUND (variant1) K={K}, M={M}, S={S} after {attempts} attempts")
+                    print("d =", d_candidate)
+                    found.append(('v1', K, M, S, d_candidate, kis_check))
+                    key = sha256(d_candidate.to_bytes(32,'big')).digest()[:16]
+                    try:
+                        aes = AES.new(key, AES.MODE_GCM, nonce=nonce)
+                        plain = aes.decrypt_and_verify(enc_flag, tag)
+                        print("DECRYPT OK:", plain)
+                        raise SystemExit(0)
+                    except Exception as e:
+                        print("Decryption failed with d (maybe wrong):", e)
     except Exception as e:
-        print(f"An error occurred during CVP solving: {e}")
-        print("The lattice basis might be singular. Attack failed.")
-        return
-    
-    # The solution vector V contains information about k_i and d
-    V = T - L_close
+        pass
 
-    # 5. Extract and verify the private key d
-    print("\nStep 5: Extracting and verifying the private key...")
-    # The last element of our solution vector V should be -d
-    d = -V[m]
+    # variant 2
+    attempts += 1
+    try:
+        B2 = try_basis_variant_2(K, S)
+        L2 = lll_reduction(B2)
+        for row in L2:
+            vec = list(map(int, row))
+            kis = vec[0:m]
+            for i in range(m):
+                e_i = es[i]
+                if e_i % n == 0:
+                    continue
+                rhs = (ss[i] - kis[i]) % n
+                try:
+                    d_candidate = (rhs * pow(e_i, -1, n)) % n
+                except ValueError:
+                    continue
+                ok, kis_check = test_d(d_candidate)
+                if ok:
+                    print(f"\nFOUND (variant2) K={K}, M={M}, S={S} after {attempts} attempts")
+                    print("d =", d_candidate)
+                    found.append(('v2', K, M, S, d_candidate, kis_check))
+                    key = sha256(d_candidate.to_bytes(32,'big')).digest()[:16]
+                    try:
+                        aes = AES.new(key, AES.MODE_GCM, nonce=nonce)
+                        plain = aes.decrypt_and_verify(enc_flag, tag)
+                        print("DECRYPT OK:", plain)
+                        raise SystemExit(0)
+                    except Exception as e:
+                        print("Decryption failed with d (maybe wrong):", e)
+    except Exception as e:
+        pass
 
-    if d < 0:
-        d = d % n # Ensure d is in the correct range
-
-    # Verify that this d produces small nonces k_i for all signatures
-    is_valid = True
-    for i in range(m):
-        k = (s_values[i] - e_values[i] * d) % n
-        if not (0 < k < M):
-            print(f"Verification FAILED for signature {i}. Nonce k is out of expected range.")
-            is_valid = False
-            break
-    
-    if is_valid:
-        print(f"Verification SUCCESSFUL!")
-        print(f"Found private key d: {d}")
-
-        # 6. Decrypt the flag
-        print("\nStep 6: Decrypting the flag...")
-        key = sha256(long_to_bytes(d, 32)).digest()[:16]
-        aes = AES.new(key, AES.MODE_GCM, nonce=nonce)
-        try:
-            flag = aes.decrypt_and_verify(enc_flag, tag)
-            print("\n" + "="*40)
-            print(f"  DECRYPTED FLAG: {flag.decode()}")
-            print("="*40)
-        except ValueError as e:
-            print(f"Decryption failed: {e}. The key is likely incorrect.")
-    else:
-        print("\nCould not find the correct private key. The attack failed.")
-
-if __name__ == "__main__":
-    decrypt()
+print("Attempts finished. Results:")
+if found:
+    for item in found:
+        print(item)
+else:
+    print("No candidate d found with tried parameter grid.")
+    print("Next suggestions:")
+    print("- Try increasing the number of signatures (if you can re-run challenge to produce more).")
+    print("- Try larger S scaling (e.g. 2**260) or K choices around 2**126..2**130.")
+    print("- Try BKZ (if available) or run LLL multiple times with randomized small perturbations.")
+    print("- If you want, paste full LLL basis output and I'll tune further.")

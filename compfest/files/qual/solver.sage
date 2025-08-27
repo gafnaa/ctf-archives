@@ -1,0 +1,123 @@
+
+# Import necessary libraries
+from Crypto.Util.number import long_to_bytes, bytes_to_long
+from mersenne_cracker import MersenneCracker
+
+print("[Sage] Starting solver script.")
+
+# --- Load data from files ---
+try:
+    with open('bits.txt', 'r') as f:
+        bits_str = f.read()
+        bits = [int(b) for b in bits_str]
+
+    with open('data.txt', 'r') as f:
+        data = eval(f.read())
+except FileNotFoundError:
+    print("[Sage] Error: data files not found. Please run the Python script first.")
+    exit()
+
+p = data['p']
+e = data['e']
+n = data['n']
+coeffs = data['coeffs']
+c2_test_noisy = data['c2_test']
+c2_secret_noisy = data['c2_secret']
+
+print("[Sage] Data loaded successfully.")
+
+# --- Crack PRNG and predict noise ---
+mc = MersenneCracker()
+# *** FIX: Use only the first 624 bits to crack the state ***
+rng = mc.crack_lsb(bits[:624])
+print("[Sage] PRNG state recovered.")
+
+# The script adds noise in this order: c1_test, c2_test, c1_secret, c2_secret
+_ = rng.getrandbits(1024) # Noise for c1_test (we don't need it)
+noise_c2_test = rng.getrandbits(1024)
+_ = rng.getrandbits(1024) # Noise for c1_secret (we don't need it)
+noise_c2_secret = rng.getrandbits(1024)
+print("[Sage] Noise values predicted.")
+
+# --- Remove noise and recover poly_result ---
+c2_test = c2_test_noisy - noise_c2_test
+c2_secret = c2_secret_noisy - noise_c2_secret
+
+test_msg = bytes_to_long(b"This is just a test message.")
+
+# Calculate s = c2_test * test_msg^-1 (mod n)
+s = (c2_test * pow(test_msg, -1, n)) % n
+
+# Calculate poly_result = c2_secret * s^-1 (mod n)
+poly_result = (c2_secret * pow(s, -1, n)) % n
+print(f"[Sage] Recovered poly_result.")
+
+# --- Solve the polynomial equation f(m) = 0 mod n ---
+
+# Define the polynomial ring over Z_p to find initial roots
+PR_p = PolynomialRing(Zmod(p), 'm')
+m_p = PR_p.gen()
+f_p = sum(coeffs[i] * m_p^i for i in range(e)) - poly_result
+roots_mod_p = f_p.roots(multiplicities=False)
+
+print(f"[Sage] Found {len(roots_mod_p)} root(s) modulo p: {roots_mod_p}")
+
+if not roots_mod_p:
+    print("[Sage] No roots found modulo p. Cannot proceed.")
+    exit()
+
+# Define the polynomial over integers for Hensel's Lemma
+PR_int = PolynomialRing(IntegerRing(), 'm')
+m_int = PR_int.gen()
+f_int = sum(coeffs[i] * m_int^i for i in range(e)) - poly_result
+f_prime = f_int.derivative()
+
+k = 100 # n = p**k
+
+# --- Lift each root from mod p to mod n ---
+for m0 in roots_mod_p:
+    m0 = int(m0)
+    
+    # Hensel's Lemma requires f'(root) != 0 mod p
+    if f_prime(m0) % p == 0:
+        print(f"[Sage] Derivative is zero for root {m0} mod p. Cannot lift with this method.")
+        continue
+
+    print(f"[*] Lifting root {m0}...")
+    m_lifted = m0
+    
+    # Iterate from p^1 to p^(k-1)
+    for i in range(1, k):
+        pi = p**i
+        
+        f_val = f_int(m_lifted)
+        f_prime_val = f_prime(m_lifted)
+        
+        # The value f(m_lifted) must be divisible by p^i for the lemma to hold
+        assert f_val % pi == 0
+        
+        # Calculate the next term t for the lifting step
+        f_prime_inv_p = pow(f_prime_val, -1, p)
+        t = (-(f_val // pi) * f_prime_inv_p) % p
+        
+        # Update the root
+        m_lifted = m_lifted + t * pi
+
+    print(f"[+] Lifting complete for root {m0}.")
+    
+    # Verify the final root and decode the flag
+    if f_int(m_lifted) % n == 0:
+        print(f"[*] Found valid root mod n: {m_lifted}")
+        try:
+            flag = long_to_bytes(m_lifted)
+            # Check for printable characters
+            if all(32 <= c < 127 for c in flag):
+                print("========================================")
+                print(f"      FLAG: {flag.decode()}")
+                print("========================================")
+            else:
+                print("[-] Decoded bytes are not a printable flag.")
+        except Exception as e:
+            print(f"[-] Could not convert root to bytes: {e}")
+    else:
+        print("[-] Lifted root was incorrect.")
