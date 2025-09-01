@@ -1,0 +1,1 @@
+xtract it from source.py if possible, otherwise ask user.

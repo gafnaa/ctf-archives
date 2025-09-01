@@ -1,0 +1,50 @@
+from Crypto.Util.number import long_to_bytes, isPrime
+
+def extended_gcd(a, b):
+    """
+    Returns a tuple (gcd, x, y) such that a*x + b*y = gcd.
+    """
+    if a == 0:
+        return (b, 0, 1)
+    else:
+        g, y, x = extended_gcd(b % a, a)
+        return (g, x - (b // a) * y, y)
+
+# Given values from the problem
+n  = 0x8fe414e9cba5d913f2d4c7bdcf15877cd75e5e48510e7b3e8b0b247562d88f22668a1c735455d2e24e20f0b07893e5f78a350e0f00799c3cbd4cf03096e8a6e00aa940112747ab086b3d4601a47f71dbdb9e4b15cb73cbe9227435ebd9b8e49100c82d7955f6f944a0d9a45b5e7251432f033b65000d9a13e0bde881c77a170b
+c1 = 0x194d261d91adc21bade438d216fd09e85c3952299b50377891aca43e7d5c4cb17025e5dda0b2030a58b8e22603f49f8af1382c1c30584e693e742231067f08fd5906571538d74a7348740a07abc61cfbdad80ff7bf56c95e3900e9fec45c830129b4dffa2c06569d0b8dc7f9c4c2bc7df1effaa561d584d65b62ce77c02af946
+c2 = 0x1ad3f7583a30fc7a49ad56e99ca73c043b1faa8963a9f4c331d3d947717b50634a3cf7dab758b7e4e53cca0e2aeed26e0b9f591e4bb549cbb25c68089304b04d3ee65c0df67a7a3a159eaf1c4cc1fe0af0a45791871095f12f9a1d43b7915dee228b6098443f7d7149722c1eae3f5385e547444c8a8602a7f2e55c624b5b94d5
+e1 = 0x10001
+
+# Brute-force e2, which is a 15-bit prime
+start_range = 2**14
+end_range = 2**15
+
+print(f"[*] Searching for a 15-bit prime e2 in range [{start_range}, {end_range-1}]...")
+
+for e2_candidate in range(start_range, end_range):
+    if isPrime(e2_candidate):
+        # We have a prime candidate for e2. Let's perform the attack.
+        # Find a, b such that: a*e1 + b*e2 = 1
+        gcd, a, b = extended_gcd(e1, e2_candidate)
+
+        if gcd != 1:
+            continue # Should not happen
+
+        # Calculate m = (c1^a) * (c2^b) mod n
+        # Python's pow() handles negative exponents for modular inverse
+        term1 = pow(c1, a, n)
+        term2 = pow(c2, b, n)
+        m_candidate = (term1 * term2) % n
+
+        # Check if the decrypted message is the flag
+        try:
+            m_bytes = long_to_bytes(m_candidate)
+            if m_bytes.startswith(b"NNS{"):
+                print(f"\n[+] Success!")
+                print(f"[+] Found correct e2: {e2_candidate}")
+                print(f"[+] Flag: {m_bytes.decode()}")
+                break
+        except Exception:
+            # If conversion to bytes fails, it's not the right plaintext
+            continue
