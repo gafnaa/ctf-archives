@@ -1,0 +1,42 @@
+[0901/111753.177:VERBOSE1:chrome\installer\setup\setup_main.cc:1498] Command Line: "C:\Program Files\AVG\Browser\Application\139.0.31477.68\Installer\chrmstp.exe" --configure-user-settings --verbose-logging --system-level --force-configure-user-settings
+[0901/111753.177:VERBOSE1:chrome\installer\setup\setup_main.cc:1504] system install is 1
+[0901/111753.177:VERBOSE1:chrome\installer\setup\installer_state.cc:88] Install Chrome
+[0901/111753.504:VERBOSE1:chrome\installer\util\install_util.cc:335] Windows NT 10.0.20348
+[0901/111753.959:VERBOSE1:chrome\installer\setup\install_worker.cc:1243] Adding unregistration items for per-user Metro keys.
+[0901/111754.101:VERBOSE1:chrome\installer\util\work_item_list.cc:34] Beginning execution of work item list Cleanup deprecated per-user registrations
+[0901/111754.101:VERBOSE1:chrome\installer\util\registry_util.cc:23] Deleting registry key Software\AVG\Browser\Metro
+[0901/111754.101:VERBOSE1:chrome\installer\util\registry_util.cc:23] Deleting registry key Software\AVG\Browser\Metro
+[0901/111754.101:VERBOSE1:chrome\installer\util\work_item_list.cc:55] Successful execution of work item list Cleanup deprecated per-user registrations
+[0901/111754.101:VERBOSE1:chrome\installer\setup\install.cc:680] Launching ""C:\Program Files\AVG\Browser\Application\139.0.31477.68\Installer\chrmstp.exe" --system-level --verbose-logging --installerdata="C:\Program Files\AVG\Browser\Application\initial_preferences" --create-shortcuts=1 --install-level=0 --no-pin-startmenu" to create shortcuts
+[0901/111754.545:VERBOSE1:chrome\installer\setup\setup_main.cc:1498] Command Line: "C:\Program Files\AVG\Browser\Application\139.0.31477.68\Installer\chrmstp.exe" --system-level --verbose-logging --installerdata="C:\Program Files\AVG\Browser\Application\initial_preferences" --create-shortcuts=1 --install-level=0 --no-pin-startmenu
+[0901/111754.545:VERBOSE1:chrome\installer\setup\setup_main.cc:1504] system install is 1
+[0901/111754.552:VERBOSE1:chrome\installer\setup\installer_state.cc:88] Install Chrome
+[0901/111754.679:VERBOSE1:chrome\installer\util\install_util.cc:335] Windows NT 10.0.20348
+[0901/111754.702:VERBOSE1:chrome\installer\setup\install.cc:180] Creating per-user Desktop "AVG Secure Browser" shortcut to C:\Program Files\AVG\Browser\Application\AVGBrowser.exe--check-run=src=desktop.
+[0901/111754.704:VERBOSE1:chrome\installer\setup\install.cc:180] Creating per-user Quick Launch "AVG Secure Browser" shortcut to C:\Program Files\AVG\Browser\Application\AVGBrowser.exe--check-run=src=quicklaunch.
+[0901/111754.795:VERBOSE1:chrome\installer\setup\install.cc:180] Creating per-user Start menu "AVG Secure Browser" shortcut to C:\Program Files\AVG\Browser\Application\AVGBrowser.exe--check-run=src=tile and pinning to the taskbar.
+[0901/111755.800:ERROR:base\metrics\persistent_histogram_storage.cc:157] Persistent histograms fail to write to file: C:\Program Files\AVG\Browser\Application\SetupMetrics\6856_13401224275766436.pma
+[0901/111755.983:VERBOSE1:chrome\installer\setup\install.cc:696] Shortcut creation process succeeded.
+[0901/111756.134:ERROR:base\metrics\persistent_histogram_storage.cc:157] Persistent histograms fail to write to file: C:\Program Files\AVG\Browser\Application\SetupMetrics\6112_13401224276111340.pma
+[0901/132552.045:VERBOSE1:chrome\installer\setup\setup_main.cc:1498] Command Line: "C:\Program Files\AVG\Browser\Application\139.0.31477.68\Installer\chrmstp.exe" --configure-user-settings --verbose-logging --system-level
+[0901/132552.045:VERBOSE1:chrome\installer\setup\setup_main.cc:1504] system install is 1
+[0901/132552.081:VERBOSE1:chrome\installer\setup\installer_state.cc:88] Install Chrome
+[0901/132552.148:VERBOSE1:chrome\installer\util\install_util.cc:335] Windows NT 10.0.20348
+[0901/132552.148:VERBOSE1:chrome\installer\setup\install_worker.cc:1243] Adding unregistration items for per-user Metro keys.
+[0901/132552.148:VERBOSE1:chrome\installer\util\work_item_list.cc:34] Beginning execution of work item list Cleanup deprecated per-user registrations
+[0901/132552.148:VERBOSE1:chrome\installer\util\registry_util.cc:23] Deleting registry key Software\AVG\Browser\Metro
+[0901/132552.148:VERBOSE1:chrome\installer\util\registry_util.cc:23] Deleting registry key Software\AVG\Browser\Metro
+[0901/132552.148:VERBOSE1:chrome\installer\util\work_item_list.cc:55] Successful execution of work item list Cleanup deprecated per-user registrations
+[0901/132552.148:VERBOSE1:chrome\installer\setup\install.cc:680] Launching ""C:\Program Files\AVG\Browser\Application\139.0.31477.68\Installer\chrmstp.exe" --system-level --verbose-logging --installerdata="C:\Program Files\AVG\Browser\Application\initial_preferences" --create-shortcuts=2 --install-level=0 --no-pin-startmenu" to create shortcuts
+[0901/132552.201:VERBOSE1:chrome\installer\setup\setup_main.cc:1498] Command Line: "C:\Program Files\AVG\Browser\Application\139.0.31477.68\Installer\chrmstp.exe" --system-level --verbose-logging --installerdata="C:\Program Files\AVG\Browser\Application\initial_preferences" --create-shortcuts=2 --install-level=0 --no-pin-startmenu
+[0901/132552.201:VERBOSE1:chrome\installer\setup\setup_main.cc:1504] system install is 1
+[0901/132552.211:VERBOSE1:chrome\installer\setup\installer_state.cc:88] Install Chrome
+[0901/132552.274:VERBOSE1:chrome\installer\util\install_util.cc:335] Windows NT 10.0.20348
+[0901/132552.274:VERBOSE1:chrome\installer\setup\install.cc:180] Overwriting per-user Desktop "AVG Secure Browser" shortcut to C:\Program Files\AVG\Browser\Application\AVGBrowser.exe--check-run=src=desktop.
+[0901/132552.289:WARNING:chrome\installer\setup\install.cc:178] Failed: Overwriting (maybe the shortcut doesn't exist?) per-user Desktop "AVG Secure Browser" shortcut to C:\Program Files\AVG\Browser\Application\AVGBrowser.exe--check-run=src=desktop.
+[0901/132552.289:VERBOSE1:chrome\installer\setup\install.cc:180] Overwriting per-user Quick Launch "AVG Secure Browser" shortcut to C:\Program Files\AVG\Browser\Application\AVGBrowser.exe--check-run=src=quicklaunch.
+[0901/132552.420:VERBOSE1:chrome\installer\setup\install.cc:180] Overwriting per-user Start menu "AVG Secure Browser" shortcut to C:\Program Files\AVG\Browser\Application\AVGBrowser.exe--check-run=src=tile.
+[0901/132552.420:WARNING:chrome\installer\setup\install.cc:178] Failed: Overwriting (maybe the shortcut doesn't exist?) per-user Start menu "AVG Secure Browser" shortcut to C:\Program Files\AVG\Browser\Application\AVGBrowser.exe--check-run=src=tile.
+[0901/132552.451:ERROR:base\metrics\persistent_histogram_storage.cc:157] Persistent histograms fail to write to file: C:\Program Files\AVG\Browser\Application\SetupMetrics\400_13401231952430299.pma
+[0901/132552.451:VERBOSE1:chrome\installer\setup\install.cc:696] Shortcut creation process succeeded.
+[0901/132552.483:ERROR:base\metrics\persistent_histogram_storage.cc:157] Persistent histograms fail to write to file: C:\Program Files\AVG\Browser\Application\SetupMetrics\4932_13401231952475570.pma

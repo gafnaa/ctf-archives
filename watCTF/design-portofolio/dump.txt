@@ -1,0 +1,3295 @@
+GET /api/posts HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+Cache-Control: no-cache
+{"status":"ok","data":"dummy_8623"}
+OK_6287
+GET /api/posts HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+VT=K
+nzIXa
+	H;}a
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 5508
+Connection: keep-alive
+Cache-Control: no-cache
+ETag: W/"p0014-"
+X-Flag-Total: 14
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Portfolio - Page 14</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            padding: 40px; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header { 
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white; 
+            padding: 40px; 
+            text-align: center;
+        }
+        .content { 
+            padding: 40px; 
+        }
+        .color-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+            gap: 25px; 
+            margin: 30px 0; 
+        }
+        .color-item {
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .color-item:hover {
+            transform: translateY(-5px);
+        }
+        .color-box { 
+            width: 100%;
+            height: 120px; 
+            border-radius: 12px; 
+            border: 3px solid #e0e0e0; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+        }
+        .color-info {
+            font-size: 14px;
+            font-weight: bold;
+            color: #555;
+            font-family: 'Courier New', monospace;
+            background: #f8f9fa;
+            padding: 8px;
+            border-radius: 6px;
+        }
+        .footer { 
+            text-align: center; 
+            padding: 30px;
+            background: #f8f9fa;
+            color: #666; 
+            border-top: 1px solid #e0e0e0;
+        }
+        h1 { margin: 0; font-size: 2.5em; }
+        h2 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>
+ Creative Design Studio</h1>
+            <p>Professional Color Palettes - Collection 14</p>
+        </div>
+        
+        <div class="content">
+            <h2>Featured Palette #14</h2>
+            <p>Discover our expertly curated color combinations designed for modern digital experiences.</p>
+            
+            <div class="color-grid">
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #980821;"></div>
+                    <div class="color-info">#980821</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #264288;"></div>
+                    <div class="color-info">#264288</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #891062;"></div>
+                    <div class="color-info">#891062</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #228498;"></div>
+                    <div class="color-info">#228498</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #082126;"></div>
+                    <div class="color-info">#082126</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #428889;"></div>
+                    <div class="color-info">#428889</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #106222;"></div>
+                    <div class="color-info">#106222</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #849808;"></div>
+                    <div class="color-info">#849808</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #212642;"></div>
+                    <div class="color-info">#212642</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #888910;"></div>
+                    <div class="color-info">#888910</div>
+                </div>
+            </div>
+            
+            <h2>Design Inspiration</h2>
+            <p>This palette draws inspiration from contemporary design trends, ensuring your projects 
+            stand out with sophisticated color harmony. Each shade has been tested for accessibility 
+            and visual impact across different devices and contexts.</p>
+            
+            <h2>Applications</h2>
+            <p>Perfect for web design, mobile applications, brand identity, and digital marketing materials. 
+            These colors maintain their vibrancy across different screen types and lighting conditions.</p>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2025 Creative Design Studio | Portfolio Collection</p>
+            <p>Page 14 | Last updated: September 01, 2025</p>
+        </div>
+    </div>
+</body>
+</html>@
+GET /dashboard HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+GET /static/css/bootstrap.min.css HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+GET /index10.html HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+1dE-6
+GET /robots.txt HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+P:?s
+GET /index12.html HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+PO=f
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+Cache-Control: no-cache
+{"status":"ok","data":"dummy_3636"}
+z9[A
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 5504
+Connection: keep-alive
+Cache-Control: no-cache
+ETag: W/"p0002-C3695E15DB403D33BD0C2C43600F9808"
+X-Flag-Total: 14
+X-Flag-Chunk-0013: C3695E15DB403D33BD0C2C43600F9808FBC36EB0338C8331300A368665B00496C093703FDC0F77464BD20E2443E06038140E82DD612718031BC36A780596C07330071E83876176B4E84AD32C4DD6E7FA7BF8627D6D76BFFD636032EC0B636114AC8225301FFE003361262CAFAF9756B60D4C83C36002EC0A5BC026B01A5E8567611EFC0E66662C983D60B4D128904AEB88E6D69AB4E153BADBC109F05698003BC22858032FC37CB80F6E8159D0D5A4782535C598E858EAE4AAA392A476D151F30C96CAF2749EDADCEBA3C2C79A1D8524493D9960A9CD4D4E4A56C29C0A029124693D132CB5B9939292BB605505814892B49E0996DAD9FED1C2F2E9DD9A922435970996DAD610B822295C0E3FA9201649927A32C152D5A6C2B5F08E8273860C814BA3C981AE80458D8A4C9224A94D4D5BF754F013705174D37A6A77B83E7AAEF805D8AABFC395A481A5C3691AA401695A32B09F86EFC1997008EC0CA360246C0F07C2E97075C6CCC59D706CD5EF4592DA4E8709963420A50956B9EDDCAADF8824B5A30E13AC7E31BCEA00A4BABD06FF172EAF3A0C4992D6F12677B5B947E1F036C9AE1A72A2AE9E2D9D334C838D5F42A9594CB054B59970387C091E81AE2215EF83536022DCDB4F9149925492970855B5B57037DC0D9F82CD610ABC11F684F1B0138C81D1300C56C2227806E6C26CB8159EAA3A724992329860A9952C81DBE0B6
+X-Flag-Chunk-0014: AAC390A4C1E3FA82D3102A1F2F114A92244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244952E27F00AD02BCB4D6733E210000000049454E44AE426082
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Portfolio - Page 2</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            padding: 40px; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header { 
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white; 
+            padding: 40px; 
+            text-align: center;
+        }
+        .content { 
+            padding: 40px; 
+        }
+        .color-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+            gap: 25px; 
+            margin: 30px 0; 
+        }
+        .color-item {
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .color-item:hover {
+            transform: translateY(-5px);
+        }
+        .color-box { 
+            width: 100%;
+            height: 120px; 
+            border-radius: 12px; 
+            border: 3px solid #e0e0e0; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+        }
+        .color-info {
+            font-size: 14px;
+            font-weight: bold;
+            color: #555;
+            font-family: 'Courier New', monospace;
+            background: #f8f9fa;
+            padding: 8px;
+            border-radius: 6px;
+        }
+        .footer { 
+            text-align: center; 
+            padding: 30px;
+            background: #f8f9fa;
+            color: #666; 
+            border-top: 1px solid #e0e0e0;
+        }
+        h1 { margin: 0; font-size: 2.5em; }
+        h2 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>
+ Creative Design Studio</h1>
+            <p>Professional Color Palettes - Collection 2</p>
+        </div>
+        
+        <div class="content">
+            <h2>Featured Palette #2</h2>
+            <p>Discover our expertly curated color combinations designed for modern digital experiences.</p>
+            
+            <div class="color-grid">
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #639A97;"></div>
+                    <div class="color-info">#639A97</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #000001;"></div>
+                    <div class="color-info">#000001</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #8F4944;"></div>
+                    <div class="color-info">#8F4944</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #415478;"></div>
+                    <div class="color-info">#415478</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #9CEDD8;"></div>
+                    <div class="color-info">#9CEDD8</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #C16AC2;"></div>
+                    <div class="color-info">#C16AC2</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #401440;"></div>
+                    <div class="color-info">#401440</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #D1A4F4;"></div>
+                    <div class="color-info">#D1A4F4</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #FF7F79;"></div>
+                    <div class="color-info">#FF7F79</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #BAB0C4;"></div>
+                    <div class="color-info">#BAB0C4</div>
+                </div>
+            </div>
+            
+            <h2>Design Inspiration</h2>
+            <p>This palette draws inspiration from contemporary design trends, ensuring your projects 
+            stand out with sophisticated color harmony. Each shade has been tested for accessibility 
+            and visual impact across different devices and contexts.</p>
+            
+            <h2>Applications</h2>
+            <p>Perfect for web design, mobile applications, brand identity, and digital marketing materials. 
+            These colors maintain their vibrancy across different screen types and lighting conditions.</p>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2025 Creative Design Studio | Portfolio Collection</p>
+            <p>Page 2 | Last updated: September 01, 2025</p>
+        </div>
+    </div>
+</body>
+</html>
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+Cache-Control: no-cache
+{"status":"ok","data":"dummy_9768"}#
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 5504
+Connection: keep-alive
+Cache-Control: no-cache
+ETag: W/"p0005-"
+X-Flag-Total: 14
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Portfolio - Page 5</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            padding: 40px; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header { 
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white; 
+            padding: 40px; 
+            text-align: center;
+        }
+        .content { 
+            padding: 40px; 
+        }
+        .color-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+            gap: 25px; 
+            margin: 30px 0; 
+        }
+        .color-item {
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .color-item:hover {
+            transform: translateY(-5px);
+        }
+        .color-box { 
+            width: 100%;
+            height: 120px; 
+            border-radius: 12px; 
+            border: 3px solid #e0e0e0; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+        }
+        .color-info {
+            font-size: 14px;
+            font-weight: bold;
+            color: #555;
+            font-family: 'Courier New', monospace;
+            background: #f8f9fa;
+            padding: 8px;
+            border-radius: 6px;
+        }
+        .footer { 
+            text-align: center; 
+            padding: 30px;
+            background: #f8f9fa;
+            color: #666; 
+            border-top: 1px solid #e0e0e0;
+        }
+        h1 { margin: 0; font-size: 2.5em; }
+        h2 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>
+ Creative Design Studio</h1>
+            <p>Professional Color Palettes - Collection 5</p>
+        </div>
+        
+        <div class="content">
+            <h2>Featured Palette #5</h2>
+            <p>Discover our expertly curated color combinations designed for modern digital experiences.</p>
+            
+            <div class="color-grid">
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #888910;"></div>
+                    <div class="color-info">#888910</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #622284;"></div>
+                    <div class="color-info">#622284</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #980821;"></div>
+                    <div class="color-info">#980821</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #264288;"></div>
+                    <div class="color-info">#264288</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #891062;"></div>
+                    <div class="color-info">#891062</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #228498;"></div>
+                    <div class="color-info">#228498</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #082126;"></div>
+                    <div class="color-info">#082126</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #428889;"></div>
+                    <div class="color-info">#428889</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #106222;"></div>
+                    <div class="color-info">#106222</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #849808;"></div>
+                    <div class="color-info">#849808</div>
+                </div>
+            </div>
+            
+            <h2>Design Inspiration</h2>
+            <p>This palette draws inspiration from contemporary design trends, ensuring your projects 
+            stand out with sophisticated color harmony. Each shade has been tested for accessibility 
+            and visual impact across different devices and contexts.</p>
+            
+            <h2>Applications</h2>
+            <p>Perfect for web design, mobile applications, brand identity, and digital marketing materials. 
+            These colors maintain their vibrancy across different screen types and lighting conditions.</p>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2025 Creative Design Studio | Portfolio Collection</p>
+            <p>Page 5 | Last updated: September 01, 2025</p>
+        </div>
+    </div>
+</body>
+</html>R
+>1l@
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 5504
+Connection: keep-alive
+Cache-Control: no-cache
+ETag: W/"p0003-89504E470D0A1A0A0000000D49484452"
+X-Flag-Total: 14
+X-Flag-Chunk-0001: 89504E470D0A1A0A0000000D4948445200000320000000C808020000009FED124D00001ABA49444154789CEDDD799C5C5599F0F15F569684B0844D085BD809486290886CA3414DC08186D7082AA2888AF301C457369D7144071C71078779711C9D71C1570504641D8960041424B209241883843503224908D949F7FCD1937C3A7D9E5B7DEFADEABA55DDBFEFE7FE01A7EB9CF354A5CEADE76EE780244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992244992068B3DA02BD9DE55755452DD86561D802449D24033BCEA00A496340426C33B6132EC0B636134AC82C5301F1E815FC0EDB0A2EA38254992DAC0503815E644972D7A6D2FC317616CD5014B6DCD4B849234F0ED0BBFCB915AF5DC5E8413AB0E5B6A5F2658929A6741B2BBF956D5210D06
+X-Flag-Chunk-0002: EF802505B3ABF5DB176148D5F14BEDA89513AC0555EF8A2B0F4075F01E2C0980A970038C2C5BFD53300CCE6F644492A4F6E5538412EC01D7D5915D753B0F3ED298702449EDCE044B83DE70B812368BFED40557C1B1F03A18095BC02170092CCA68EA52D8BBDFE29424B50F132C0D7A1F812951F9B3F06638116E84FF8635B004EE854FC39E7053546553F866FF062B496A0B26581ADC46C1E7A2F2857018DC9B51EBAF701C5C1BFDE9EDF0B6460527496A5726581ADC3E08DB26859D70123C55B362279C024F447FBAA021914992DA98099606B733A3C21FC09D39EA2E834F44E55361423D314992DA9E099606B1C9B04F52D80917E76EE12678202A7F6FF9A024490380099606B17032C3991917FEB25C1115CE28138E2469C070A2D1C8663015DE0093603C8C81CD61535809CBE115780616C07C980DF7C1E2AA03EE0F63E028380C0E80F1301646C15A78159E813FC2DD700BFCB91FBADE078E8323601FD8163681E5F012CC83DFC20DF050833A9A1E155E55B0916BE18A6424ED09BB174CD45ACDD6300D0E8509B02B6C019BC26A580ACFC09FE05E980973AA8EB35F55380AF21801D3612A4C865D614B18014B61113CBE6E49F2BBE1B58AC26BAC6DE19DF0569800E36033780D5E8417E01EB819EE8435550739808D85E3E06D7000EC08A361352C8279301B6E813BA1ABEA20D5D20E811FC2B2226BA474C223F0059892
+X-Flag-Chunk-0003: 7BB1940F975D8F25E736ADEE0FE16A5891AFAFBBE0E8FABAEBE960F8658E4E7F036FEA51EBD1E40557E6E86B4B581B35BE7DF1B0EF8ADAF970F1765AC421F0735893EF0BF0107CB0F891DA7151531FAB3BF2AD6075D2EC8F4A3555E128382AEAE2B00D5F330A3E0B2FE588ED25B808B6695C780DD7E75239BBC1F7A37FD95EDB13D051B0EBCA77C59507D0AD23AA3B71DD5FB782CB61795F7DCD830FBA62984263E13FEAFE361F94AFAF161954A9DDE0E6523DDE0A3B97EDB4DB08F80674E6EE712D5CB8AE6EB904EBE8A8D93F960AFEE2A8A9FF2CD554B5B6819F96FA02CC81438A7434224A0E7E5D77FCA747B1154D7D2A1C05DDFA4CB08E84E70AC6F69D4604D64F6A275867143CE2FD7E913B5F2ADF15571E40B78EA8EE44008E84178AF478178CCBFDF90F74DE8305C07878004EAD3A8C6ABD0F1E2D7B203E0DEE4F0EB2F31B0DBF804F1439FA190A9F83AF95ED1138302AFC7DA9A6C25A61FBAD6C123C08EF2E55775FB80BCEC8FDFA357075527878DDBBE6F4D982BFC06D455AA87014E4F461F825ECD0CFBDB4884BE172D8B4489553E0079E476990E930339AC8A686C3E07E787D7F45D45E4CB0606798D5A043CFF675115C597047D6CBD6701B1C51BCE208B801DE52AAD34FC2074A55040E880AFF50AAA987A3C2FDDAEA16C7C9F06BD8B18E1686C1E5F0A9DCAF4FCF320E8193EA086047383C29FC49913B902A1C
+X-Flag-Chunk-0004: 0539CD807F6BABEF553D3E0D6797AAF83EF8508363198CF6816B6044F18ADBC21DB047E323521BBA29E354E75CF8021C0D7BC016301C36851D617F980197C0EDC96D016D7A89F0A2ECA6EE86F3E0A0758BF16D0DFBC1A9704DC63D3A4B8A8FAB2B32BA5E0957C171B0178C82ADE0F570263CB8E1CB16C1F349DD3C97087F1F757A42C1E0BB0D8555516BBB956AADF976841733FE1516C2D7E148D8153682EDE00D7076C6A7D7BDE59FA2E289A4EEFD75BC8B73A3600ECE5DBDDA51D053D625C2F1052F96F5DCDAEE12E197E0B51EFFFB025C066F855D6023D81226C059F040C6FBFD0B6C95A3EBCA77C59507D0AD23AADB6B9FB0027EB4EE077113D816DE00E7C3E3195DCFADEF584503C131D137E315786FBE93CC5BC287E0F675157326587D5A9084F4AD06B59C3A3963783C046FAD5971DF8C1BD21F2872843D3DA3F7FB60CFEC5A67C0CA9ABB953C095698524CCA1D792F7F8A5AFB9BB2AD35D310F855C6C7F82FB07176C519B02863F8E4CC2CC39C66AFB26F24FDAD9D97BB6EB5A3A097AC04EB8EA4F039F82ECC80D7AF4BFE3687F17014FC13DCDBE3956D9760F5CC5CBF059B67D41D0AE767FCDB9DDF88D8163471575C61001D3577A75D303B7B500F81BFDF301B5EBF7DA31F42553BF95934B0DFD477BDDE26C33575FC3CF7B2A059A37AF78C63E2AB6BFEB2AE371CAE8CAA7F325FEF2332F292FFCAF1E37454C690
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Portfolio - Page 3</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            padding: 40px; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header { 
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white; 
+            padding: 40px; 
+            text-align: center;
+        }
+        .content { 
+            padding: 40px; 
+        }
+        .color-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+            gap: 25px; 
+            margin: 30px 0; 
+        }
+        .color-item {
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .color-item:hover {
+            transform: translateY(-5px);
+        }
+        .color-box { 
+            width: 100%;
+            height: 120px; 
+            border-radius: 12px; 
+            border: 3px solid #e0e0e0; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+        }
+        .color-info {
+            font-size: 14px;
+            font-weight: bold;
+            color: #555;
+            font-family: 'Courier New', monospace;
+            background: #f8f9fa;
+            padding: 8px;
+            border-radius: 6px;
+        }
+        .footer { 
+            text-align: center; 
+            padding: 30px;
+            background: #f8f9fa;
+            color: #666; 
+            border-top: 1px solid #e0e0e0;
+        }
+        h1 { margin: 0; font-size: 2.5em; }
+        h2 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>
+ Creative Design Studio</h1>
+            <p>Professional Color Palettes - Collection 3</p>
+        </div>
+        
+        <div class="content">
+            <h2>Featured Palette #3</h2>
+            <p>Discover our expertly curated color combinations designed for modern digital experiences.</p>
+            
+            <div class="color-grid">
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #A98D82;"></div>
+                    <div class="color-info">#A98D82</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #AB3BC1;"></div>
+                    <div class="color-info">#AB3BC1</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #73C862;"></div>
+                    <div class="color-info">#73C862</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #1C1D08;"></div>
+                    <div class="color-info">#1C1D08</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #C8CD13;"></div>
+                    <div class="color-info">#C8CD13</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #F731C6;"></div>
+                    <div class="color-info">#F731C6</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #0674BE;"></div>
+                    <div class="color-info">#0674BE</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #EA1B80;"></div>
+                    <div class="color-info">#EA1B80</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #4F2742;"></div>
+                    <div class="color-info">#4F2742</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #888910;"></div>
+                    <div class="color-info">#888910</div>
+                </div>
+            </div>
+            
+            <h2>Design Inspiration</h2>
+            <p>This palette draws inspiration from contemporary design trends, ensuring your projects 
+            stand out with sophisticated color harmony. Each shade has been tested for accessibility 
+            and visual impact across different devices and contexts.</p>
+            
+            <h2>Applications</h2>
+            <p>Perfect for web design, mobile applications, brand identity, and digital marketing materials. 
+            These colors maintain their vibrancy across different screen types and lighting conditions.</p>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2025 Creative Design Studio | Portfolio Collection</p>
+            <p>Page 3 | Last updated: September 01, 2025</p>
+        </div>
+    </div>
+</body>
+</html>
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+Cache-Control: no-cache
+{"status":"ok","data":"dummy_6592"}
+GET /index11.html HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+S'%5
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+Cache-Control: no-cache
+{"status":"ok","data":"dummy_3584"}x
+|19,/
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+Cache-Control: no-cache
+{"status":"ok","data":"dummy_2821"}
+GET /profile HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+Cache-Control: no-cache
+{"status":"ok","data":"dummy_4248"}
+GET /about HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+Cache-Control: no-cache
+{"status":"ok","data":"dummy_3114"}
+GET /index7.html HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Pe'1
+GET /index5.html HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+Cache-Control: no-cache
+{"status":"ok","data":"dummy_2161"}
+m?#`
+GET /contact HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 5508
+Connection: keep-alive
+Cache-Control: no-cache
+ETag: W/"p0012-"
+X-Flag-Total: 14
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Portfolio - Page 12</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            padding: 40px; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header { 
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white; 
+            padding: 40px; 
+            text-align: center;
+        }
+        .content { 
+            padding: 40px; 
+        }
+        .color-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+            gap: 25px; 
+            margin: 30px 0; 
+        }
+        .color-item {
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .color-item:hover {
+            transform: translateY(-5px);
+        }
+        .color-box { 
+            width: 100%;
+            height: 120px; 
+            border-radius: 12px; 
+            border: 3px solid #e0e0e0; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+        }
+        .color-info {
+            font-size: 14px;
+            font-weight: bold;
+            color: #555;
+            font-family: 'Courier New', monospace;
+            background: #f8f9fa;
+            padding: 8px;
+            border-radius: 6px;
+        }
+        .footer { 
+            text-align: center; 
+            padding: 30px;
+            background: #f8f9fa;
+            color: #666; 
+            border-top: 1px solid #e0e0e0;
+        }
+        h1 { margin: 0; font-size: 2.5em; }
+        h2 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>
+ Creative Design Studio</h1>
+            <p>Professional Color Palettes - Collection 12</p>
+        </div>
+        
+        <div class="content">
+            <h2>Featured Palette #12</h2>
+            <p>Discover our expertly curated color combinations designed for modern digital experiences.</p>
+            
+            <div class="color-grid">
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #891062;"></div>
+                    <div class="color-info">#891062</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #228498;"></div>
+                    <div class="color-info">#228498</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #082126;"></div>
+                    <div class="color-info">#082126</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #428889;"></div>
+                    <div class="color-info">#428889</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #106222;"></div>
+                    <div class="color-info">#106222</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #849808;"></div>
+                    <div class="color-info">#849808</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #212642;"></div>
+                    <div class="color-info">#212642</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #888910;"></div>
+                    <div class="color-info">#888910</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #622284;"></div>
+                    <div class="color-info">#622284</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #980821;"></div>
+                    <div class="color-info">#980821</div>
+                </div>
+            </div>
+            
+            <h2>Design Inspiration</h2>
+            <p>This palette draws inspiration from contemporary design trends, ensuring your projects 
+            stand out with sophisticated color harmony. Each shade has been tested for accessibility 
+            and visual impact across different devices and contexts.</p>
+            
+            <h2>Applications</h2>
+            <p>Perfect for web design, mobile applications, brand identity, and digital marketing materials. 
+            These colors maintain their vibrancy across different screen types and lighting conditions.</p>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2025 Creative Design Studio | Portfolio Collection</p>
+            <p>Page 12 | Last updated: September 01, 2025</p>
+        </div>
+    </div>
+</body>
+</html>
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+Cache-Control: no-cache
+{"status":"ok","data":"dummy_7950"}
+U8NG.
+GET /logout HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+?Q4@
+$va/
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 5508
+Connection: keep-alive
+Cache-Control: no-cache
+ETag: W/"p0016-"
+X-Flag-Total: 14
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Portfolio - Page 16</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            padding: 40px; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header { 
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white; 
+            padding: 40px; 
+            text-align: center;
+        }
+        .content { 
+            padding: 40px; 
+        }
+        .color-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+            gap: 25px; 
+            margin: 30px 0; 
+        }
+        .color-item {
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .color-item:hover {
+            transform: translateY(-5px);
+        }
+        .color-box { 
+            width: 100%;
+            height: 120px; 
+            border-radius: 12px; 
+            border: 3px solid #e0e0e0; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+        }
+        .color-info {
+            font-size: 14px;
+            font-weight: bold;
+            color: #555;
+            font-family: 'Courier New', monospace;
+            background: #f8f9fa;
+            padding: 8px;
+            border-radius: 6px;
+        }
+        .footer { 
+            text-align: center; 
+            padding: 30px;
+            background: #f8f9fa;
+            color: #666; 
+            border-top: 1px solid #e0e0e0;
+        }
+        h1 { margin: 0; font-size: 2.5em; }
+        h2 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>
+ Creative Design Studio</h1>
+            <p>Professional Color Palettes - Collection 16</p>
+        </div>
+        
+        <div class="content">
+            <h2>Featured Palette #16</h2>
+            <p>Discover our expertly curated color combinations designed for modern digital experiences.</p>
+            
+            <div class="color-grid">
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #4E44AE;"></div>
+                    <div class="color-info">#4E44AE</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #426082;"></div>
+                    <div class="color-info">#426082</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #1DDDFE;"></div>
+                    <div class="color-info">#1DDDFE</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #A8CA09;"></div>
+                    <div class="color-info">#A8CA09</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #ADD219;"></div>
+                    <div class="color-info">#ADD219</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #20A765;"></div>
+                    <div class="color-info">#20A765</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #5C8F3B;"></div>
+                    <div class="color-info">#5C8F3B</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #708757;"></div>
+                    <div class="color-info">#708757</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #8F4C03;"></div>
+                    <div class="color-info">#8F4C03</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #F8FAEC;"></div>
+                    <div class="color-info">#F8FAEC</div>
+                </div>
+            </div>
+            
+            <h2>Design Inspiration</h2>
+            <p>This palette draws inspiration from contemporary design trends, ensuring your projects 
+            stand out with sophisticated color harmony. Each shade has been tested for accessibility 
+            and visual impact across different devices and contexts.</p>
+            
+            <h2>Applications</h2>
+            <p>Perfect for web design, mobile applications, brand identity, and digital marketing materials. 
+            These colors maintain their vibrancy across different screen types and lighting conditions.</p>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2025 Creative Design Studio | Portfolio Collection</p>
+            <p>Page 16 | Last updated: September 01, 2025</p>
+        </div>
+    </div>
+</body>
+</html>
+!St~
+GET /api/posts HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+GET /sitemap.xml HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+Cache-Control: no-cache
+{"status":"ok","data":"dummy_1224"}
+GET /static/js/jquery.min.js HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+Cache-Control: no-cache
+{"status":"ok","data":"dummy_2407"}
+GET /profile HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+GET /api/users HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+iDp	
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+Cache-Control: no-cache
+{"status":"ok","data":"dummy_6258"}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 5508
+Connection: keep-alive
+Cache-Control: no-cache
+ETag: W/"p0010-"
+X-Flag-Total: 14
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Portfolio - Page 10</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            padding: 40px; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header { 
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white; 
+            padding: 40px; 
+            text-align: center;
+        }
+        .content { 
+            padding: 40px; 
+        }
+        .color-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+            gap: 25px; 
+            margin: 30px 0; 
+        }
+        .color-item {
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .color-item:hover {
+            transform: translateY(-5px);
+        }
+        .color-box { 
+            width: 100%;
+            height: 120px; 
+            border-radius: 12px; 
+            border: 3px solid #e0e0e0; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+        }
+        .color-info {
+            font-size: 14px;
+            font-weight: bold;
+            color: #555;
+            font-family: 'Courier New', monospace;
+            background: #f8f9fa;
+            padding: 8px;
+            border-radius: 6px;
+        }
+        .footer { 
+            text-align: center; 
+            padding: 30px;
+            background: #f8f9fa;
+            color: #666; 
+            border-top: 1px solid #e0e0e0;
+        }
+        h1 { margin: 0; font-size: 2.5em; }
+        h2 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>
+ Creative Design Studio</h1>
+            <p>Professional Color Palettes - Collection 10</p>
+        </div>
+        
+        <div class="content">
+            <h2>Featured Palette #10</h2>
+            <p>Discover our expertly curated color combinations designed for modern digital experiences.</p>
+            
+            <div class="color-grid">
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #728CC1;"></div>
+                    <div class="color-info">#728CC1</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #B78E3C;"></div>
+                    <div class="color-info">#B78E3C</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #2C588C;"></div>
+                    <div class="color-info">#2C588C</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #08AF66;"></div>
+                    <div class="color-info">#08AF66</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #9E6CCF;"></div>
+                    <div class="color-info">#9E6CCF</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #76B894;"></div>
+                    <div class="color-info">#76B894</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #7D7840;"></div>
+                    <div class="color-info">#7D7840</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #2EE8DD;"></div>
+                    <div class="color-info">#2EE8DD</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #3F668E;"></div>
+                    <div class="color-info">#3F668E</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #2FF1C5;"></div>
+                    <div class="color-info">#2FF1C5</div>
+                </div>
+            </div>
+            
+            <h2>Design Inspiration</h2>
+            <p>This palette draws inspiration from contemporary design trends, ensuring your projects 
+            stand out with sophisticated color harmony. Each shade has been tested for accessibility 
+            and visual impact across different devices and contexts.</p>
+            
+            <h2>Applications</h2>
+            <p>Perfect for web design, mobile applications, brand identity, and digital marketing materials. 
+            These colors maintain their vibrancy across different screen types and lighting conditions.</p>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2025 Creative Design Studio | Portfolio Collection</p>
+            <p>Page 10 | Last updated: September 01, 2025</p>
+        </div>
+    </div>
+</body>
+</html>
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+Cache-Control: no-cache
+{"status":"ok","data":"dummy_2464"}
+Ifuu3
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+Cache-Control: no-cache
+{"status":"ok","data":"dummy_3009"}`
+GET /images/logo.png HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+Cache-Control: no-cache
+{"status":"ok","data":"dummy_5823"}V
+GET /settings HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+(aN@
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 5504
+Connection: keep-alive
+Cache-Control: no-cache
+ETag: W/"p0001-"
+X-Flag-Total: 14
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Portfolio - Page 1</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            padding: 40px; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header { 
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white; 
+            padding: 40px; 
+            text-align: center;
+        }
+        .content { 
+            padding: 40px; 
+        }
+        .color-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+            gap: 25px; 
+            margin: 30px 0; 
+        }
+        .color-item {
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .color-item:hover {
+            transform: translateY(-5px);
+        }
+        .color-box { 
+            width: 100%;
+            height: 120px; 
+            border-radius: 12px; 
+            border: 3px solid #e0e0e0; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+        }
+        .color-info {
+            font-size: 14px;
+            font-weight: bold;
+            color: #555;
+            font-family: 'Courier New', monospace;
+            background: #f8f9fa;
+            padding: 8px;
+            border-radius: 6px;
+        }
+        .footer { 
+            text-align: center; 
+            padding: 30px;
+            background: #f8f9fa;
+            color: #666; 
+            border-top: 1px solid #e0e0e0;
+        }
+        h1 { margin: 0; font-size: 2.5em; }
+        h2 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>
+ Creative Design Studio</h1>
+            <p>Professional Color Palettes - Collection 1</p>
+        </div>
+        
+        <div class="content">
+            <h2>Featured Palette #1</h2>
+            <p>Discover our expertly curated color combinations designed for modern digital experiences.</p>
+            
+            <div class="color-grid">
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #89504E;"></div>
+                    <div class="color-info">#89504E</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #470D0A;"></div>
+                    <div class="color-info">#470D0A</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #1A0A00;"></div>
+                    <div class="color-info">#1A0A00</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #00000D;"></div>
+                    <div class="color-info">#00000D</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #494844;"></div>
+                    <div class="color-info">#494844</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #520000;"></div>
+                    <div class="color-info">#520000</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #012C00;"></div>
+                    <div class="color-info">#012C00</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #000064;"></div>
+                    <div class="color-info">#000064</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #080200;"></div>
+                    <div class="color-info">#080200</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #0000B3;"></div>
+                    <div class="color-info">#0000B3</div>
+                </div>
+            </div>
+            
+            <h2>Design Inspiration</h2>
+            <p>This palette draws inspiration from contemporary design trends, ensuring your projects 
+            stand out with sophisticated color harmony. Each shade has been tested for accessibility 
+            and visual impact across different devices and contexts.</p>
+            
+            <h2>Applications</h2>
+            <p>Perfect for web design, mobile applications, brand identity, and digital marketing materials. 
+            These colors maintain their vibrancy across different screen types and lighting conditions.</p>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2025 Creative Design Studio | Portfolio Collection</p>
+            <p>Page 1 | Last updated: September 01, 2025</p>
+        </div>
+    </div>
+</body>
+</html>x
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+Cache-Control: no-cache
+{"status":"ok","data":"dummy_3723"}
+)d|P
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 5504
+Connection: keep-alive
+Cache-Control: no-cache
+ETag: W/"p0008-"
+X-Flag-Total: 14
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Portfolio - Page 8</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            padding: 40px; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header { 
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white; 
+            padding: 40px; 
+            text-align: center;
+        }
+        .content { 
+            padding: 40px; 
+        }
+        .color-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+            gap: 25px; 
+            margin: 30px 0; 
+        }
+        .color-item {
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .color-item:hover {
+            transform: translateY(-5px);
+        }
+        .color-box { 
+            width: 100%;
+            height: 120px; 
+            border-radius: 12px; 
+            border: 3px solid #e0e0e0; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+        }
+        .color-info {
+            font-size: 14px;
+            font-weight: bold;
+            color: #555;
+            font-family: 'Courier New', monospace;
+            background: #f8f9fa;
+            padding: 8px;
+            border-radius: 6px;
+        }
+        .footer { 
+            text-align: center; 
+            padding: 30px;
+            background: #f8f9fa;
+            color: #666; 
+            border-top: 1px solid #e0e0e0;
+        }
+        h1 { margin: 0; font-size: 2.5em; }
+        h2 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>
+ Creative Design Studio</h1>
+            <p>Professional Color Palettes - Collection 8</p>
+        </div>
+        
+        <div class="content">
+            <h2>Featured Palette #8</h2>
+            <p>Discover our expertly curated color combinations designed for modern digital experiences.</p>
+            
+            <div class="color-grid">
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #D737C0;"></div>
+                    <div class="color-info">#D737C0</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #997DBF;"></div>
+                    <div class="color-info">#997DBF</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #AFC7F8;"></div>
+                    <div class="color-info">#AFC7F8</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #F3F2D8;"></div>
+                    <div class="color-info">#F3F2D8</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #FCFFB1;"></div>
+                    <div class="color-info">#FCFFB1</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #79673E;"></div>
+                    <div class="color-info">#79673E</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #35BF75;"></div>
+                    <div class="color-info">#35BF75</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #5BB312;"></div>
+                    <div class="color-info">#5BB312</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #937061;"></div>
+                    <div class="color-info">#937061</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #473C47;"></div>
+                    <div class="color-info">#473C47</div>
+                </div>
+            </div>
+            
+            <h2>Design Inspiration</h2>
+            <p>This palette draws inspiration from contemporary design trends, ensuring your projects 
+            stand out with sophisticated color harmony. Each shade has been tested for accessibility 
+            and visual impact across different devices and contexts.</p>
+            
+            <h2>Applications</h2>
+            <p>Perfect for web design, mobile applications, brand identity, and digital marketing materials. 
+            These colors maintain their vibrancy across different screen types and lighting conditions.</p>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2025 Creative Design Studio | Portfolio Collection</p>
+            <p>Page 8 | Last updated: September 01, 2025</p>
+        </div>
+    </div>
+</body>
+</html>
+GET /index3.html HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+OK_3348
+]%$k
+GET /static/css/bootstrap.min.css HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+Cache-Control: no-cache
+{"status":"ok","data":"dummy_8513"}
+i'; 
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+Cache-Control: no-cache
+{"status":"ok","data":"dummy_1024"}
+GET /index1.html HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+Cache-Control: no-cache
+{"status":"ok","data":"dummy_8760"}8
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+Cache-Control: no-cache
+{"status":"ok","data":"dummy_9103"}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+Cache-Control: no-cache
+{"status":"ok","data":"dummy_3484"}C
+{C8s
+GET /contact HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+GET /static/css/bootstrap.min.css HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+GET /sitemap.xml HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+Cache-Control: no-cache
+{"status":"ok","data":"dummy_1673"}V
+GET /api/auth/login HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+(:dZO
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+Cache-Control: no-cache
+{"status":"ok","data":"dummy_4596"}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+Cache-Control: no-cache
+{"status":"ok","data":"dummy_3811"}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+Cache-Control: no-cache
+{"status":"ok","data":"dummy_5258"}
+GET /static/js/jquery.min.js HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+GET /api/notifications HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+Cache-Control: no-cache
+{"status":"ok","data":"dummy_7000"}6
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+Cache-Control: no-cache
+{"status":"ok","data":"dummy_8712"}
+<UAo
+Ssh/
+HELLO_495*
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+Cache-Control: no-cache
+{"status":"ok","data":"dummy_2718"}>
+GET /index6.html HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 5504
+Connection: keep-alive
+Cache-Control: no-cache
+ETag: W/"p0007-"
+X-Flag-Total: 14
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Portfolio - Page 7</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            padding: 40px; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header { 
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white; 
+            padding: 40px; 
+            text-align: center;
+        }
+        .content { 
+            padding: 40px; 
+        }
+        .color-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+            gap: 25px; 
+            margin: 30px 0; 
+        }
+        .color-item {
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .color-item:hover {
+            transform: translateY(-5px);
+        }
+        .color-box { 
+            width: 100%;
+            height: 120px; 
+            border-radius: 12px; 
+            border: 3px solid #e0e0e0; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+        }
+        .color-info {
+            font-size: 14px;
+            font-weight: bold;
+            color: #555;
+            font-family: 'Courier New', monospace;
+            background: #f8f9fa;
+            padding: 8px;
+            border-radius: 6px;
+        }
+        .footer { 
+            text-align: center; 
+            padding: 30px;
+            background: #f8f9fa;
+            color: #666; 
+            border-top: 1px solid #e0e0e0;
+        }
+        h1 { margin: 0; font-size: 2.5em; }
+        h2 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>
+ Creative Design Studio</h1>
+            <p>Professional Color Palettes - Collection 7</p>
+        </div>
+        
+        <div class="content">
+            <h2>Featured Palette #7</h2>
+            <p>Discover our expertly curated color combinations designed for modern digital experiences.</p>
+            
+            <div class="color-grid">
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #849808;"></div>
+                    <div class="color-info">#849808</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #212642;"></div>
+                    <div class="color-info">#212642</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #888910;"></div>
+                    <div class="color-info">#888910</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #622284;"></div>
+                    <div class="color-info">#622284</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #980821;"></div>
+                    <div class="color-info">#980821</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #264288;"></div>
+                    <div class="color-info">#264288</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #891062;"></div>
+                    <div class="color-info">#891062</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #228498;"></div>
+                    <div class="color-info">#228498</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #082126;"></div>
+                    <div class="color-info">#082126</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #42887D;"></div>
+                    <div class="color-info">#42887D</div>
+                </div>
+            </div>
+            
+            <h2>Design Inspiration</h2>
+            <p>This palette draws inspiration from contemporary design trends, ensuring your projects 
+            stand out with sophisticated color harmony. Each shade has been tested for accessibility 
+            and visual impact across different devices and contexts.</p>
+            
+            <h2>Applications</h2>
+            <p>Perfect for web design, mobile applications, brand identity, and digital marketing materials. 
+            These colors maintain their vibrancy across different screen types and lighting conditions.</p>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2025 Creative Design Studio | Portfolio Collection</p>
+            <p>Page 7 | Last updated: September 01, 2025</p>
+        </div>
+    </div>
+</body>
+</html>
+MRWP
+GET /api/posts HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+mADuy~
+GET /profile HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+Cache-Control: no-cache
+{"status":"ok","data":"dummy_7595"}z
+|eH;^q
+1;m@
+HELLO_254
+h`N	
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+Cache-Control: no-cache
+{"status":"ok","data":"dummy_6700"}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 5504
+Connection: keep-alive
+Cache-Control: no-cache
+ETag: W/"p0009-7C153C53AAB5E6581C15363CC10A7BA9"
+X-Flag-Total: 14
+X-Flag-Chunk-0009: 7C153C53AAB5E6581C15363CC10A7BA921BD83EA2D1933A4A4D707EF2E98D1563E0AA456567A6F90565C5C4F1C6DCC042BB717E187702CEC01FF9EF190CB3038B3D97195F16C5498CE27D4E400F62AD5D46E65EF4C0FA78A2E37EFF68151E1DCD63E31FE72749530E7AC0AA1B06ED1791F7E9A443514DE9DBC6CA7E8B1DFFCB7B777AB7C1448ADACDC4A8E9B4467B0CACDF8D0FE4CB08A5B001F85A3326ED27A7B93A329259C13329CFCB39F84975C73CEFADD4BB9B40C78382A3CA854536FCCDD7E4B49338C71751CB686933587494C0D2F47EBCBA65709DF933CD950622599CA4781D4CACAED5AF7889E3A6AE573F9FDC904ABAC3BA023BAF374BF7658393C7CD2EA902606F068F4D1854BE3F56942D918EE894E43EE5D6ACAFE23A3C2BB8BB7D3646186513A610D2B9658FE283D113525B9372EBD3E784BF149312A1F05522B2B77BF44582BDCD50C022658759895B1A66CB933AB3DA5C947E9F999422FC3DCA4F0D0867651DB9268099A49A5929B77948DE1E58CAB84D30BB6B325BC292A9F5534A0A60B97659D5CAAA92DA2E7039E2A351FF78DD1B9E1937AFCF73ED1DAB145AF0FD202A340ADAFBF77C5AD1CC0A452B5C2E3E4705733089860D5676654B879DDCDA60F90977EC22ECB2D49C9E4E6AE18957E7443A289B96B1B0D87D711437A350A9851B091E3A39924E7C3FC32113555788EED98524D4D8BF6FBE5CEE1
+X-Flag-Chunk-0010: AD849F25853DAF12BE2FF9EB62B8A9545F958F02B5B826EC8A5B36809D61DFE2B5C29B64D2A783070713ACFA84D30DD4FF48EAE2A4A49EBB8F433F4D4A86C1C71BDD4B0DE98F28707AC146DE5FDF1476D74485EF80DD8A34F2775161D1FB812A7167749FFB51A5A6737B675498734DC0547A3A6A428FE70F4E4AFE7A4DD94157F928508B5B9C94347C57DCCA0194389D7F7052F8706B4FB9ACD675C1BA455E7B6EF5AFBB745DD2667F7C411F4C7A59023BF4434759E6449FDEF1B9AB0F8727A316BA8A5C30FA6354FDBBB9AB1F9D11C0FEB95BA8D6AD51F045D3DCD7C18AA49135750C8421F04CD2E03F0370701470780F5C4E958F82D451D17BCCB3586A9BDA237ABFEF2ADECE579346EA5F02B239BBE2CA03E8C8D88F3D5EF024CC39512317F643C01A14EE48BE4CCF35A2D92F465FD3F0469F7ACC887A99D5C46BFCA74701FC19C6E6ABFE998C9D42A104EBACA8FADA7CBF67A3605E54FD8EDCBD57EEC428FEA70B9E17FC66D448788632BF2F270D3E09C0A551B425D64A5AAFF2519032C16A9D04AB39BBE2CA03E8C8DE97A693A4641909CF45FBD242170434707C122EAC636AC183616DF27DFA412302EB88BEE8D735A2E59E86C0EFA28EFEA5BE5FAC51701E7C36C72B47C0FC28805FE5B84A352DFAF04B2458A3E12F510BCF664CCEBEDE50B83AA3F769B97BAFDC70782A7A0B5FCDDDC2A1B0AA1F12820332DA7C3E29
+X-Flag-Chunk-0011: BCA4BE8E2A1F052913ACD649B03A9AB22BAE3C80B097EE6D41EE23DE2F44D5C3E7C034285C0C5DB018FEA9F885ED1D33CE5EA4EBA395B039AC8C1ABFB8D177CD4DC8F875BCB6D43A09E3E00BF057E882CBF355999E31AA1F82FDB26B9DB161D869A655E899B2333362781AA66454D90A6EC8A8153EF7D0CA3E90F1463E94A3EE6EF04254F7E64604F687A4D907A3BEEABF1A5BF928E8C504AB7512ACA6ED8AAB0DA0233BC1EADEA7F5794ABB033A938A9D1993306B50B8B8C757610DDC0433F2DDE1FBB7F074F445BCA771B1FD38E3BB3E07CE8143609B06AD2D1D5EA7EB4E2F3E9A2CF716DA0CDE0B37C16B3DAAE7FF69B922238055702D9C007BC128D81CF687BF830792CFFCB1A46EA1046B38CCCE88612DFC188E816D61388C81293D7E3ED36D79A9E76EAA3504EECC783BDFACB9E0EB0C7839AAB5ACEC0C3ABD9C5F73A7DFBD3DD4888E688151D093095657CB24583471575C61001D7D0DB4FBB2AFF40D810B604D54EB5BF545A5F67671F49D580677C04570341C00DBC30818053BC054F8747460DDBDAD2CBBD04A683F589DE30726DC8A5EA2BA24BBA9E7E17B70321C083BC246300A7681C970225C0ABFCB8833FF4FCB08F855D977BA0226C2A34979D15991F682A56563E8B97DAC60BF2D62277829E31D2D84AFC1E1B0336C04DBC244F878764ADA05A73628AA7135AF02776FE736A82FAA1E053D996075B55282D5
+X-Flag-Chunk-0012: CC5D7155017444755FDCF07F57C095301D76878D611B9804E7C2DC8CAEE7C3668D78FB6A576182556E5B0B27363ABCF0898C7E1AD59F6FDC47D1BD15FA69191D3D2ED0E7D609EF071A9160016FCBB84E947FFB7AF14E5BC7C10D4A313FDFD0A86A7F2BD6367A659B6A47C17A26585DAD9460D1DC5D7125017444754F8E9E0ECEB92D6AC373F9FDC079B01A6129CC88E6D4A9D3D7E00258DBE8664317C2BBAA5BF3FC559806974157EE2A2BE064F861C65FD3E98FFB34138E2F35F378B7AFC03965EBB682FBE02DB0B08E163AE1BC463F925D3B519ED5A08776D7AB7614A865357357DC3A013C0AEF2BD5E95F616AB44C820697869CC1BA01C6F5679007C2B51BDED8D17F874DDBC37FE6B82E5363EB845FC387CB4E673F056ECFD1C50D1BAE7CF778F29A7F2FFB094CA879F12BDC5E8A56236E53DBC135A5FEDDE7C111FD10CF989AC7D08DBA16D94BE5A3C033585D2D7606ABDB814DDC153739808EA8EE4400A6C1A2223DDEE35A08EAB631FC0D7C167E09AF14DC872E871FC15B9A15EAD6F07EF87F300B9E80251937153664548F876FC0C2229FC652B809CEEE6B6A839CF6854FC3CDF06778155E8357E009B8093E152D2A9C4EBE72691DBD0F85D3A2A42DDD16C39761EB3AFA6A4D87C28D35BF603DB747E023F96E032FE7AA8C7E57F4F3AAEA158E0213ACAE964CB0BA357357DCB4003AA2BA13D7FD753BF86E8E3B28E6
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Portfolio - Page 9</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            padding: 40px; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header { 
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white; 
+            padding: 40px; 
+            text-align: center;
+        }
+        .content { 
+            padding: 40px; 
+        }
+        .color-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+            gap: 25px; 
+            margin: 30px 0; 
+        }
+        .color-item {
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .color-item:hover {
+            transform: translateY(-5px);
+        }
+        .color-box { 
+            width: 100%;
+            height: 120px; 
+            border-radius: 12px; 
+            border: 3px solid #e0e0e0; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+        }
+        .color-info {
+            font-size: 14px;
+            font-weight: bold;
+            color: #555;
+            font-family: 'Courier New', monospace;
+            background: #f8f9fa;
+            padding: 8px;
+            border-radius: 6px;
+        }
+        .footer { 
+            text-align: center; 
+            padding: 30px;
+            background: #f8f9fa;
+            color: #666; 
+            border-top: 1px solid #e0e0e0;
+        }
+        h1 { margin: 0; font-size: 2.5em; }
+        h2 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>
+ Creative Design Studio</h1>
+            <p>Professional Color Palettes - Collection 9</p>
+        </div>
+        
+        <div class="content">
+            <h2>Featured Palette #9</h2>
+            <p>Discover our expertly curated color combinations designed for modern digital experiences.</p>
+            
+            <div class="color-grid">
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #3963FC;"></div>
+                    <div class="color-info">#3963FC</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #5EDB59;"></div>
+                    <div class="color-info">#5EDB59</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #54F3CE;"></div>
+                    <div class="color-info">#54F3CE</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #7C8AB5;"></div>
+                    <div class="color-info">#7C8AB5</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #998497;"></div>
+                    <div class="color-info">#998497</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #723ACD;"></div>
+                    <div class="color-info">#723ACD</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #5EC476;"></div>
+                    <div class="color-info">#5EC476</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #9B870F;"></div>
+                    <div class="color-info">#9B870F</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #2391C5;"></div>
+                    <div class="color-info">#2391C5</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #988497;"></div>
+                    <div class="color-info">#988497</div>
+                </div>
+            </div>
+            
+            <h2>Design Inspiration</h2>
+            <p>This palette draws inspiration from contemporary design trends, ensuring your projects 
+            stand out with sophisticated color harmony. Each shade has been tested for accessibility 
+            and visual impact across different devices and contexts.</p>
+            
+            <h2>Applications</h2>
+            <p>Perfect for web design, mobile applications, brand identity, and digital marketing materials. 
+            These colors maintain their vibrancy across different screen types and lighting conditions.</p>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2025 Creative Design Studio | Portfolio Collection</p>
+            <p>Page 9 | Last updated: September 01, 2025</p>
+        </div>
+    </div>
+</body>
+</html>
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 5508
+Connection: keep-alive
+Cache-Control: no-cache
+ETag: W/"p0011-"
+X-Flag-Total: 14
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Portfolio - Page 11</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            padding: 40px; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header { 
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white; 
+            padding: 40px; 
+            text-align: center;
+        }
+        .content { 
+            padding: 40px; 
+        }
+        .color-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+            gap: 25px; 
+            margin: 30px 0; 
+        }
+        .color-item {
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .color-item:hover {
+            transform: translateY(-5px);
+        }
+        .color-box { 
+            width: 100%;
+            height: 120px; 
+            border-radius: 12px; 
+            border: 3px solid #e0e0e0; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+        }
+        .color-info {
+            font-size: 14px;
+            font-weight: bold;
+            color: #555;
+            font-family: 'Courier New', monospace;
+            background: #f8f9fa;
+            padding: 8px;
+            border-radius: 6px;
+        }
+        .footer { 
+            text-align: center; 
+            padding: 30px;
+            background: #f8f9fa;
+            color: #666; 
+            border-top: 1px solid #e0e0e0;
+        }
+        h1 { margin: 0; font-size: 2.5em; }
+        h2 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>
+ Creative Design Studio</h1>
+            <p>Professional Color Palettes - Collection 11</p>
+        </div>
+        
+        <div class="content">
+            <h2>Featured Palette #11</h2>
+            <p>Discover our expertly curated color combinations designed for modern digital experiences.</p>
+            
+            <div class="color-grid">
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #CE6618;"></div>
+                    <div class="color-info">#CE6618</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #2E4A84;"></div>
+                    <div class="color-info">#2E4A84</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #10F373;"></div>
+                    <div class="color-info">#10F373</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #146222;"></div>
+                    <div class="color-info">#146222</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #849808;"></div>
+                    <div class="color-info">#849808</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #212642;"></div>
+                    <div class="color-info">#212642</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #888910;"></div>
+                    <div class="color-info">#888910</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #622284;"></div>
+                    <div class="color-info">#622284</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #980821;"></div>
+                    <div class="color-info">#980821</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #264288;"></div>
+                    <div class="color-info">#264288</div>
+                </div>
+            </div>
+            
+            <h2>Design Inspiration</h2>
+            <p>This palette draws inspiration from contemporary design trends, ensuring your projects 
+            stand out with sophisticated color harmony. Each shade has been tested for accessibility 
+            and visual impact across different devices and contexts.</p>
+            
+            <h2>Applications</h2>
+            <p>Perfect for web design, mobile applications, brand identity, and digital marketing materials. 
+            These colors maintain their vibrancy across different screen types and lighting conditions.</p>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2025 Creative Design Studio | Portfolio Collection</p>
+            <p>Page 11 | Last updated: September 01, 2025</p>
+        </div>
+    </div>
+</body>
+</html>a
+GET /dashboard HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+HELLO_450
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+Cache-Control: no-cache
+{"status":"ok","data":"dummy_7825"}
+HELLO_763
+GET /index4.html HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 5504
+Connection: keep-alive
+Cache-Control: no-cache
+ETag: W/"p0004-"
+X-Flag-Total: 14
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Portfolio - Page 4</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            padding: 40px; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header { 
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white; 
+            padding: 40px; 
+            text-align: center;
+        }
+        .content { 
+            padding: 40px; 
+        }
+        .color-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+            gap: 25px; 
+            margin: 30px 0; 
+        }
+        .color-item {
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .color-item:hover {
+            transform: translateY(-5px);
+        }
+        .color-box { 
+            width: 100%;
+            height: 120px; 
+            border-radius: 12px; 
+            border: 3px solid #e0e0e0; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+        }
+        .color-info {
+            font-size: 14px;
+            font-weight: bold;
+            color: #555;
+            font-family: 'Courier New', monospace;
+            background: #f8f9fa;
+            padding: 8px;
+            border-radius: 6px;
+        }
+        .footer { 
+            text-align: center; 
+            padding: 30px;
+            background: #f8f9fa;
+            color: #666; 
+            border-top: 1px solid #e0e0e0;
+        }
+        h1 { margin: 0; font-size: 2.5em; }
+        h2 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>
+ Creative Design Studio</h1>
+            <p>Professional Color Palettes - Collection 4</p>
+        </div>
+        
+        <div class="content">
+            <h2>Featured Palette #4</h2>
+            <p>Discover our expertly curated color combinations designed for modern digital experiences.</p>
+            
+            <div class="color-grid">
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #622284;"></div>
+                    <div class="color-info">#622284</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #980821;"></div>
+                    <div class="color-info">#980821</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #264288;"></div>
+                    <div class="color-info">#264288</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #891062;"></div>
+                    <div class="color-info">#891062</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #228498;"></div>
+                    <div class="color-info">#228498</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #082126;"></div>
+                    <div class="color-info">#082126</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #428889;"></div>
+                    <div class="color-info">#428889</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #106222;"></div>
+                    <div class="color-info">#106222</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #849808;"></div>
+                    <div class="color-info">#849808</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #212642;"></div>
+                    <div class="color-info">#212642</div>
+                </div>
+            </div>
+            
+            <h2>Design Inspiration</h2>
+            <p>This palette draws inspiration from contemporary design trends, ensuring your projects 
+            stand out with sophisticated color harmony. Each shade has been tested for accessibility 
+            and visual impact across different devices and contexts.</p>
+            
+            <h2>Applications</h2>
+            <p>Perfect for web design, mobile applications, brand identity, and digital marketing materials. 
+            These colors maintain their vibrancy across different screen types and lighting conditions.</p>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2025 Creative Design Studio | Portfolio Collection</p>
+            <p>Page 4 | Last updated: September 01, 2025</p>
+        </div>
+    </div>
+</body>
+</html>a
+GET /api/notifications HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+GET /sitemap.xml HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+GET /dashboard HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+Cache-Control: no-cache
+{"status":"ok","data":"dummy_2288"}
+GET /index2.html HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 5508
+Connection: keep-alive
+Cache-Control: no-cache
+ETag: W/"p0013-"
+X-Flag-Total: 14
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Portfolio - Page 13</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            padding: 40px; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header { 
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white; 
+            padding: 40px; 
+            text-align: center;
+        }
+        .content { 
+            padding: 40px; 
+        }
+        .color-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+            gap: 25px; 
+            margin: 30px 0; 
+        }
+        .color-item {
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .color-item:hover {
+            transform: translateY(-5px);
+        }
+        .color-box { 
+            width: 100%;
+            height: 120px; 
+            border-radius: 12px; 
+            border: 3px solid #e0e0e0; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+        }
+        .color-info {
+            font-size: 14px;
+            font-weight: bold;
+            color: #555;
+            font-family: 'Courier New', monospace;
+            background: #f8f9fa;
+            padding: 8px;
+            border-radius: 6px;
+        }
+        .footer { 
+            text-align: center; 
+            padding: 30px;
+            background: #f8f9fa;
+            color: #666; 
+            border-top: 1px solid #e0e0e0;
+        }
+        h1 { margin: 0; font-size: 2.5em; }
+        h2 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>
+ Creative Design Studio</h1>
+            <p>Professional Color Palettes - Collection 13</p>
+        </div>
+        
+        <div class="content">
+            <h2>Featured Palette #13</h2>
+            <p>Discover our expertly curated color combinations designed for modern digital experiences.</p>
+            
+            <div class="color-grid">
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #264288;"></div>
+                    <div class="color-info">#264288</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #891062;"></div>
+                    <div class="color-info">#891062</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #228498;"></div>
+                    <div class="color-info">#228498</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #082126;"></div>
+                    <div class="color-info">#082126</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #428889;"></div>
+                    <div class="color-info">#428889</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #106222;"></div>
+                    <div class="color-info">#106222</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #849808;"></div>
+                    <div class="color-info">#849808</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #212642;"></div>
+                    <div class="color-info">#212642</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #888910;"></div>
+                    <div class="color-info">#888910</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #622284;"></div>
+                    <div class="color-info">#622284</div>
+                </div>
+            </div>
+            
+            <h2>Design Inspiration</h2>
+            <p>This palette draws inspiration from contemporary design trends, ensuring your projects 
+            stand out with sophisticated color harmony. Each shade has been tested for accessibility 
+            and visual impact across different devices and contexts.</p>
+            
+            <h2>Applications</h2>
+            <p>Perfect for web design, mobile applications, brand identity, and digital marketing materials. 
+            These colors maintain their vibrancy across different screen types and lighting conditions.</p>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2025 Creative Design Studio | Portfolio Collection</p>
+            <p>Page 13 | Last updated: September 01, 2025</p>
+        </div>
+    </div>
+</body>
+</html>
+GET /static/css/bootstrap.min.css HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+PYi||o
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+Cache-Control: no-cache
+{"status":"ok","data":"dummy_6303"}
+GET /static/fonts/roboto.woff2 HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+Cache-Control: no-cache
+{"status":"ok","data":"dummy_2972"}3
+GET /index15.html HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+]v\h
+GET /index8.html HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+GET /index16.html HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+Cache-Control: no-cache
+{"status":"ok","data":"dummy_6392"}I
+GET /api/auth/login HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+hOz	
+GET /index14.html HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+OK_7444
+GET /api/notifications HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+GET /dashboard HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+Cache-Control: no-cache
+{"status":"ok","data":"dummy_4959"}
+GET /settings HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+GET /settings HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+OK_9715
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 5504
+Connection: keep-alive
+Cache-Control: no-cache
+ETag: W/"p0006-EEDEFA4CB036CEA8B85DBEC8537746AD"
+X-Flag-Total: 14
+X-Flag-Chunk-0005: EEDEFA4CB036CEA8B85DBEC8537746AD9D52B6B566CACA2D4ECB51777C469E7A5DBEAEF78EEA7EAED4BB089BBA305FDD6A47412A4CB0FE71C3FF5D081F83617D3575105C055D6D9860ADDFFE21470B9F892A3ED488D816346B575C6D001D35FF0966C2C8BE5A38217A44E9B56826670D161BC3ABC977E2BB5547451347757A4CDC053F2D78B3F9DD490B2FC1A81C753F1AF5FE78F6D16A2FE765EF11FA4CB0768A6A75D671D6E19AA8C173CAB6D634C3E0C928F2AFE66EE1B08CCBA353F2559F9D542CF720E7E7A318725EA7AB7614A4C204AB67227B3B8C29D2E074F8C7529134478D04EB7BF95A180E73A3EA7BD71DDB82419F602D80B1F91AB924AAFE937E8856EDE1C0E80B715CD551D1AC4115CE53301746176C67EFE827F6E3392A3E1605104EFE191A967102AC2B47827540546B49F4CA91F0199807ABE039F8B78C3BC1BF1D357851EEF752951951D84FE73860EDE9B28C04258FB3A3BA6F28FE46E6258DDC93AF62E5A320152658EBB79FC346A59A6D595909D6E222CFAF9D15B5F0FEBA635B30E813ACFC8F156F14DD0EBB66D03CF1AADEDE1E7D9F26571D15CD1A54BF89DEFED4524DFDFFA49D7085BE9EDE14F5FEDB82FD9E5A36C13A22AAF56CF2B28D6056F2B21761BFE4955F8F1ABCBCE0DB69BE70C2A7D30B36F2BA6842CE55B0458EBADB46977AF39F3FEB7650F42E72CE1951ED2808D548B016C066A5DA
+X-Flag-Chunk-0006: 6C655909D6978A34B243D4C297EB8E6D415376C59507D091F14F30B7E04C03E15585F3FA21E03631B8A769D83A2ACC73D7C500B03FBC3929BC136E2FD5DAB7939249B06BCD2AFF275F3BB5FD045616ACD26D93A8705952F20F706452B80D5C950C9D5773F7D23ABAD781E9E5D5DCD765D65B083F4B0A47C2B139EABE08BF4C0A4F2C388F51FADCE26BF9963CAA7C1414751A2C6D6883ADACD014FCCFC3F3496138158BF2FB36741679FD77606D52787CC3C2693B833BC14A7F50E9B13EC0C0F69EA8305CB7388FBB60795258FB34C0DB92924EB8B960BF2B6056C12ADDC2C95DD209933E90517D42F2244438D952A10B6DCD774414E14C5855BCA91BA3C29CE781D2D38DE3A219ADB20C851393C25FC05F72D4AD7C1414F29BB2995F3B7AA6F8A4748F25258566C854EAD682AF5F04B393C229056F191C40067782F5425498E7D99C01E098A46435DC52B6B5B5D10C4635A6201A131D5CCECEF7A3D84BA179BAD7CB9960D598587C97BEEA66F5D23AC239C78BE6B8DDFE2B3A72CD99245D171DEAE49F4CEBC8E8268F3CF37450F52828AAE8F9DDB6F650F12AE9FE7CE05D4E6DA6A7E0F1E2B57E91940CCDFDC8CB8033B813AC87A383F5FDE13F06DC6DA4BD6C1E2D65F05B78A58E36D3C3CD1AE7E70F88BE7A8F96EA774EA95A39852978B75E376C7545AF69F1F53AC2E52CCADD36B404FE9C14EE96EF56F165707D52F8AEDC
+X-Flag-Chunk-0007: E9699A8A2D859FE7A858F928286475B4B8D000F648F12AE9657A13AC7A3C54AA5678DE71621D61B4B3C19D60655D603A05FE08E70EDC452B2746BFFDE5F29BF5D2934FBB04AFFA5FE1E428258E96283299644F6BA2C2F4CC65D67D3CF39387D4C26C6075B1A09A2DFD57E82AFB799231BD42CE5970D2134E63A38BC8A991D1CD7CD7C28A1C7527563D0A0A7938DF9B1A305E2C5E253D0F5A6E9A0C752BB72BF8535458FF7C19ED69702758C05732CA7781AFC0D3F0007C158E83ED9B1A57FF0A7FF6EA3C1594FEB46C97FDFD0A673A0847669F9E2AB2D8DC7A61829526491746BFB84BE03D49A7E1045A2D9E60A5C70FCF65DC9898479860ED94AFEECCE864619EAB84D361CBA430E7CDD1958F8242CA2D43DEBE1A722FFFA0FF7DAB4BB91DF2FCE874FEAE7586D2AE06FD17F0F69A33A10D8149700E5C0F0BE139B8113E0FC7E67B04BD65853F7B97C14A5809ABD66DABD76D6B600DBCB66E5BBB6EEBEC317BEFBF260D0ECB5E8B2A9C303D9C86AA4F9D194FF0D5169E0C488F7797C09BE1CBF024AC8117E0FB3029FAB50BAF85957BC2B139B68A12CA1A9744FB149E72C83933FEDA68181E97E331CCF42EF585B9EF04AF7C1414D2AF97C25BD0E07958B26595388908AC881EF5D8A6DE58DAD4205996BDA6D3605CC60DBFBDEC003BC03B01E884FBE1FBF0C3FA6EDAA844F8704D7FDC91BD7146F613A62325F2A46ECB8AE7
+X-Flag-Chunk-0008: BB8BA3C230AAA570015CD0578361DD4585626AAE2DA2C2D2A7AFB2EA86BD84AE84B3372C190D7F5B73B685EE17F4F2E3DC0F96573E0A0A69E5EF527F086F6A543395DE1B2C4B0E56F32CBC3D100DFA3358C072980A97179CF06328BC112E8767E0AC76FB209B363F5356021F3E4350CF782E2AFCB91A53C703A4E11EA4957F141BFB4F905537FFAC72BF8F6EC2AB7D95B0233A3994F3F9415A60141452EEFCAE545A7A22AA74C54132BB64A2BDF2827EB31ACE8289707DF11B7AC6C037E1B6B67A6265803D2359E261BD9732DA09E79ECD233C1D12F6D222C25335F55CD30CAFBA169A092CBD776A7ACD7360E9F5C139F060EEEEDA6B14B4DD6972B5BBD27B83B4628BCF08D86F4CB07A78048E8771F009B8B5E021E35498D93EBBECCA6FBE0EA7B22CBAFADB7A259E155A9191FDBCAE6C0C61C5A7CAB6D604E16DFEF51C688627840A7DD3D2046B249C90F1E2F031C342737F573E0A0A29747E5DAA5FE9BD415AB1C4734803820956E205B80C8E86ADE040F8087C3BDF0C02531AB1F4557384271B7680218DDEFE3B2380FC3766E551EE61EC30FB195FAAA9A1B073EE2E5A4498E3D6F3587B58B7D041F093D16294595709DF9D9C84EB2A9860553E0AA45656FAE18CB46289C521060413AC6C9DF007F80E9C0EFBC276700ADC18CD58BDDE19B07BF3022C2F9C307D8B2606103E9F522E80616533B3F021E43D4B35B573740E
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Portfolio - Page 6</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            padding: 40px; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header { 
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white; 
+            padding: 40px; 
+            text-align: center;
+        }
+        .content { 
+            padding: 40px; 
+        }
+        .color-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+            gap: 25px; 
+            margin: 30px 0; 
+        }
+        .color-item {
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .color-item:hover {
+            transform: translateY(-5px);
+        }
+        .color-box { 
+            width: 100%;
+            height: 120px; 
+            border-radius: 12px; 
+            border: 3px solid #e0e0e0; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+        }
+        .color-info {
+            font-size: 14px;
+            font-weight: bold;
+            color: #555;
+            font-family: 'Courier New', monospace;
+            background: #f8f9fa;
+            padding: 8px;
+            border-radius: 6px;
+        }
+        .footer { 
+            text-align: center; 
+            padding: 30px;
+            background: #f8f9fa;
+            color: #666; 
+            border-top: 1px solid #e0e0e0;
+        }
+        h1 { margin: 0; font-size: 2.5em; }
+        h2 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>
+ Creative Design Studio</h1>
+            <p>Professional Color Palettes - Collection 6</p>
+        </div>
+        
+        <div class="content">
+            <h2>Featured Palette #6</h2>
+            <p>Discover our expertly curated color combinations designed for modern digital experiences.</p>
+            
+            <div class="color-grid">
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #212642;"></div>
+                    <div class="color-info">#212642</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #888910;"></div>
+                    <div class="color-info">#888910</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #622284;"></div>
+                    <div class="color-info">#622284</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #980821;"></div>
+                    <div class="color-info">#980821</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #264288;"></div>
+                    <div class="color-info">#264288</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #891062;"></div>
+                    <div class="color-info">#891062</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #228498;"></div>
+                    <div class="color-info">#228498</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #082126;"></div>
+                    <div class="color-info">#082126</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #428889;"></div>
+                    <div class="color-info">#428889</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #106222;"></div>
+                    <div class="color-info">#106222</div>
+                </div>
+            </div>
+            
+            <h2>Design Inspiration</h2>
+            <p>This palette draws inspiration from contemporary design trends, ensuring your projects 
+            stand out with sophisticated color harmony. Each shade has been tested for accessibility 
+            and visual impact across different devices and contexts.</p>
+            
+            <h2>Applications</h2>
+            <p>Perfect for web design, mobile applications, brand identity, and digital marketing materials. 
+            These colors maintain their vibrancy across different screen types and lighting conditions.</p>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2025 Creative Design Studio | Portfolio Collection</p>
+            <p>Page 6 | Last updated: September 01, 2025</p>
+        </div>
+    </div>
+</body>
+</html>'
+/8-@
+OK_2539
+GET /profile HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+GET /logout HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+PTL/k
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+Cache-Control: no-cache
+{"status":"ok","data":"dummy_5444"}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+Cache-Control: no-cache
+{"status":"ok","data":"dummy_7187"}
+GET /index9.html HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+GET /static/css/bootstrap.min.css HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+P@]B
+GET /contact HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+&s;G
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 5508
+Connection: keep-alive
+Cache-Control: no-cache
+ETag: W/"p0015-"
+X-Flag-Total: 14
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Portfolio - Page 15</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            padding: 40px; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header { 
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white; 
+            padding: 40px; 
+            text-align: center;
+        }
+        .content { 
+            padding: 40px; 
+        }
+        .color-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+            gap: 25px; 
+            margin: 30px 0; 
+        }
+        .color-item {
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .color-item:hover {
+            transform: translateY(-5px);
+        }
+        .color-box { 
+            width: 100%;
+            height: 120px; 
+            border-radius: 12px; 
+            border: 3px solid #e0e0e0; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+        }
+        .color-info {
+            font-size: 14px;
+            font-weight: bold;
+            color: #555;
+            font-family: 'Courier New', monospace;
+            background: #f8f9fa;
+            padding: 8px;
+            border-radius: 6px;
+        }
+        .footer { 
+            text-align: center; 
+            padding: 30px;
+            background: #f8f9fa;
+            color: #666; 
+            border-top: 1px solid #e0e0e0;
+        }
+        h1 { margin: 0; font-size: 2.5em; }
+        h2 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>
+ Creative Design Studio</h1>
+            <p>Professional Color Palettes - Collection 15</p>
+        </div>
+        
+        <div class="content">
+            <h2>Featured Palette #15</h2>
+            <p>Discover our expertly curated color combinations designed for modern digital experiences.</p>
+            
+            <div class="color-grid">
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #622284;"></div>
+                    <div class="color-info">#622284</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #980821;"></div>
+                    <div class="color-info">#980821</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #264288;"></div>
+                    <div class="color-info">#264288</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #891062;"></div>
+                    <div class="color-info">#891062</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #2284D8;"></div>
+                    <div class="color-info">#2284D8</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #0F884D;"></div>
+                    <div class="color-info">#0F884D</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #3FB708;"></div>
+                    <div class="color-info">#3FB708</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #77E685;"></div>
+                    <div class="color-info">#77E685</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #000000;"></div>
+                    <div class="color-info">#000000</div>
+                </div>
+                <div class="color-item">
+                    <div class="color-box" style="background-color: #004945;"></div>
+                    <div class="color-info">#004945</div>
+                </div>
+            </div>
+            
+            <h2>Design Inspiration</h2>
+            <p>This palette draws inspiration from contemporary design trends, ensuring your projects 
+            stand out with sophisticated color harmony. Each shade has been tested for accessibility 
+            and visual impact across different devices and contexts.</p>
+            
+            <h2>Applications</h2>
+            <p>Perfect for web design, mobile applications, brand identity, and digital marketing materials. 
+            These colors maintain their vibrancy across different screen types and lighting conditions.</p>
+        </div>
+        
+        <div class="footer">
+            <p>&copy; 2025 Creative Design Studio | Portfolio Collection</p>
+            <p>Page 15 | Last updated: September 01, 2025</p>
+        </div>
+    </div>
+</body>
+</html>
+GET /logout HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+HELLO_220
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+Cache-Control: no-cache
+{"status":"ok","data":"dummy_2970"}
+kQ7}
+HTTP/1.1 200 OK
+Server: nginx/1.18.0
+Date: Mon, 01 Sep 2025 15:23:10 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 35
+Connection: keep-alive
+Cache-Control: no-cache
+{"status":"ok","data":"dummy_9296"}|
+GET /index13.html HTTP/1.1
+Host: ctf-challenge.local
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1

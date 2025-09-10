@@ -1,0 +1,10 @@
+Script started on 2025-09-10 10:41:50+07:00 [COMMAND="ssh hexed@challs.watctf.org -p 8022" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="69" LINES="52"]
+The authenticity of host '[challs.watctf.org]:8022 ([172.174.211.227]:8022)' can't be established.
+ED25519 key fingerprint is SHA256:B7txBCIKkrOQM5ayhfL/ahB9HA1hep6ui/xfE77DVY4.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '[challs.watctf.org]:8022' (ED25519) to the list of known hosts.
+watctf{im_more_of_a_tram_fan_personally}lmao no flag for you lmao no flag for you lmao no flag for you lmao no flag for you lmao no flag for you lmao no flag for you lmao no flag for you lmao no flag for you lmao no flag for you lmao no flag for you lmao no flag for you lmao no flag for you lmao no flag for you lmao no flag for you lmao no flag for you lmao no flag for you lmao no flag for you lmao no flag for you lmao no flag for you lmao no flag for you lmao no flag for you lmao no flag for you lmao no flag for you lmao no flag for you lmao no flag for you lmao no flag for you lmao no flag for you lmao no flag for you lmao no flag for you lmao no flag for you lmao no flag for you lmao no flag for you 
+Connection to challs.watctf.org closed.
+
+Script done on 2025-09-10 10:42:03+07:00 [COMMAND_EXIT_CODE="0"]
