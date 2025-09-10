@@ -1,46 +1,38 @@
-﻿# 2024-2025 CTF Writeup(s)
+﻿# 2024-2025 CTF(s) Archive
 
 This is my archive in working on ctf on various platforms.
 
-* PicoCTF
-* Bandit (Overthewire)
-* RajawaliSecTeam
-* Hackthebox
-* TCP1P
-* TryHackMe
-* CTFLearn
-* etc..
+- PicoCTF
+- Bandit (Overthewire)
+- Hackthebox
+- TryHackMe
+- CTFLearn
+- etc..
 
 ## Event & Competition Recap
 
 This is a list of Capture The Flag (CTF) competitions I have participated in, along with rankings and team names.
 
-
-| No | CTF Competition        | Year | Rank     | Team Name                     | Level         |
-|----|------------------------|------|----------|-------------------------------|---------------|
-| 1  | Gemastik XVII          | 2024 | -        | Furious Bananas               | National      |
-| 2  | picoCTF 2025           | 2025 | 1231     | LingGangGu                    | International |
-| 3  | TCP1P Ramadan          | 2025 | 15       | LingGangGu                    | National      |
-| 4  | Cyber Apocalypse (HTB) | 2025 | 1676     | mas renan tolong yg smngat yh | International |
-| 5  | Try Out (HTB)          | 2025 | 116      | mas renan tolong yg smngat yh | International |
-| 6  | Liga Komatik           | 2025 | 10       | Satpam Digital                | University    |
-| 7  | Find IT                | 2025 | 32       | kata gafna bebas              | National      |
-| 8  | IFEST13                | 2025 | 13 | no fasilkom no worries        | National      |
-| 9  | TJCTF                  | 2025 | 239      | solo karir (solo)             | International |
-| 10 | N0PSctf                | 2025 | 495      | llcxmn fans club (solo)       | International |
-| 11 | FIT Competition        | 2025 | 30       | llcxmn fanclub                | National      |
-| 12 | ITFEST           | 2025 | 35 | llcxmn fan club | National |
-| 13 | HackToday IPB | 2025 | 12 | pwnr sigma | National |
-| 14 | HIDC25 | 2025 | 13 | One Piece is real! | National |
-| 15 | Cyber Ops Clash 2.0 | 2025 | 2 | perintis | National |
-| 16 | CRCHCTF | 2025 | 28 | sankya fan club | International |
+| No  | CTF Competition     | Year | Rank | Team Name                     | Level         |
+| --- | ------------------- | ---- | ---- | ----------------------------- | ------------- |
+| 1   | TCP1P Ramadan       | 2025 | 15   | LingGangGu                    | National      |
+| 2   | Try Out (HTB)       | 2025 | 11   | mas renan tolong yg smngat yh | International |
+| 3   | Liga Komatik        | 2025 | 10   | Satpam Digital                | University    |
+| 4   | Find IT             | 2025 | 32   | kata gafna bebas              | National      |
+| 5   | IFEST13             | 2025 | 13   | no fasilkom no worries        | National      |
+| 6   | FIT Competition     | 2025 | 30   | llcxmn fanclub                | National      |
+| 7   | ITFEST              | 2025 | 35   | llcxmn fan club               | National      |
+| 8   | HackToday IPB       | 2025 | 12   | pwnr sigma                    | National      |
+| 9   | HIDC25              | 2025 | 13   | One Piece is real!            | National      |
+| 10  | Cyber Ops Clash 2.0 | 2025 | 2    | perintis                      | National      |
+| 11  | CRCHCTF             | 2025 | 28   | sankya fan club               | International |
 
 ## Notes
 
 For some contests, writeup can be accessed here:
+
 - [picoCTF](https://github.com/gafnaa/picoctf-writeup)
 - [picoCTF 2025](https://github.com/gafnaa/picoctf2025-LingGanGu)
 - [rajawalisecCTF](https://github.com/gafnaa/ctf-rajawalisec)
 
-
-> maaf ga lengkap, males buat wu
+> Note : WU ga lengkap, males buat
