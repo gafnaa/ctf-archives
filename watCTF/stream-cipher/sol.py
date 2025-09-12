@@ -21,22 +21,19 @@ def pad_chunk(data: bytes) -> bytes:
 
 def find_plaintext_offset(ciphertext: bytes, full_plaintext: bytes) -> int:
     """
-    Finds the starting offset of the plaintext by testing keystream candidates.
-    This version correctly interprets the `str(counter) * 1337` logic.
+    Finds the starting offset of the plaintext.
+    This version assumes the keystream logic is str(1337 * counter), which is
+    a common pattern for this type of challenge.
     """
     print("[*] Searching for correct plaintext offset (0-1000)...")
     first_ct_block = ciphertext[:CHUNK_SIZE]
     
-    # For counter=0, input is `b'0' * 1337`. This is 5 full blocks and a final partial block.
-    # Since 5 is an odd number, the XOR sum of the permuted full blocks is just one
-    # permuted block of `b'0'`. As a permutation of a uniform block is still that
-    # uniform block, this simplifies to a block of `ord('0')`.
-    # ks_0 = (block of ord('0')) ^ P(final_partial_block)
-    # Therefore, ks_0 ^ (block of ord('0')) = P(final_partial_block)
-    # The final partial block is `b'0'*57 + b'\0'*199`. The right side is a permutation
-    # of this known chunk, so its byte counts are fixed.
-    expected_counts = Counter({ord(b'0'): 57, 0: 199})
-    constant_xor_block = bytes([ord(b'0')] * CHUNK_SIZE)
+    # For counter=0, the input to chf is str(1337 * 0) -> b'0'.
+    # This is padded to b'0' + 255 nulls.
+    # The first keystream block is a direct permutation of this known input.
+    # Therefore, the keystream block must have these exact byte counts.
+    input_chunk_0 = pad_chunk(b'0')
+    expected_counts = Counter(input_chunk_0)
 
     for offset in range(1001):
         pt_candidate_block = full_plaintext[offset : offset + CHUNK_SIZE]
@@ -46,11 +43,8 @@ def find_plaintext_offset(ciphertext: bytes, full_plaintext: bytes) -> int:
         # Recover the potential first keystream block
         keystream_candidate = xor_bytes(first_ct_block, pt_candidate_block)
         
-        # Reverse the XOR from the full blocks to get the permuted chunk candidate
-        permuted_chunk_candidate = xor_bytes(keystream_candidate, constant_xor_block)
-        
         # Check if its byte counts match our expectation
-        if Counter(permuted_chunk_candidate) == expected_counts:
+        if Counter(keystream_candidate) == expected_counts:
             print(f"[+] Found correct offset: {offset}")
             return offset
             
@@ -60,24 +54,22 @@ def find_plaintext_offset(ciphertext: bytes, full_plaintext: bytes) -> int:
 def recover_shared_key(ciphertext: bytes, plaintext: bytes) -> np.ndarray:
     """
     Recovers the secret permutation key using the known plaintext.
-    This version uses counters 10-99 where the keystream is a direct permutation.
+    With the str(1337*counter) logic, every block provides direct info.
     """
     print("[*] Recovering the secret permutation key...")
     
     possibilities = [set(range(CHUNK_SIZE)) for _ in range(CHUNK_SIZE)]
     
-    # For counters 10-99, len(str(i)) is 2. The input data length is 2*1337=2674.
-    # The number of full chunks is 2674 // 256 = 10. Since 10 is even, the XOR sum
-    # of the permuted full chunks is zero. This leaves ks_i = P(last_chunk),
-    # giving us a direct relationship to solve for the key.
-    num_blocks_to_solve = 20 
-    print(f"[*] Using counters 10-{10 + num_blocks_to_solve -1} to solve...")
+    num_blocks_available = len(ciphertext) // CHUNK_SIZE
+    # We only need a few blocks to solve the key.
+    num_blocks_to_solve = min(num_blocks_available, 20) 
 
-    for i in range(10, 10 + num_blocks_to_solve):
+    print(f"[*] Using {num_blocks_to_solve} blocks to solve...")
+
+    for i in range(num_blocks_to_solve):
         # Determine the known input chunk for the permutation
-        input_data = (str(i) * 1337).encode()
-        last_chunk_len = len(input_data) % CHUNK_SIZE
-        input_chunk = pad_chunk(input_data[-last_chunk_len:])
+        input_data = str(1337 * i).encode()
+        input_chunk = pad_chunk(input_data)
         
         # Recover the corresponding keystream block
         ct_block = ciphertext[i*CHUNK_SIZE : (i+1)*CHUNK_SIZE]
@@ -101,7 +93,8 @@ def recover_shared_key(ciphertext: bytes, plaintext: bytes) -> np.ndarray:
     print("[*] Performing elimination to solve remaining ambiguities...")
     solved_key = np.full(CHUNK_SIZE, -1, dtype=int)
     
-    while -1 in solved_key:
+    # Iteratively solve the key by finding unique possibilities
+    for _ in range(CHUNK_SIZE): # Iterate to ensure propagation of constraints
         made_progress = False
         for i in range(CHUNK_SIZE):
             if solved_key[i] == -1 and len(possibilities[i]) == 1:
@@ -109,15 +102,20 @@ def recover_shared_key(ciphertext: bytes, plaintext: bytes) -> np.ndarray:
                 solved_key[i] = value
                 made_progress = True
                 
+                # Remove this solved value from all other possibilities
                 for j in range(CHUNK_SIZE):
                     if i != j and value in possibilities[j]:
                         possibilities[j].remove(value)
         
-        if not made_progress:
+        if not made_progress and -1 in solved_key:
             unsolved_count = sum(1 for s in possibilities if len(s) > 1)
             if unsolved_count > 0:
                  print(f"[-] Could not fully solve the key. {unsolved_count} ambiguous positions remain.", file=sys.stderr)
                  sys.exit(1)
+
+    if -1 in solved_key:
+        print("[-] Critical error: Key recovery failed despite progress seeming to stop.", file=sys.stderr)
+        sys.exit(1)
 
     print("[+] Successfully recovered the shared_key!")
     return solved_key
@@ -134,18 +132,18 @@ def decrypt_file(shared_key: np.ndarray):
         return np.array(list(chunk), dtype=np.uint8)[shared_key]
 
     def chf(data):
+        # With the str(1337*counter) logic, data is never longer than one chunk,
+        # so the chf state logic simplifies greatly.
         state = np.zeros(CHUNK_SIZE, dtype=np.uint8)
-        for i in range(0, len(data), CHUNK_SIZE):
-            chunk = data[i:i+CHUNK_SIZE]
-            chunk = pad_chunk(chunk)
-            state ^= apply_perm(chunk)
+        chunk = pad_chunk(data)
+        state ^= apply_perm(chunk)
         return bytes(state.tolist())
 
     def csprng():
         counter = 0
         while True:
-            # Generate input using the correct string repetition logic
-            input_data = (str(counter) * 1337).encode()
+            # Generate input using the corrected str(1337 * counter) logic
+            input_data = str(1337 * counter).encode()
             yield chf(input_data)
             counter += 1
 
