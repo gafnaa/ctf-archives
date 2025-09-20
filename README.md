@@ -16,7 +16,7 @@ This is a list of Capture The Flag (CTF) competitions I have participated in, al
 | No  | CTF Competition     | Year | Rank | Team Name                     | Level         |
 | --- | ------------------- | ---- | ---- | ----------------------------- | ------------- |
 | 1   | TCP1P Ramadan       | 2025 | 15   | LingGangGu                    | National      |
-| 2   | Try Out (HTB)       | 2025 | 11   | mas renan tolong yg smngat yh | International |
+| 2   | Try Out (HTB)       | 2025 | 116   | mas renan tolong yg smngat yh | International |
 | 3   | Liga Komatik        | 2025 | 10   | Satpam Digital                | University    |
 | 4   | Find IT             | 2025 | 32   | kata gafna bebas              | National      |
 | 5   | IFEST13             | 2025 | 13   | no fasilkom no worries        | National      |
@@ -36,3 +36,4 @@ For some contests, writeup can be accessed here:
 - [rajawalisecCTF](https://github.com/gafnaa/ctf-rajawalisec)
 
 > Note : WU ga lengkap, males buat
+
